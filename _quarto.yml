@@ -1,0 +1,36 @@
+project:
+  type: book
+
+book:
+  title: "ReCAF:  The Evidence-Centered Design Conceptual Assessment Framework Reconceptualized"
+  author: "Russell G. Almond"
+  date: "5/9/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - arguments.qmd
+    - variables.qmd
+    - tasks.qmd
+    - observations.qmd
+    - evidenceRules.qmd
+    - marks.qmd
+    - interactions.qmd
+    - CAF.qmd
+    - comments.qmd
+    - glossary.qmd
+    - references.qmd
+
+bibliography: ReCAF.bib
+csl:  apa.csl
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+comments:
+  utterances: 
+    repo: ralmond/ReECD
+    
+
