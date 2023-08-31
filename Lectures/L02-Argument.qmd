@@ -1,3 +1,277 @@
 ---
 title: "02 Assessment Argument"
 ---
+
+# The Assessment Argument
+
+
+```{dot}
+//| label: fig-Toulmin
+//| fig-cap: The basic Toulmin diagram of an argument.
+//| fig-height:  4
+digraph {
+	rankdir="BT";
+	node [shape="rectangle"];
+
+	claim [label="Claim"]
+	warrant [label="Warrant"]
+	alt [label="Alternative"]
+	data [label="Observation"]
+
+	junction1 [fixedsize="true", height=0, width=0, style="invis"]
+
+	spacer1, spacer2, spacer3, spacer4 [fixedsize="true", height=0, width=0, style="invis"]
+	{rank="max"; spacer1, claim, spacer2}
+	spacer1 -> claim -> spacer2 [style="invis"]
+	{rank="same"; warrant, junction1, alt}
+
+	spacer1->warrant, spacer2 -> alt [style="invis"]
+	{rank="min"; spacer3, data, spacer4}
+	spacer3 -> data -> spacer4 [style="invis"]
+	warrant->spacer3, alt -> spacer4 [style="invis"]
+
+	data -> junction1 [dir="none"] 
+	junction1 ->  claim [label="so"]
+
+	subgraph cluser_1 {
+		warrant -> junction1 [label="since"]
+		junction1 -> alt [dir="back", label="unless"]
+	}
+
+}
+```
+
+* _Claim_:
+
+* _Observation_:
+
+* _Warrant_:
+
+* _Alternative_:
+
+### Example
+
+
+-   **Claim:** The job candidate can produce appropriate and relevant
+    routine business correspondence.
+
+-   **Observation:** The candidate's cover letter was well written.
+
+-   **Warrant:** A cover letter is a type of business correspondence,
+    therefore this is a positive example of the type of needed work.
+
+-   **Alternative:** The candidate may have had help writing or
+    correcting the letter.
+
+# Variables, Indicators and Context Features {#sec-Variables}
+
+Domain -- Value -- Evaluator
+
+## Context Features
+
+## Indicators {#sec-Indicators}
+
+# Constructs
+
+
+```{dot}
+//| label: fig-Context
+//| fig-cap: "A Toulmin Diagram with context added."
+//| height: 4
+digraph {
+	rankdir="BT";
+	node [shape="rectangle"];
+
+	claim1 [label="Claim1"]
+	claim2 [label="Claim2"]
+	claim3 [label="Claim3"]
+	const [label="Construct"]
+	data1 [label="Observation1"]
+	data2 [label="Observation2"]
+	data3 [label="Observation3"]
+
+	{rank="max"; claim1, claim2, claim3}
+	claim1 -> claim2 -> claim3 [style="invis"]
+	const -> claim1; const -> claim2; const -> claim3
+
+	{rank="min"; data1, data2, data3}
+	data1 -> data2 -> data3 [style="invis"]
+	const -> data1; const -> data2; const -> data3
+	
+	}
+```
+
+# Contexts
+
+## Contexts and Situtations
+
+## Adding Contexts to the Toulmin Diagram
+
+
+```{dot}
+//| label: fig-ToulminC
+//| fig-cap: "Toulmin diagram with added context."
+//| height: 4
+digraph {
+	rankdir="TB";
+	node [shape="rectangle"];
+
+	subgraph cluster_C {
+		rank="max";
+		color="black";
+		label="Context*";
+		style="rounded";
+		shape="";
+		claim [label="Claim"]
+		spacer1 [fixedsize="true", height=0, width=0, style="invis"]
+		spacer2 [fixedsize="true", height=0, width=0, style="invis"]
+		spacer1 -> claim -> spacer2 [style="invis"]
+		{rank="same"; spacer1; claim; spacer2}
+	}
+
+	subgraph row_1 {
+		rank="same";
+		warrant1 [label="Warrant*"]
+		alt1 [label="Alternative*"]
+		junction1 [fixedsize="true", height=0, width=0, style="invis"]
+		warrant1 -> junction1 
+		junction1 -> alt1 [dir="back"]
+	}  
+
+	subgraph row_2 {
+		rank="same";
+		const [label="Construct"]
+		spacerM1 [fixedsize="true", height=0, width=0, style="invis"]
+		spacerM2 [fixedsize="true", height=0, width=0, style="invis"]
+		spacerM1 -> const -> spacerM2 [style="invis"]
+		{rank="same"; spacerM1; const; spacerM2}
+	}
+
+	subgraph row_3 {
+		rank="same";
+		warrant2 [label="Warrant"]
+		alt2 [label="Alternative"]
+		junction2 [fixedsize="true", height=0, width=0, style="invis"]
+		warrant2 -> junction2 
+		junction2 -> alt2 [dir="back"]
+	} 
+
+	subgraph cluster_O {
+		rank="min";
+		color="black";
+		label="Context";
+		style="rounded";
+		labelloc="b";
+		data [label="Observation"]
+		spacer3[fixedsize="true", height=0, width=0, style="invis"]
+		spacer4 [fixedsize="true", height=0, width=0, style="invis"]
+		spacer3 -> data -> spacer4 [style="invis"]
+		{rank="same"; spacer3; data; spacer4}
+	}
+
+
+	warrant2->spacer3 [style="invis"]
+	warrant1->spacerM1->warrant2 [style="invis"]
+	spacer1 -> warrant1 [style="invis"]
+	alt2 -> spacer4 [style="invis"]
+	alt1 -> spacerM2->alt2 [style="invis"]
+	spacer2 -> alt1 [style="invis"]
+
+
+	data -> junction2 [dir="back"] 
+	junction2 -> const [dir="none"]
+	const -> junction1 [dir="none"]
+	junction1 ->  claim 
+}
+```
+
+
+```{dot}
+//| label: fig-ToulminCC
+//| fig-cap: "Toulmin diagram with retricted context."
+//| height: 4
+digraph{
+	compound=true;
+	rankdir="TB";
+	node [shape="rectangle"];
+
+
+	subgraph cluster_C {
+		rank="max";
+		color="black";
+		label="Context*";
+		style="rounded";
+		shape="";
+		claim [label="Claim"]
+		spacer1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer1 -> claim -> spacer2 [style="invis"]
+		{rank="same"; spacer1; claim; spacer2}
+	}
+	
+	subgraph row_1 {
+		rank="same";
+		warrant1 [label="Warrant*"]
+		alt1 [label="Alternative*"]
+		junction1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		warrant1 -> junction1 
+		junction1 -> alt1 [dir="back"]
+	}  
+	
+	subgraph row_2 {
+		rank="same";
+		const [label="Construct"]
+		spacerM1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM1 -> const -> spacerM2 [style="invis"]
+		{rank="same"; spacerM1; const; spacerM2}
+	}
+
+	subgraph row_3 {
+		rank="same";
+		warrant2 [label="Warrant"]
+		alt2 [label="Alternative"]
+		junction2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		warrant2 -> junction2 
+		junction2 -> alt2 [dir="back"]
+	} 
+
+	subgraph cluster_O {
+		rank="min";
+		color="black";
+		label="Context";
+		style="rounded";
+		labelloc="b";
+		data [label="Observation"]
+		spacer3 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer4 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer3 -> data -> spacer4 [style="invis"]
+		{rank="same"; spacer3; data; spacer4}
+	}
+
+
+	warrant2->spacer3 [style="dashed",dir="back",lhead="cluster_O"]
+	warrant1->spacerM1->warrant2 [style="invis"]
+	spacer1 -> warrant1 [style="dashed",ltail="cluster_C"]
+	alt2 -> spacer4 [style="dashed",dir="back",lhead="cluster_O"]
+	alt1 -> spacerM2->alt2 [style="invis"]
+	spacer2 -> alt1 [style="dashed",ltail="cluster_C"]
+	
+
+	data -> junction2 [dir="back"] 
+	junction2 -> const [dir="none"]
+	const -> junction1 [dir="none"]
+	junction1 ->  claim 
+
+}
+```
+
+# Logical Reasoning
+
+## Deduction
+
+## Abduction
+
+## Induction
+
+# Validity Argument

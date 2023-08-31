@@ -1,4 +1,23 @@
 ---
 title: "01 Purpose"
-editor: visual
 ---
+
+```{block}
+Never go anywhere without a Porpoise.
+--Lewis Carroll
+```
+
+## Setting A Goal
+
+## Audience
+
+## Context
+
+## Environmental Constraints
+
+## Scope Creep
+
+## Purpose and Validity
+
+## Exercises
+

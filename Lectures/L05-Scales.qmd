@@ -1,3 +1,115 @@
 ---
 title: "05 Scales"
 ---
+# Skill Maps
+
+> ...to build an imaginary variable along which we can define
+> ... equal units that, although abstract in theory, are,
+> nevertheless, approximable in practice...It is the fundamental
+> language of science... [to] add up to reproducible meaning. 
+> -- Wright, 1999, p. 67-8  
+
+Many families have a wall in their home with a series of marks
+indicating the height of their children at various points in time.
+This provides a visual indication of how their children have grown
+over time.  It also allows the family to compare the growth of a
+younger child to an older sibling.  It provides a frame of reference
+for thinking about the growth of the children in stature.
+
+The _Skill Map_ is a wall against which the students can be measured.
+The word "map" was chosen to get people thinking about the landscape
+of possible skill configurations.  One region of the map corresponds
+to a _target_ or _goal_:  a collection of skills that students should
+posses at the end of the instructional unit.  An important part of the
+assessment is then to locate where the students are on the map, so the
+teacher can develop a plan to get them to the goal.
+
+## Defining a Scale
+
+Height and length are examples of what mathematicians call a _measure_
+and statisticians call a _interval scale_.  The key property of a
+measure or an interval scale is that they can be added together.
+Putting a 6' table next to a 3' card table produces 9' of table
+length.  The difference between two measurements is also meaningful:
+if I weigh 218 lbs at my annual physical and then I weigh 198 lbs at
+the next physical, I can be said to have lost 20 lbs (which will make
+my doctor happy).  
+
+In _ordinal scale_ the states are ordered, but the difference between
+the levels are not necessarily equal.  Consider a survey question on a
+Likert scale, e.g. "I like Brussel sprouts," with possible answers of
+"Strongly disagree", "Somewhat disagree", "Neither agree nor
+disagree", "Somewhat agree", and "Strongly aggree".  The difference
+between "Strongly disagree" and "Somewhat disagree" and the difference
+between "Neither agree nor disagree" and "Somewhat agree" are both one
+point in the scale.  But do they really represent the equivalent
+changes in attitude towards Brussel sprouts?
+
+Although an introductory statistics course will make a big distinction
+between these two types of scales, in practice, the line is wuzzy.
+Often researchers will take a number of Likert scale items and assign
+the numbers 1 to 5 (if there are 5 options) to the options.  They will
+then add these numbers as if they represented an interval and not just
+an ordinal scale.  The hope here is that the departures from a pure
+interval scale will cancel each other out, so that the resulting scale
+is approximately interval.
+
+All interval scales are also ordinal, and for the purposes of
+educational measurement we need at least an ordinal scale.  However,
+there are many applications for which we don't need a full ordinal
+scale.  Suppose the goal is to determine which students are meeting
+the state proficiency standards.  Then an ordinal scale for which the levels
+of the scale can be mapped to the state standards is sufficient.  On
+the other hand, if the goal is to rank order the students to identify
+a the group of highest (or lowest) performing students for a program
+then a fully interval scale may be necessary.
+
+## Identifying points on the scale
+
+Think of the scale as being a ladder in some latent space.  Note that
+the position of the ladder, whether we place it high on a hill or down
+in a hole, and the distance between the rungs is arbitrary.  To locate
+the ladder in latent space, label the spaces between the rungs and
+then identify them with qualities of people, what kind of things they
+can do and what quality that their work has.
+
+We do this with a table like Table 1.  We label the groups in our
+scale with labels suitable to the application:  Advanced >
+Proficient > Approaching; or Master > Journeyman > Apprentice; or
+High > Medium > Low.  Then we have three columns describing
+characteristics of people associated with that level, characteristics
+of activities associated with that level and characteristics of work
+associated with that level.
+
+Below Basic
+
+Tying levels to instruction
+
+
+
+### Characteristics of People
+
+### Characteristics of Activities
+
+High Jump
+
+### Characteristics of Work
+
+Diving Example
+
+## Russell's Rule
+
+
+## Tying Multiple Scales together
+
+## Multiple Paths to Proficiency
+
+### The Psychometric Snake
+
+### Curriculum Dependence
+
+### Identifying Outliers
+
+## Scores:  Defining where a student is on the map
+
+## Exercises

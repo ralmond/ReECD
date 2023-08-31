@@ -1,0 +1,235 @@
+# Preface {.unnumbered}
+
+> A construct--centered approach [to assessment design] would begin
+> by asking what complex of knowledge, skills, or other attribute
+> should be assessed, presumably because they are tied to explicit
+> or implicit objectives of instruction or are otherwise valued
+> by society. Next, what behaviors or performances should reveal
+> those constructs, and what tasks or situations should elicit
+> those behaviors? Thus, the nature of the construct guides the
+> selection or construction of relevant tasks as well as the rational
+> development of construct-based scoring criteria and rubrics.
+> (Messick, 1989, p. 17)
+
+
+## Introduction
+
+The idea behind evidence-centered assessment design (ECD) is simple to
+state.  The reason educators assess students it to get evidence about
+the skills that they care about.  It stands to reason, that a good
+assessment would therefore would provide strong evidence about whether
+or not the student had the skill of interest.  To design good
+assessments, think about tasks that the student can do that will
+provide strong evidence.
+
+That's it.  It is that simple.  You don't need to read the rest of
+this book.  Well, not really.  There is a lot of subtlety to thinking
+through exactly how to do it.  That is what this book will do.
+
+Good teachers have internalized this rule in their assessment design
+practice.  They may not think about it much, but an experience teacher
+over the years will keep activities that provide good information
+about student progress and discard ones that don't.  The teacher may
+or may not have explicitly thought through the evidence implications
+of their decisions, but their instincts will bring them to the same
+place as if they had.  The goal of this book is to add labels to this
+way of thinking so that teachers can get better at it.
+
+There is a hidden benefit of designing assessments to maximize
+evidence.  It turns out, the kinds of activities that provide the most
+evidence are the ones that the teacher has the most uncertainty about
+whether or not the student can do it yet.  This is what Vygotsky calls
+the _zone of proximal development_, and are between what Falmange
+calls between the _inner fringe_ (what the student can do without
+help) and the _outer fringe_ (what students can do with help).  This
+is also the optimal place for practice.  As a matter of fact, Shute,
+Hansen, and Almond (2008) found that students using a version of the
+ACED assessment _for_ learning system which optimized task selection
+for maximum evidence had the best learning gains.  
+
+## Messick's Framing
+
+The quote from Sam Messick at the beginning of the chapter does a
+pretty good job of laying out the basic steps in the ECD process.  In
+particular, the assessment designer must answer the following
+questions:
+
+1. _What is being measured?_  Often, these are knowldege, skills or
+   abilities we hope the student has mastered; however, they could
+   also be attitude or emotions that is of interest.  
+   
+2. _How can those things be measured?_  In other words, would would be
+   good evidence that a student has or does not have the target skill?
+   
+3. _What kinds of activities would provide opportunities to capture
+   the evidence?_  In particular, the assessment designer should
+   create tasks where "success" means that the student has mastered the
+   skill and "failure" means that the student has not yet mastered the
+   skill. 
+   
+4. _How much evidence is needed to be able to support the claims of
+   the assessment?_  Is it sufficient for the student to be sucessful
+   once, or must the student demonstrate mastery with repeated
+   success?  If multiple skills are to be measured, how can the
+   teacher stucture a set of activities to reach all of the targets.
+   
+The answers to these four questions make up the _conceptual assessment
+framework_ for a particular assessment.  These will depend heavily on
+the purpose for which the assessment is being given.  A high-stakes
+exam used for student promotion must gather more and stronger evidence
+than a quiz used to check student progress.  Mistakes in the former
+have very large consquences, while missing a single quiz is an easily
+corrected mistake.
+
+As this is a design problem, constraints also come into play.  The
+principal is probably willing to rearrange class schedules to
+accomodate the final exam, but the teacher must find a way to fit the
+quiz into the normal instructional schedule.  The ideal measurement
+for a science task may require a laboratory setup that is not
+available, so a simpler way to measure the same skills is needed.  
+
+A useful exercise in assessment design is to start by thinking about
+evidence and activities that would be useful if there were no
+constraints.  Next, add the constraints back in and see if there are
+ways to simplify the ideal but too expensive tasks.  This may result
+in clever ways to exploit tried and true formats like multiple-choice.
+
+
+## Evidence-Centered versus Evidence-Based
+
+As the term _evidence-based_ has been heavily discussed in the
+educational literature, it is worth making a distinction between
+evidence-centered and evidence-based.  The idea behind evidence-based
+education, is that educators should adopt policies for which there
+exists evidence of its effectiveness, usually in the form of a formal
+study.  Thus, the evidence in _evidence-based_ is about the policy or
+practice, not the individual student.  In _evidence-centered_ design
+the evidence is about whether an individual student posesses a
+specific skill.
+
+Although evidence-based education is well intentioned, there are two
+difficulties that educators frequently find in putting it into
+practice.  The first is judging the quality and relevence of the
+evidence.  Often the study is with a particular population (convenient
+to the researcher) and the program is implemented with guidance and
+feedback from the designers.  When choosing whether or not to adobt a
+policy, an educator must extrapolate from the provided evidence to the
+particular population they serve with the resources they have to
+implement the policy.  
+
+The second difficulty is that teachers should feel free to experiment
+with variations on existing policies and even new policies; as
+otherwise we (the educational community) will never discover new, more
+effective techniques.  Computer scientists call this the
+exploration--exploitation tradeoff:  is it better to pick the choice
+which will have proven success or try something new in the hope that
+it will be better. 
+
+For example, suppose that you know how long it takes you to get to
+work each day, but a friend shows you a "short cut".  You may be
+unsure if the short cut has more or less traffic than your usual route
+at your usual commute time.  The question is, do you take the old
+familiar route with the familiar time to success or take a chance on
+the new, possibly better route?
+
+Although teachers should be free to experiment, they should do it like
+scientists, and measure their success and failure.  Evidence-centered
+design can help here.  To properly measure the success, they need to
+follow the steps of ECD:  they need to clearly
+specify their goals, they need to describe what would provide evidence
+about their goals and then structure activities to elicit that
+evidence.
+
+## Teacher as Dectective
+
+## Evidence-Centered Decision Making
+
+## First Principles
+
+## Design for Validity
+
+## Roadmap
+
+# Purpose of this Screed {Purpose}
+
+The conceptual assessment framework (CAF) was the end goal of the
+evidence-centered assessment design process (ECD; [@OntheStructure]).
+Now, with over 20 years of experience trying to use it to design
+assessments, as well as 10 years of experience trying to teach it to
+students, I have started to revisit the basic definitions and terms. In
+many cases the need is to simplify language to make it easier to train
+new assesment designers in the techniques. (Calling all of the design
+elements in the CAF "models" was a terrible decision; that word is used
+to mean too many different things in too many different domains.)\
+There are also a number of places where I have difficulty describing the
+subtlties of the modeling framework and the implications of some of the
+assumptions and design decisions.
+
+One incentive for revisiting the CAF comes from my work on game based
+assessments. Particularly, designing knowledge elicitations for the
+games *Physics Playground* (Val Shute, PI; Matthew Ventura, Matthew
+Small, Yoon Jeon Kim, Don Franceschetti, Lubin Wang, Fengfeng Ke, Adam
+Lamee, Weinan Zhao, Seyed Ahmad Rahimi, Chen Sun, Seyfullah Tingir,
+Ginny Smith, Chih-Pu Dai, Renata Kuba, Xiaotong Yang, and Curt Fulwider)
+*e-Rebuild* (Fengfeng Ke and Kathy Clark) and *Zoombinis* (Elizabeth
+Rowe and Mia Almeda). The challenge here is how to manage the copius
+quantities of knowldge that go into constructing an educational game.
+Also, learning supports where never well integrated into the original
+ECD framework (which was focused on assessment).
+
+The second incentive comes from work I've been doing with James
+Hernandez on making a simplified evidence-centered classroom assessment
+(ECCA) for teachers. While typically a classroom teacher doesn't need a
+formal evidence accumulation mechanism (like item response theory or
+Bayesian networks), thinking through the evidentiary value of various
+classroom activities can help the teacher select more informative
+actities as well as help identify was in which those activities can be
+customized to learner and classroom needs. Some of this is based on Mark
+Wilson's book *Contructing Measures* [@Wilson2006]. In particular, my
+thoughts here build on my initial attempts to explain Mark's approach to
+students.
+
+One element which was missing (or rather mostly implicit) in the
+original formulation of ECD was that of *context*. At the time of the
+2003 paper, I would have called "context" a feature (or at least a
+derived property) of the task model. A couple of developments have
+caused me to rethink the idea of context. One is Mislevy (???), which
+asserts that in some game-based assessments (especially games with
+open-ended tasks) the context needs to be inferred from the state of the
+simulation and the players actions. Thus, a sequence of actions by a
+player might travel though a number of contexts. The second comes from
+Physics playground, where I realized that contexts had a natural nesting
+structure: game levels which required the player to manipulate gravity
+were a subset of manipulation levels, and game levels that could be
+solved using a lever were subsets of sketching levels. I realized that
+reasoning from contexts was an important part of argument structure,
+particularly going back to work by Mahoney and Laskey (???) on building
+Bayesian networks from context information. In particular, I began to
+realize that each domain to be assessed will have an ontology of
+contexts, which must be maintained to properly reason about the
+structure of the argument.
+
+Although my goal is to eventually reach the point where I can explain
+these ideas to non-technical readers such as teachers, game designers
+and cognitive scientists, I realized that I first needed to create
+rigorous definitions for all of the terms of the updated model. Thus,
+the current screed is designed as working paper for me to formulate
+those definitions and the key lemmas of the system. As this is very much
+a work in progress, I welcome feedback of many different kinds.
+
+The paper has the following structure. First, I revisit the evidentiary
+argument using the Toulmin diagram [@Toulmin1958], adding context to the
+basic argument structure. Next, as a preliminary I need a rigorous
+definition of a task, which I provide along with definitions for
+*observables* and *observers* which are the basic mechanism for evidence
+identification. At this point, I am ready to formally define *contexts*
+and their relationships to tasks. *Claims*, which are key components for
+defining scales, are next defined in terms of observables and contexts;
+*marks* are analogues of claims used instead in building evidence. Marks
+differ from claims primarily in that they can have feedback associated
+with them. At this point, I revisit the CAF, now using the simplified
+names for the original design elements from ECCA. Finally, I note that
+an important component of context is related to the life experience of
+the individual examinee. This has interesting implications for designing
+culturally responsive assessments.
+

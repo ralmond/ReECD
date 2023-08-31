@@ -1,2 +1,437 @@
 # Evidential Arguments
 
+
+# The Assessment Argument {#sec-Argument}
+
+A quote I have often used in introducing ECD is that data become
+evidence when connected to a claim through a warrant. This is often
+shown in a Toulmin diagram (@fig-Toulmin). I have relabled *data* as
+*observation* ($O$). The *warrant* is a belief that the observation is
+more likely if the claim holds. The *alternative* is a situation, which
+if it holds, would cause the observation to be likely even in the
+absence of the claim holding.
+
+```{dot}
+//| label: fig-Toulmin
+//| fig-cap: The basic Toulmin diagram of an argument.
+//| fig-height:  4
+digraph {
+	rankdir="BT";
+	node [shape="rectangle"];
+
+	claim [label="Claim"]
+	warrant [label="Warrant"]
+	alt [label="Alternative"]
+	data [label="Observation"]
+
+	junction1 [fixedsize="true", height=0, width=0, style="invis"]
+
+	spacer1, spacer2, spacer3, spacer4 [fixedsize="true", height=0, width=0, style="invis"]
+	{rank="max"; spacer1, claim, spacer2}
+	spacer1 -> claim -> spacer2 [style="invis"]
+	{rank="same"; warrant, junction1, alt}
+
+	spacer1->warrant, spacer2 -> alt [style="invis"]
+	{rank="min"; spacer3, data, spacer4}
+	spacer3 -> data -> spacer4 [style="invis"]
+	warrant->spacer3, alt -> spacer4 [style="invis"]
+
+	data -> junction1 [dir="none"] 
+	junction1 ->  claim [label="so"]
+
+	subgraph cluser_1 {
+		warrant -> junction1 [label="since"]
+		junction1 -> alt [dir="back", label="unless"]
+	}
+
+}
+```
+
+A simple example will help illustrate the idea.
+
+-   **Claim:** The job candidate can produce appropriate and relevant
+    routine business correspondence.
+
+-   **Observation:** The candidate's cover letter was well written.
+
+-   **Warrant:** A cover letter is a type of business correspondence,
+    therefore this is a positive example of the type of needed work.
+
+-   **Alternative:** The candidate may have had help writing or
+    correcting the letter.
+
+Although the diagram and example implies that each of the elements are
+singular, in practice there are multiples of each. First, many
+claim--observation pairs will have multiple warrants and alternative
+associated with them (and the diagram should not be interpreted to
+indicate that the warrants and alternatives are somehow paired). Second,
+any given assessment is likely to have multiple observations to support
+each claim and a given assessment is likely to support multiple claims.
+
+# Variables, Indicators and Context Features {#sec-Variables}
+
+Domain -- Value -- Evaluator
+
+## Context Features
+
+## Indicators {#sec-Indicators}
+
+Both the claim and observation are written in terms of *tasks*;
+opportunities to collect information about the candidate (@sec-Task
+provides a more rigorous definition of a task). The *Observation* refers
+to the outcome from a task which was complete (writing the letter),
+while the *claim* is a prediction for a task in the future (presumably
+the job requires routine business correspondence). This future
+orientation is more apparent in educational constructs than in other
+kinds of psychological constructs, but it works there as well. The claim
+that a patient is depressed is a prediction about how the patient will
+react in a future situation. At some points in assessment design process
+(particularly when constructing the skill map; @sec-Skill), the
+distinction between past observation and future prediction is not
+important. In that case, the term *indicator* can be used to refer to
+both claims and obserables.
+
+All indicators need to pass the *clarity test* [@HowardMatheson1981].
+This is an idea from the field of decision analysis that it is possible
+for some person who had all the relevant information can unambiguously
+tell whether the claim/observation holds or not. (Howard and Matheson
+imagine a clairvoyant who can see everything in her crystal ball, but in
+the 21st Century, we have Google and Facebook, so we no longer need the
+clairvoyant.) The claim and observation above fail this test: to meet
+the test, the phrases "appropriate", "relevant", "routine business
+correspondence" and "well written" need to be more clearly defined.
+
+The clarity test forces claims to be potentially observable. The
+*observable* will be defined in terms of a *task* (@sec-Task); then the
+*claim* in the following section (@sec-Claim). This restriction is
+similar in effect to the common practice of restricting educational
+objectives to "action verbs". Thus, in a proper educational reasoning
+system, the claims need to be reworked in terms of tasks.
+
+# Constructs {#sec-Constructs}
+
+On the other hand, it is fairly commmon to express a claim, at least
+initially, using non-action verbs like *knows* or *understands*. For
+example, the hiring manager might request that the candidate "understand
+routine business correspondence". This is a *construct* or a *skill*,
+words I will use to indicate a collection of claims that might be made
+about an individual. For example, "understanding routine business
+correspondence" might cover claims regarding both understading received
+letters and emails and making an appropriate response as well as
+producing letters and emails for work activities. Often these claims are
+arranged into a scale, or a collection of scales called a *skill map*
+(@sec-Skill).
+
+Many psychological models are defined in terms of these *constructs*. In
+the example of the job candidate, it is natural to think about a
+"business correspondence" construct which would imply the ability to
+produce a variety of different business correspondence. Almond et al.
+(-@bninea) refers to this as a *high-level claim* and notes that it is
+defined by a hierarchy of claims. For the claim hierarchy to be well
+defined, the lowest level members of the claim hierarchy must all pass
+the clarity test; that is, they must be potentially observable (if given
+enough time and resources).
+
+The question of whether or not an assessment is a valid measure of a
+construct begs the question of whether or not the construct is well
+defined. To this end, I offer the following rule:
+
+> *Russell's Rule (binary Construct):* \_Consider a construct defined as
+> either being present or absent in a particular candidate. Then the
+> construct is well defined if and only if there exists at least one
+> indicator which is likely to be observed when the construct is present
+> and unlikely to be observed when the construct is absent. Furthermore,
+> the indicator must pass the clarity test.
+
+One big advantage of the introducing the construct into the picture is
+that the relationship between construct and indicator is causal (or at
+least a hypothesized cause under a certain psychological model). This
+can be seen in @fig-Construct where the edges are now oriented in the
+causal direction: from the construct to the indicator. The construct is
+now an intermediate point on the link from observation to claim.
+
+```{dot}
+//| label: fig-Context
+//| fig-cap: "A Toulmin Diagram with context added."
+//| height: 4
+digraph {
+	rankdir="BT";
+	node [shape="rectangle"];
+
+	claim1 [label="Claim1"]
+	claim2 [label="Claim2"]
+	claim3 [label="Claim3"]
+	const [label="Construct"]
+	data1 [label="Observation1"]
+	data2 [label="Observation2"]
+	data3 [label="Observation3"]
+
+	{rank="max"; claim1, claim2, claim3}
+	claim1 -> claim2 -> claim3 [style="invis"]
+	const -> claim1; const -> claim2; const -> claim3
+
+	{rank="min"; data1, data2, data3}
+	data1 -> data2 -> data3 [style="invis"]
+	const -> data1; const -> data2; const -> data3
+	
+	}
+```
+
+# Contexts
+
+## Contexts and Situtations
+
+## Adding Contexts to the Toulmin Diagram
+
+Every task, both the ones corresponding to claims and those
+corresponding to observations, has a *context* (@sec-Context). Figure
+@fig-ToulminC augments the previous figure with an indication of the
+contexts associated with both the observation and the claim. The claim
+is often associated with a set of contexts (denoted \_Context\*\_ in the
+diagram) which are usually distinct from the context of the observation
+(denoted *Context*) which is usually a single context or a subset of the
+full range of contexts.
+
+```{dot}
+//| label: fig-ToulminC
+//| fig-cap: "Toulmin diagram with added context."
+//| height: 4
+digraph {
+	rankdir="TB";
+	node [shape="rectangle"];
+
+	subgraph cluster_C {
+		rank="max";
+		color="black";
+		label="Context*";
+		style="rounded";
+		shape="";
+		claim [label="Claim"]
+		spacer1 [fixedsize="true", height=0, width=0, style="invis"]
+		spacer2 [fixedsize="true", height=0, width=0, style="invis"]
+		spacer1 -> claim -> spacer2 [style="invis"]
+		{rank="same"; spacer1; claim; spacer2}
+	}
+
+	subgraph row_1 {
+		rank="same";
+		warrant1 [label="Warrant*"]
+		alt1 [label="Alternative*"]
+		junction1 [fixedsize="true", height=0, width=0, style="invis"]
+		warrant1 -> junction1 
+		junction1 -> alt1 [dir="back"]
+	}  
+
+	subgraph row_2 {
+		rank="same";
+		const [label="Construct"]
+		spacerM1 [fixedsize="true", height=0, width=0, style="invis"]
+		spacerM2 [fixedsize="true", height=0, width=0, style="invis"]
+		spacerM1 -> const -> spacerM2 [style="invis"]
+		{rank="same"; spacerM1; const; spacerM2}
+	}
+
+	subgraph row_3 {
+		rank="same";
+		warrant2 [label="Warrant"]
+		alt2 [label="Alternative"]
+		junction2 [fixedsize="true", height=0, width=0, style="invis"]
+		warrant2 -> junction2 
+		junction2 -> alt2 [dir="back"]
+	} 
+
+	subgraph cluster_O {
+		rank="min";
+		color="black";
+		label="Context";
+		style="rounded";
+		labelloc="b";
+		data [label="Observation"]
+		spacer3[fixedsize="true", height=0, width=0, style="invis"]
+		spacer4 [fixedsize="true", height=0, width=0, style="invis"]
+		spacer3 -> data -> spacer4 [style="invis"]
+		{rank="same"; spacer3; data; spacer4}
+	}
+
+
+	warrant2->spacer3 [style="invis"]
+	warrant1->spacerM1->warrant2 [style="invis"]
+	spacer1 -> warrant1 [style="invis"]
+	alt2 -> spacer4 [style="invis"]
+	alt1 -> spacerM2->alt2 [style="invis"]
+	spacer2 -> alt1 [style="invis"]
+
+
+	data -> junction2 [dir="back"] 
+	junction2 -> const [dir="none"]
+	const -> junction1 [dir="none"]
+	junction1 ->  claim 
+}
+```
+
+Returning to the job candidate, the context for the cover letter
+includes the feature that the candidate can ask for assistance in
+writing the letter. The question then becomes is that sufficiently
+similar to the task in the claim. In particular, if it is expected that
+the future correspondence produced by the candidate will be reviewed and
+that the candidate can request assistance when needed, it might be. If
+the job expectation is that the candidate can produce the correspondence
+without assistance, it might not be.
+
+Reasoning about the relationship between *Context* and \_Context\*\_ is
+thus key to any assessment argument. However, in practice a single task
+is seldom used as the complete assessment argument. Instead, there must
+be an assessment *plan* (@sec-Plan) which asks the candidate to perform
+a collection of different tasks, with differing contexts. This
+collection must provide a sufficient span of the \_Context\*\_ space,
+that the observations will provide sufficient support for the claim.
+
+The context feature used in the example, the candidate has access to
+help in writing the cover letter, is related to the alternative in the
+model. In particular, if the context was restricted (say to a proctored
+environment) then the alternative related to help would no longer be
+active, and the letter would provide stronger evidence. Thus, the
+context under which the observation is made influences both the warrant
+and the alternative. This is shown in @fig-ToulminCC.
+
+```{dot}
+//| label: fig-ToulminCC
+//| fig-cap: "Toulmin diagram with retricted context."
+//| height: 4
+digraph{
+	compound=true;
+	rankdir="TB";
+	node [shape="rectangle"];
+
+
+	subgraph cluster_C {
+		rank="max";
+		color="black";
+		label="Context*";
+		style="rounded";
+		shape="";
+		claim [label="Claim"]
+		spacer1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer1 -> claim -> spacer2 [style="invis"]
+		{rank="same"; spacer1; claim; spacer2}
+	}
+	
+	subgraph row_1 {
+		rank="same";
+		warrant1 [label="Warrant*"]
+		alt1 [label="Alternative*"]
+		junction1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		warrant1 -> junction1 
+		junction1 -> alt1 [dir="back"]
+	}  
+	
+	subgraph row_2 {
+		rank="same";
+		const [label="Construct"]
+		spacerM1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM1 -> const -> spacerM2 [style="invis"]
+		{rank="same"; spacerM1; const; spacerM2}
+	}
+
+	subgraph row_3 {
+		rank="same";
+		warrant2 [label="Warrant"]
+		alt2 [label="Alternative"]
+		junction2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		warrant2 -> junction2 
+		junction2 -> alt2 [dir="back"]
+	} 
+
+	subgraph cluster_O {
+		rank="min";
+		color="black";
+		label="Context";
+		style="rounded";
+		labelloc="b";
+		data [label="Observation"]
+		spacer3 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer4 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer3 -> data -> spacer4 [style="invis"]
+		{rank="same"; spacer3; data; spacer4}
+	}
+
+
+	warrant2->spacer3 [style="dashed",dir="back",lhead="cluster_O"]
+	warrant1->spacerM1->warrant2 [style="invis"]
+	spacer1 -> warrant1 [style="dashed",ltail="cluster_C"]
+	alt2 -> spacer4 [style="dashed",dir="back",lhead="cluster_O"]
+	alt1 -> spacerM2->alt2 [style="invis"]
+	spacer2 -> alt1 [style="dashed",ltail="cluster_C"]
+	
+
+	data -> junction2 [dir="back"] 
+	junction2 -> const [dir="none"]
+	const -> junction1 [dir="none"]
+	junction1 ->  claim 
+
+}
+```
+
+Contexts are complex entities. It is clear than there are hierarchical
+relationships as well as non-hierarchical ones. In fact, every domain
+has an ontology of contexts that are considered interesting (at least
+for the target population). @sec-Context develops the notion of the
+ontology of contexts. It is also true that the context might change in
+the middle of an activity (especially if the activity is long and
+complex with many parts). Also, contexts will largely determine the
+features of tasks, particularly the ones used to manipulate the
+evidentiary focus of the task (@sec-Activity).
+
+# Logical Reasoning
+
+@fig-Construct is a reframing of the basic validity argument of an
+assessment. On the basis of a collection of observations, the examiner
+produces a score, which is a measure of the strength of evidence for the
+proposition that the examinee possess the central construct of the
+assessment. On the basis of the subsequent beliefs about the examinee
+projecting the construct, the score user can then establish beliefs
+about whether or not the claims will hold. (Note that different score
+users might assign different degrees of importance to different claims
+and hence have different values for the validity of the assessment).
+Documenting the warrants and alternatives for the relationships between
+constructs and both observations and claims is central to documenting
+the validity argument.
+
+The introduction of the construct into the argument is important for two
+reasons. One is that the construct is a shorthand for a collection of
+claims or observations, and hence assessment designers can concentrate
+on only the top or bottom half of @fig-ToulminC and @fig-ToulminCC. The
+second is that the construct is a hypothesized cause. Thus the
+relationships of construct to claim and construct to observable are both
+causal ones. Humans are often much better at reasoning in the causal
+direction.
+
+The philosopher Charles S. Pierce discusses three different types of
+logical reasoning: deduction, abduction, and induction. All three play a
+role in building a validity argument.
+
+## Deduction {#sec-Deduction}
+
+Deduction deals with logical rules of the form *If A then B.* If this
+rule is believed to be true, and *x* is an *A*, then it can be logically
+deduced that *x* is also a *B*. In the case of an assessment argument,
+*x* is the candidate, *A* the proposition that the candidate possesses
+the construct, and *B* an observation or a claim. Therefore, deduction
+is following the path of causal reasoning.
+
+Often modal adverbs (e.g., *always*, *usually*, *sometimes*, *never*)
+are applied to the claim. This is probably useful in many problems, but
+the modal adverbs themselves need precise definitions. How is *usually*
+defined in the context of a particular problem. In some cases, it could
+be represented with a probability, but in other cases, it may refer to
+some contexts in which the candidate is likely to be successful and
+other, more difficult, contexts in which the candidate is not likely to
+be successful.
+
+## Abduction {#sec-Abduction}
+
+## Induction {#sec-Induction}
+
+# Validity Arguments
