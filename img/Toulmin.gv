@@ -1,0 +1,30 @@
+digraph Toulmin {
+	rankdir="BT";
+	node [shape="rectangle"];
+
+	claim [label="Claim"]
+	warrant [label="Warrant"]
+	alt [label="Alternative"]
+	data [label="Observation"]
+
+	junction1 [fixedsize="true", height=0, width=0, style="invis"]
+
+	spacer1, spacer2, spacer3, spacer4 [fixedsize="true", height=0, width=0, style="invis"]
+	{rank="max"; spacer1, claim, spacer2}
+	spacer1 -> claim -> spacer2 [style="invis"]
+	{rank="same"; warrant, junction1, alt}
+
+	spacer1->warrant, spacer2 -> alt [style="invis"]
+	{rank="min"; spacer3, data, spacer4}
+	spacer3 -> data -> spacer4 [style="invis"]
+	warrant->spacer3, alt -> spacer4 [style="invis"]
+
+	data -> junction1 [dir="none"] 
+	junction1 ->  claim [label="so"]
+
+	subgraph cluser_1 {
+		warrant -> junction1 [label="since"]
+		junction1 -> alt [dir="back", label="unless"]
+	}
+
+}

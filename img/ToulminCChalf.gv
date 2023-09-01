@@ -1,0 +1,47 @@
+digraph ToulminCChalf {
+	compound=true;
+	rankdir="TB";
+	node [shape="rectangle"];
+
+	subgraph row_2 {
+		rank="same";
+		const [label="Claim"]
+		spacerM1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM1 -> const -> spacerM2 [style="invis"]
+		{rank="same"; spacerM1; const; spacerM2}
+	}
+
+	subgraph row_3 {
+		rank="same";
+		warrant2 [label="Warrant"]
+		alt2 [label="Alternative"]
+		junction2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		warrant2 -> junction2 
+		junction2 -> alt2 [dir="back"]
+	} 
+
+	subgraph cluster_O {
+		rank="min";
+		color="black";
+		label="Context";
+		style="rounded";
+		labelloc="b";
+		data [label="Observation"]
+		spacer3 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer4 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer3 -> data -> spacer4 [style="invis"]
+		{rank="same"; spacer3; data; spacer4}
+	}
+
+
+	warrant2->spacer3 [style="dashed",dir="back",lhead="cluster_O"]
+	spacerM1->warrant2 [style="invis"]
+	alt2 -> spacer4 [style="dashed",dir="back",lhead="cluster_O"]
+
+	
+
+	data -> junction2 [dir="back"] 
+	junction2 -> const [dir="none"]
+
+}

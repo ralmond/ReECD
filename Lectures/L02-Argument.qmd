@@ -4,50 +4,23 @@ title: "02 Assessment Argument"
 
 # The Assessment Argument
 
+![Toulmin Diagram](../img/Toulmin.png)
 
-```{dot}
-//| label: fig-Toulmin
-//| fig-cap: The basic Toulmin diagram of an argument.
-//| fig-height:  4
-digraph {
-	rankdir="BT";
-	node [shape="rectangle"];
 
-	claim [label="Claim"]
-	warrant [label="Warrant"]
-	alt [label="Alternative"]
-	data [label="Observation"]
 
-	junction1 [fixedsize="true", height=0, width=0, style="invis"]
+_Subject_ person (or thing) being measured
 
-	spacer1, spacer2, spacer3, spacer4 [fixedsize="true", height=0, width=0, style="invis"]
-	{rank="max"; spacer1, claim, spacer2}
-	spacer1 -> claim -> spacer2 [style="invis"]
-	{rank="same"; warrant, junction1, alt}
+_We_ persons doing the measurement
 
-	spacer1->warrant, spacer2 -> alt [style="invis"]
-	{rank="min"; spacer3, data, spacer4}
-	spacer3 -> data -> spacer4 [style="invis"]
-	warrant->spacer3, alt -> spacer4 [style="invis"]
+* _Claim_:  What _we_ want to say about _subject_
 
-	data -> junction1 [dir="none"] 
-	junction1 ->  claim [label="so"]
+* _Observation_: Something we see about _subject_ (often in a certain _situation_ or _context_)
 
-	subgraph cluser_1 {
-		warrant -> junction1 [label="since"]
-		junction1 -> alt [dir="back", label="unless"]
-	}
+* _Warrant_: Reason to believe _observation_ is associated with _claim_
 
-}
-```
+* _Alternative_: Reasons why _observation_ could be present when _claim_ does not hold
 
-* _Claim_:
-
-* _Observation_:
-
-* _Warrant_:
-
-* _Alternative_:
+A _task_ is a way of creating a _situation_ in which _we_ can make an _observation_.
 
 ### Example
 
@@ -65,206 +38,62 @@ digraph {
 
 # Variables, Indicators and Context Features {#sec-Variables}
 
-Domain -- Value -- Evaluator
+There are three aspects to a variable definition:
 
-## Context Features
+* _Domain_:  possible values variable could take on.
+* _Value_: the value it takes a particular situation
+* _Evaluator_:  a rule or procedure for determining its value.
+
+## Situational variables
+
+* Task features -- task goal and resources
+  - Response type
+  - Skill demands
+  - Kind and length of research material
+
+* Environment features -- environment properties and affordances
+  - distractions
+  - security
+  - tool availability
+
+* Person features -- features of the _subject_, usually related to their experience
+ - biological
+ - preparation
+ - aversions
+ 
+* Interaction features
+ - Person by task:  familiarity
+ - Person by environment:  ADHD and noisy environment
+ - Task by environment:  Calculation demand and calculator availability
+
+## Situtations and Contexts
+
+* A _situation_ is a collection of variables describing a particular point in time and space.  
+  - In a _situation_ all variable have an assigned value.
+
+* A _context_ is a set of situations.
+
+ - Variables may be unknown, or restricted to a set.
+ 
+ - Some contexts are nested within others.
 
 ## Indicators {#sec-Indicators}
 
+Indicators are features of the outcome (work product or process) of a task.
+
+What _subject_ did, wrote, said, indicated, &c
+
 # Constructs
 
+## Contexts and Claims
 
-```{dot}
-//| label: fig-Context
-//| fig-cap: "A Toulmin Diagram with context added."
-//| height: 4
-digraph {
-	rankdir="BT";
-	node [shape="rectangle"];
+## Construct in the Toulmin diagram
 
-	claim1 [label="Claim1"]
-	claim2 [label="Claim2"]
-	claim3 [label="Claim3"]
-	const [label="Construct"]
-	data1 [label="Observation1"]
-	data2 [label="Observation2"]
-	data3 [label="Observation3"]
+![Construct Diagram](../img/ToulminConstruct.png)
 
-	{rank="max"; claim1, claim2, claim3}
-	claim1 -> claim2 -> claim3 [style="invis"]
-	const -> claim1; const -> claim2; const -> claim3
+## Contexts and situations
 
-	{rank="min"; data1, data2, data3}
-	data1 -> data2 -> data3 [style="invis"]
-	const -> data1; const -> data2; const -> data3
-	
-	}
-```
-
-# Contexts
-
-## Contexts and Situtations
-
-## Adding Contexts to the Toulmin Diagram
-
-
-```{dot}
-//| label: fig-ToulminC
-//| fig-cap: "Toulmin diagram with added context."
-//| height: 4
-digraph {
-	rankdir="TB";
-	node [shape="rectangle"];
-
-	subgraph cluster_C {
-		rank="max";
-		color="black";
-		label="Context*";
-		style="rounded";
-		shape="";
-		claim [label="Claim"]
-		spacer1 [fixedsize="true", height=0, width=0, style="invis"]
-		spacer2 [fixedsize="true", height=0, width=0, style="invis"]
-		spacer1 -> claim -> spacer2 [style="invis"]
-		{rank="same"; spacer1; claim; spacer2}
-	}
-
-	subgraph row_1 {
-		rank="same";
-		warrant1 [label="Warrant*"]
-		alt1 [label="Alternative*"]
-		junction1 [fixedsize="true", height=0, width=0, style="invis"]
-		warrant1 -> junction1 
-		junction1 -> alt1 [dir="back"]
-	}  
-
-	subgraph row_2 {
-		rank="same";
-		const [label="Construct"]
-		spacerM1 [fixedsize="true", height=0, width=0, style="invis"]
-		spacerM2 [fixedsize="true", height=0, width=0, style="invis"]
-		spacerM1 -> const -> spacerM2 [style="invis"]
-		{rank="same"; spacerM1; const; spacerM2}
-	}
-
-	subgraph row_3 {
-		rank="same";
-		warrant2 [label="Warrant"]
-		alt2 [label="Alternative"]
-		junction2 [fixedsize="true", height=0, width=0, style="invis"]
-		warrant2 -> junction2 
-		junction2 -> alt2 [dir="back"]
-	} 
-
-	subgraph cluster_O {
-		rank="min";
-		color="black";
-		label="Context";
-		style="rounded";
-		labelloc="b";
-		data [label="Observation"]
-		spacer3[fixedsize="true", height=0, width=0, style="invis"]
-		spacer4 [fixedsize="true", height=0, width=0, style="invis"]
-		spacer3 -> data -> spacer4 [style="invis"]
-		{rank="same"; spacer3; data; spacer4}
-	}
-
-
-	warrant2->spacer3 [style="invis"]
-	warrant1->spacerM1->warrant2 [style="invis"]
-	spacer1 -> warrant1 [style="invis"]
-	alt2 -> spacer4 [style="invis"]
-	alt1 -> spacerM2->alt2 [style="invis"]
-	spacer2 -> alt1 [style="invis"]
-
-
-	data -> junction2 [dir="back"] 
-	junction2 -> const [dir="none"]
-	const -> junction1 [dir="none"]
-	junction1 ->  claim 
-}
-```
-
-
-```{dot}
-//| label: fig-ToulminCC
-//| fig-cap: "Toulmin diagram with retricted context."
-//| height: 4
-digraph{
-	compound=true;
-	rankdir="TB";
-	node [shape="rectangle"];
-
-
-	subgraph cluster_C {
-		rank="max";
-		color="black";
-		label="Context*";
-		style="rounded";
-		shape="";
-		claim [label="Claim"]
-		spacer1 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		spacer2 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		spacer1 -> claim -> spacer2 [style="invis"]
-		{rank="same"; spacer1; claim; spacer2}
-	}
-	
-	subgraph row_1 {
-		rank="same";
-		warrant1 [label="Warrant*"]
-		alt1 [label="Alternative*"]
-		junction1 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		warrant1 -> junction1 
-		junction1 -> alt1 [dir="back"]
-	}  
-	
-	subgraph row_2 {
-		rank="same";
-		const [label="Construct"]
-		spacerM1 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		spacerM2 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		spacerM1 -> const -> spacerM2 [style="invis"]
-		{rank="same"; spacerM1; const; spacerM2}
-	}
-
-	subgraph row_3 {
-		rank="same";
-		warrant2 [label="Warrant"]
-		alt2 [label="Alternative"]
-		junction2 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		warrant2 -> junction2 
-		junction2 -> alt2 [dir="back"]
-	} 
-
-	subgraph cluster_O {
-		rank="min";
-		color="black";
-		label="Context";
-		style="rounded";
-		labelloc="b";
-		data [label="Observation"]
-		spacer3 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		spacer4 [label="", fixedsize="true", height=0, width=0, style="invis"]
-		spacer3 -> data -> spacer4 [style="invis"]
-		{rank="same"; spacer3; data; spacer4}
-	}
-
-
-	warrant2->spacer3 [style="dashed",dir="back",lhead="cluster_O"]
-	warrant1->spacerM1->warrant2 [style="invis"]
-	spacer1 -> warrant1 [style="dashed",ltail="cluster_C"]
-	alt2 -> spacer4 [style="dashed",dir="back",lhead="cluster_O"]
-	alt1 -> spacerM2->alt2 [style="invis"]
-	spacer2 -> alt1 [style="dashed",ltail="cluster_C"]
-	
-
-	data -> junction2 [dir="back"] 
-	junction2 -> const [dir="none"]
-	const -> junction1 [dir="none"]
-	junction1 ->  claim 
-
-}
-```
+![Toulmin Diagram with Contexts](../img/ToulminCC.png)
 
 # Logical Reasoning
 

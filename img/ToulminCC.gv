@@ -1,0 +1,74 @@
+digraph ToulminCC {
+	compound=true;
+	rankdir="TB";
+	node [shape="rectangle"];
+
+
+	subgraph cluster_C {
+		rank="max";
+		color="black";
+		label="Context*";
+		style="rounded";
+		shape="";
+		claim [label="Claim"]
+		spacer1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer1 -> claim -> spacer2 [style="invis"]
+		{rank="same"; spacer1; claim; spacer2}
+	}
+	
+	subgraph row_1 {
+		rank="same";
+		warrant1 [label="Warrant*"]
+		alt1 [label="Alternative*"]
+		junction1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		warrant1 -> junction1 
+		junction1 -> alt1 [dir="back"]
+	}  
+	
+	subgraph row_2 {
+		rank="same";
+		const [label="Construct"]
+		spacerM1 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacerM1 -> const -> spacerM2 [style="invis"]
+		{rank="same"; spacerM1; const; spacerM2}
+	}
+
+	subgraph row_3 {
+		rank="same";
+		warrant2 [label="Warrant"]
+		alt2 [label="Alternative"]
+		junction2 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		warrant2 -> junction2 
+		junction2 -> alt2 [dir="back"]
+	} 
+
+	subgraph cluster_O {
+		rank="min";
+		color="black";
+		label="Context";
+		style="rounded";
+		labelloc="b";
+		data [label="Observation"]
+		spacer3 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer4 [label="", fixedsize="true", height=0, width=0, style="invis"]
+		spacer3 -> data -> spacer4 [style="invis"]
+		{rank="same"; spacer3; data; spacer4}
+	}
+
+
+	warrant2->spacer3 [style="dashed",dir="back",lhead="cluster_O"]
+	warrant1->spacerM1->warrant2 [style="invis"]
+	spacer1 -> warrant1 [style="dashed",ltail="cluster_C"]
+	alt2 -> spacer4 [style="dashed",dir="back",lhead="cluster_O"]
+	alt1 -> spacerM2->alt2 [style="invis"]
+	spacer2 -> alt1 [style="dashed",ltail="cluster_C"]
+	
+
+	data -> junction2 [dir="back"] 
+	junction2 -> const [dir="none"]
+	const -> junction1 [dir="none"]
+	junction1 ->  claim 
+
+}
