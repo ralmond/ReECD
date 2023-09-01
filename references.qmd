@@ -1,4 +1,6 @@
 # References {.unnumbered}
 
+Note:  The references are also available via the Zotero [EvidenceCenteredDesign](https://www.zotero.org/groups/4900299/evidencecentereddesign) group
+
 ::: {#refs}
 :::

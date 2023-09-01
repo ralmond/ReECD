@@ -1,0 +1,457 @@
+[
+  {
+    "objectID": "comments.html",
+    "href": "comments.html",
+    "title": "Request for comments",
+    "section": "",
+    "text": "Request for comments"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Re:CAF—The Reconceptionalized Conceptual Assessment Framework",
+    "section": "",
+    "text": "Re:CAF—The Reconceptionalized Conceptual Assessment Framework\n\n\n\n\n\n\nCaution\n\n\n\nThis is a draft version of the material and does not represent the final content.\nFeel free to offer suggestions or request clarifications in the comments. I do not promise a prompt response.\n\n\nCurrently we have the following content:\n\nLecture Notes – from my Scale and Instrument Class\nBook – A draft screed\nReferenced – See also the Zotero EvidenceCenteredDesign group\nGlossary – A work in progress"
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "I’ll eventuall port the content over from http://ecd.ralmond.net/ecdwiki/ECD/Glossary"
+  },
+  {
+    "objectID": "Book/tasks.html",
+    "href": "Book/tasks.html",
+    "title": "Tasks",
+    "section": "",
+    "text": "Tasks"
+  },
+  {
+    "objectID": "Book/evidenceRules.html",
+    "href": "Book/evidenceRules.html",
+    "title": "Rules of Evidence",
+    "section": "",
+    "text": "Rules of Evidence"
+  },
+  {
+    "objectID": "Book/variables.html",
+    "href": "Book/variables.html",
+    "title": "Situations, Contexts and Variables",
+    "section": "",
+    "text": "Situations, Contexts and Variables"
+  },
+  {
+    "objectID": "Book/intro.html",
+    "href": "Book/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "Book/index.html",
+    "href": "Book/index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "A construct–centered approach [to assessment design] would begin by asking what complex of knowledge, skills, or other attribute should be assessed, presumably because they are tied to explicit or implicit objectives of instruction or are otherwise valued by society. Next, what behaviors or performances should reveal those constructs, and what tasks or situations should elicit those behaviors? Thus, the nature of the construct guides the selection or construction of relevant tasks as well as the rational development of construct-based scoring criteria and rubrics. (Messick, 1989, p. 17)\n\n\n\nThe idea behind evidence-centered assessment design (ECD) is simple to state. The reason educators assess students it to get evidence about the skills that they care about. It stands to reason, that a good assessment would therefore would provide strong evidence about whether or not the student had the skill of interest. To design good assessments, think about tasks that the student can do that will provide strong evidence.\nThat’s it. It is that simple. You don’t need to read the rest of this book. Well, not really. There is a lot of subtlety to thinking through exactly how to do it. That is what this book will do.\nGood teachers have internalized this rule in their assessment design practice. They may not think about it much, but an experience teacher over the years will keep activities that provide good information about student progress and discard ones that don’t. The teacher may or may not have explicitly thought through the evidence implications of their decisions, but their instincts will bring them to the same place as if they had. The goal of this book is to add labels to this way of thinking so that teachers can get better at it.\nThere is a hidden benefit of designing assessments to maximize evidence. It turns out, the kinds of activities that provide the most evidence are the ones that the teacher has the most uncertainty about whether or not the student can do it yet. This is what Vygotsky calls the zone of proximal development, and are between what Falmange calls between the inner fringe (what the student can do without help) and the outer fringe (what students can do with help). This is also the optimal place for practice. As a matter of fact, Shute, Hansen, and Almond (2008) found that students using a version of the ACED assessment for learning system which optimized task selection for maximum evidence had the best learning gains.\n\n\n\nThe quote from Sam Messick at the beginning of the chapter does a pretty good job of laying out the basic steps in the ECD process. In particular, the assessment designer must answer the following questions:\n\nWhat is being measured? Often, these are knowldege, skills or abilities we hope the student has mastered; however, they could also be attitude or emotions that is of interest.\nHow can those things be measured? In other words, would would be good evidence that a student has or does not have the target skill?\nWhat kinds of activities would provide opportunities to capture the evidence? In particular, the assessment designer should create tasks where “success” means that the student has mastered the skill and “failure” means that the student has not yet mastered the skill.\nHow much evidence is needed to be able to support the claims of the assessment? Is it sufficient for the student to be sucessful once, or must the student demonstrate mastery with repeated success? If multiple skills are to be measured, how can the teacher stucture a set of activities to reach all of the targets.\n\nThe answers to these four questions make up the conceptual assessment framework for a particular assessment. These will depend heavily on the purpose for which the assessment is being given. A high-stakes exam used for student promotion must gather more and stronger evidence than a quiz used to check student progress. Mistakes in the former have very large consquences, while missing a single quiz is an easily corrected mistake.\nAs this is a design problem, constraints also come into play. The principal is probably willing to rearrange class schedules to accomodate the final exam, but the teacher must find a way to fit the quiz into the normal instructional schedule. The ideal measurement for a science task may require a laboratory setup that is not available, so a simpler way to measure the same skills is needed.\nA useful exercise in assessment design is to start by thinking about evidence and activities that would be useful if there were no constraints. Next, add the constraints back in and see if there are ways to simplify the ideal but too expensive tasks. This may result in clever ways to exploit tried and true formats like multiple-choice.\n\n\n\nAs the term evidence-based has been heavily discussed in the educational literature, it is worth making a distinction between evidence-centered and evidence-based. The idea behind evidence-based education, is that educators should adopt policies for which there exists evidence of its effectiveness, usually in the form of a formal study. Thus, the evidence in evidence-based is about the policy or practice, not the individual student. In evidence-centered design the evidence is about whether an individual student posesses a specific skill.\nAlthough evidence-based education is well intentioned, there are two difficulties that educators frequently find in putting it into practice. The first is judging the quality and relevence of the evidence. Often the study is with a particular population (convenient to the researcher) and the program is implemented with guidance and feedback from the designers. When choosing whether or not to adobt a policy, an educator must extrapolate from the provided evidence to the particular population they serve with the resources they have to implement the policy.\nThe second difficulty is that teachers should feel free to experiment with variations on existing policies and even new policies; as otherwise we (the educational community) will never discover new, more effective techniques. Computer scientists call this the exploration–exploitation tradeoff: is it better to pick the choice which will have proven success or try something new in the hope that it will be better.\nFor example, suppose that you know how long it takes you to get to work each day, but a friend shows you a “short cut”. You may be unsure if the short cut has more or less traffic than your usual route at your usual commute time. The question is, do you take the old familiar route with the familiar time to success or take a chance on the new, possibly better route?\nAlthough teachers should be free to experiment, they should do it like scientists, and measure their success and failure. Evidence-centered design can help here. To properly measure the success, they need to follow the steps of ECD: they need to clearly specify their goals, they need to describe what would provide evidence about their goals and then structure activities to elicit that evidence."
+  },
+  {
+    "objectID": "Book/index.html#introduction",
+    "href": "Book/index.html#introduction",
+    "title": "Preface",
+    "section": "",
+    "text": "The idea behind evidence-centered assessment design (ECD) is simple to state. The reason educators assess students it to get evidence about the skills that they care about. It stands to reason, that a good assessment would therefore would provide strong evidence about whether or not the student had the skill of interest. To design good assessments, think about tasks that the student can do that will provide strong evidence.\nThat’s it. It is that simple. You don’t need to read the rest of this book. Well, not really. There is a lot of subtlety to thinking through exactly how to do it. That is what this book will do.\nGood teachers have internalized this rule in their assessment design practice. They may not think about it much, but an experience teacher over the years will keep activities that provide good information about student progress and discard ones that don’t. The teacher may or may not have explicitly thought through the evidence implications of their decisions, but their instincts will bring them to the same place as if they had. The goal of this book is to add labels to this way of thinking so that teachers can get better at it.\nThere is a hidden benefit of designing assessments to maximize evidence. It turns out, the kinds of activities that provide the most evidence are the ones that the teacher has the most uncertainty about whether or not the student can do it yet. This is what Vygotsky calls the zone of proximal development, and are between what Falmange calls between the inner fringe (what the student can do without help) and the outer fringe (what students can do with help). This is also the optimal place for practice. As a matter of fact, Shute, Hansen, and Almond (2008) found that students using a version of the ACED assessment for learning system which optimized task selection for maximum evidence had the best learning gains."
+  },
+  {
+    "objectID": "Book/index.html#messicks-framing",
+    "href": "Book/index.html#messicks-framing",
+    "title": "Preface",
+    "section": "",
+    "text": "The quote from Sam Messick at the beginning of the chapter does a pretty good job of laying out the basic steps in the ECD process. In particular, the assessment designer must answer the following questions:\n\nWhat is being measured? Often, these are knowldege, skills or abilities we hope the student has mastered; however, they could also be attitude or emotions that is of interest.\nHow can those things be measured? In other words, would would be good evidence that a student has or does not have the target skill?\nWhat kinds of activities would provide opportunities to capture the evidence? In particular, the assessment designer should create tasks where “success” means that the student has mastered the skill and “failure” means that the student has not yet mastered the skill.\nHow much evidence is needed to be able to support the claims of the assessment? Is it sufficient for the student to be sucessful once, or must the student demonstrate mastery with repeated success? If multiple skills are to be measured, how can the teacher stucture a set of activities to reach all of the targets.\n\nThe answers to these four questions make up the conceptual assessment framework for a particular assessment. These will depend heavily on the purpose for which the assessment is being given. A high-stakes exam used for student promotion must gather more and stronger evidence than a quiz used to check student progress. Mistakes in the former have very large consquences, while missing a single quiz is an easily corrected mistake.\nAs this is a design problem, constraints also come into play. The principal is probably willing to rearrange class schedules to accomodate the final exam, but the teacher must find a way to fit the quiz into the normal instructional schedule. The ideal measurement for a science task may require a laboratory setup that is not available, so a simpler way to measure the same skills is needed.\nA useful exercise in assessment design is to start by thinking about evidence and activities that would be useful if there were no constraints. Next, add the constraints back in and see if there are ways to simplify the ideal but too expensive tasks. This may result in clever ways to exploit tried and true formats like multiple-choice."
+  },
+  {
+    "objectID": "Book/index.html#evidence-centered-versus-evidence-based",
+    "href": "Book/index.html#evidence-centered-versus-evidence-based",
+    "title": "Preface",
+    "section": "",
+    "text": "As the term evidence-based has been heavily discussed in the educational literature, it is worth making a distinction between evidence-centered and evidence-based. The idea behind evidence-based education, is that educators should adopt policies for which there exists evidence of its effectiveness, usually in the form of a formal study. Thus, the evidence in evidence-based is about the policy or practice, not the individual student. In evidence-centered design the evidence is about whether an individual student posesses a specific skill.\nAlthough evidence-based education is well intentioned, there are two difficulties that educators frequently find in putting it into practice. The first is judging the quality and relevence of the evidence. Often the study is with a particular population (convenient to the researcher) and the program is implemented with guidance and feedback from the designers. When choosing whether or not to adobt a policy, an educator must extrapolate from the provided evidence to the particular population they serve with the resources they have to implement the policy.\nThe second difficulty is that teachers should feel free to experiment with variations on existing policies and even new policies; as otherwise we (the educational community) will never discover new, more effective techniques. Computer scientists call this the exploration–exploitation tradeoff: is it better to pick the choice which will have proven success or try something new in the hope that it will be better.\nFor example, suppose that you know how long it takes you to get to work each day, but a friend shows you a “short cut”. You may be unsure if the short cut has more or less traffic than your usual route at your usual commute time. The question is, do you take the old familiar route with the familiar time to success or take a chance on the new, possibly better route?\nAlthough teachers should be free to experiment, they should do it like scientists, and measure their success and failure. Evidence-centered design can help here. To properly measure the success, they need to follow the steps of ECD: they need to clearly specify their goals, they need to describe what would provide evidence about their goals and then structure activities to elicit that evidence."
+  },
+  {
+    "objectID": "Book/glossary.html",
+    "href": "Book/glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Glossary"
+  },
+  {
+    "objectID": "Book/summary.html",
+    "href": "Book/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Book/arguments.html#context-features",
+    "href": "Book/arguments.html#context-features",
+    "title": "Evidential Arguments",
+    "section": "Context Features",
+    "text": "Context Features"
+  },
+  {
+    "objectID": "Book/arguments.html#sec-Indicators",
+    "href": "Book/arguments.html#sec-Indicators",
+    "title": "Evidential Arguments",
+    "section": "Indicators",
+    "text": "Indicators\nBoth the claim and observation are written in terms of tasks; opportunities to collect information about the candidate (?@sec-Task provides a more rigorous definition of a task). The Observation refers to the outcome from a task which was complete (writing the letter), while the claim is a prediction for a task in the future (presumably the job requires routine business correspondence). This future orientation is more apparent in educational constructs than in other kinds of psychological constructs, but it works there as well. The claim that a patient is depressed is a prediction about how the patient will react in a future situation. At some points in assessment design process (particularly when constructing the skill map; ?@sec-Skill), the distinction between past observation and future prediction is not important. In that case, the term indicator can be used to refer to both claims and obserables.\nAll indicators need to pass the clarity test (HowardMatheson1981?). This is an idea from the field of decision analysis that it is possible for some person who had all the relevant information can unambiguously tell whether the claim/observation holds or not. (Howard and Matheson imagine a clairvoyant who can see everything in her crystal ball, but in the 21st Century, we have Google and Facebook, so we no longer need the clairvoyant.) The claim and observation above fail this test: to meet the test, the phrases “appropriate”, “relevant”, “routine business correspondence” and “well written” need to be more clearly defined.\nThe clarity test forces claims to be potentially observable. The observable will be defined in terms of a task (?@sec-Task); then the claim in the following section (?@sec-Claim). This restriction is similar in effect to the common practice of restricting educational objectives to “action verbs”. Thus, in a proper educational reasoning system, the claims need to be reworked in terms of tasks."
+  },
+  {
+    "objectID": "Book/arguments.html#contexts-and-situtations",
+    "href": "Book/arguments.html#contexts-and-situtations",
+    "title": "Evidential Arguments",
+    "section": "Contexts and Situtations",
+    "text": "Contexts and Situtations"
+  },
+  {
+    "objectID": "Book/arguments.html#adding-contexts-to-the-toulmin-diagram",
+    "href": "Book/arguments.html#adding-contexts-to-the-toulmin-diagram",
+    "title": "Evidential Arguments",
+    "section": "Adding Contexts to the Toulmin Diagram",
+    "text": "Adding Contexts to the Toulmin Diagram\nEvery task, both the ones corresponding to claims and those corresponding to observations, has a context (?@sec-Context). Figure Figure 3 augments the previous figure with an indication of the contexts associated with both the observation and the claim. The claim is often associated with a set of contexts (denoted _Context*_ in the diagram) which are usually distinct from the context of the observation (denoted Context) which is usually a single context or a subset of the full range of contexts.\n\n\n\n\n\n\n  \n\ncluster_O\n\n Context  \n\ncluster_C\n\n Context*   \n\nclaim\n\n Claim       \n\nwarrant1\n\n Warrant*    \n\nalt1\n\n Alternative*     \n\nwarrant1-&gt;junction1\n\n        \n\njunction1-&gt;claim\n\n    \n\njunction1-&gt;alt1\n\n    \n\nconst\n\n Construct   \n\nconst-&gt;junction1\n\n     \n\nwarrant2\n\n Warrant    \n\nalt2\n\n Alternative     \n\nwarrant2-&gt;junction2\n\n        \n\njunction2-&gt;const\n\n   \n\njunction2-&gt;alt2\n\n    \n\ndata\n\n Observation   \n\ndata-&gt;junction2\n\n     \n\n\nFigure 3: Toulmin diagram with added context.\n\n\n\n\nReturning to the job candidate, the context for the cover letter includes the feature that the candidate can ask for assistance in writing the letter. The question then becomes is that sufficiently similar to the task in the claim. In particular, if it is expected that the future correspondence produced by the candidate will be reviewed and that the candidate can request assistance when needed, it might be. If the job expectation is that the candidate can produce the correspondence without assistance, it might not be.\nReasoning about the relationship between Context and _Context*_ is thus key to any assessment argument. However, in practice a single task is seldom used as the complete assessment argument. Instead, there must be an assessment plan (?@sec-Plan) which asks the candidate to perform a collection of different tasks, with differing contexts. This collection must provide a sufficient span of the _Context*_ space, that the observations will provide sufficient support for the claim.\nThe context feature used in the example, the candidate has access to help in writing the cover letter, is related to the alternative in the model. In particular, if the context was restricted (say to a proctored environment) then the alternative related to help would no longer be active, and the letter would provide stronger evidence. Thus, the context under which the observation is made influences both the warrant and the alternative. This is shown in Figure 4.\n\n\n\n\n\n\n  \n\ncluster_O\n\n Context  \n\ncluster_C\n\n Context*   \n\nclaim\n\n Claim       \n\nwarrant1\n\n Warrant*   \n\nspacer1-&gt;warrant1\n\n    \n\nalt1\n\n Alternative*   \n\nspacer2-&gt;alt1\n\n     \n\nwarrant1-&gt;junction1\n\n        \n\njunction1-&gt;claim\n\n    \n\njunction1-&gt;alt1\n\n    \n\nconst\n\n Construct   \n\nconst-&gt;junction1\n\n     \n\nwarrant2\n\n Warrant    \n\nalt2\n\n Alternative     \n\nwarrant2-&gt;junction2\n\n     \n\nwarrant2-&gt;spacer3\n\n     \n\nalt2-&gt;spacer4\n\n    \n\njunction2-&gt;const\n\n   \n\njunction2-&gt;alt2\n\n    \n\ndata\n\n Observation   \n\ndata-&gt;junction2\n\n     \n\n\nFigure 4: Toulmin diagram with retricted context.\n\n\n\n\nContexts are complex entities. It is clear than there are hierarchical relationships as well as non-hierarchical ones. In fact, every domain has an ontology of contexts that are considered interesting (at least for the target population). ?@sec-Context develops the notion of the ontology of contexts. It is also true that the context might change in the middle of an activity (especially if the activity is long and complex with many parts). Also, contexts will largely determine the features of tasks, particularly the ones used to manipulate the evidentiary focus of the task (?@sec-Activity)."
+  },
+  {
+    "objectID": "Book/arguments.html#sec-Deduction",
+    "href": "Book/arguments.html#sec-Deduction",
+    "title": "Evidential Arguments",
+    "section": "Deduction",
+    "text": "Deduction\nDeduction deals with logical rules of the form If A then B. If this rule is believed to be true, and x is an A, then it can be logically deduced that x is also a B. In the case of an assessment argument, x is the candidate, A the proposition that the candidate possesses the construct, and B an observation or a claim. Therefore, deduction is following the path of causal reasoning.\nOften modal adverbs (e.g., always, usually, sometimes, never) are applied to the claim. This is probably useful in many problems, but the modal adverbs themselves need precise definitions. How is usually defined in the context of a particular problem. In some cases, it could be represented with a probability, but in other cases, it may refer to some contexts in which the candidate is likely to be successful and other, more difficult, contexts in which the candidate is not likely to be successful."
+  },
+  {
+    "objectID": "Book/arguments.html#sec-Abduction",
+    "href": "Book/arguments.html#sec-Abduction",
+    "title": "Evidential Arguments",
+    "section": "Abduction",
+    "text": "Abduction"
+  },
+  {
+    "objectID": "Book/arguments.html#sec-Induction",
+    "href": "Book/arguments.html#sec-Induction",
+    "title": "Evidential Arguments",
+    "section": "Induction",
+    "text": "Induction"
+  },
+  {
+    "objectID": "Book/marks.html",
+    "href": "Book/marks.html",
+    "title": "Marks and Feedback",
+    "section": "",
+    "text": "Marks and Feedback"
+  },
+  {
+    "objectID": "Book/interactions.html",
+    "href": "Book/interactions.html",
+    "title": "Person by Task by Environment Features",
+    "section": "",
+    "text": "Person by Task by Environment Features"
+  },
+  {
+    "objectID": "Book/CAF.html",
+    "href": "Book/CAF.html",
+    "title": "The Conceptual Assessment Framework Revisited",
+    "section": "",
+    "text": "The Conceptual Assessment Framework Revisited"
+  },
+  {
+    "objectID": "Lectures/L14-Dimensionality.html",
+    "href": "Lectures/L14-Dimensionality.html",
+    "title": "14 Dimensionality",
+    "section": "",
+    "text": "Constructs versus Dimensions\n\n\nIdentification\n\n\nDimensionsality and Demographic Variables"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html",
+    "href": "Lectures/L01-Purpose.html",
+    "title": "01 Purpose",
+    "section": "",
+    "text": "Never go anywhere without a Porpoise.\n–Lewis Carroll"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html#setting-a-goal",
+    "href": "Lectures/L01-Purpose.html#setting-a-goal",
+    "title": "01 Purpose",
+    "section": "Setting A Goal",
+    "text": "Setting A Goal"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html#audience",
+    "href": "Lectures/L01-Purpose.html#audience",
+    "title": "01 Purpose",
+    "section": "Audience",
+    "text": "Audience"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html#context",
+    "href": "Lectures/L01-Purpose.html#context",
+    "title": "01 Purpose",
+    "section": "Context",
+    "text": "Context"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html#environmental-constraints",
+    "href": "Lectures/L01-Purpose.html#environmental-constraints",
+    "title": "01 Purpose",
+    "section": "Environmental Constraints",
+    "text": "Environmental Constraints"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html#scope-creep",
+    "href": "Lectures/L01-Purpose.html#scope-creep",
+    "title": "01 Purpose",
+    "section": "Scope Creep",
+    "text": "Scope Creep"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html#purpose-and-validity",
+    "href": "Lectures/L01-Purpose.html#purpose-and-validity",
+    "title": "01 Purpose",
+    "section": "Purpose and Validity",
+    "text": "Purpose and Validity"
+  },
+  {
+    "objectID": "Lectures/L01-Purpose.html#exercises",
+    "href": "Lectures/L01-Purpose.html#exercises",
+    "title": "01 Purpose",
+    "section": "Exercises",
+    "text": "Exercises"
+  },
+  {
+    "objectID": "Lectures/L03-CAF.html#skill-map",
+    "href": "Lectures/L03-CAF.html#skill-map",
+    "title": "03 Conceptual Assessment Framework",
+    "section": "Skill Map",
+    "text": "Skill Map"
+  },
+  {
+    "objectID": "Lectures/L03-CAF.html#evidence-rubrics",
+    "href": "Lectures/L03-CAF.html#evidence-rubrics",
+    "title": "03 Conceptual Assessment Framework",
+    "section": "Evidence Rubrics",
+    "text": "Evidence Rubrics"
+  },
+  {
+    "objectID": "Lectures/L03-CAF.html#activity-templates",
+    "href": "Lectures/L03-CAF.html#activity-templates",
+    "title": "03 Conceptual Assessment Framework",
+    "section": "Activity Templates",
+    "text": "Activity Templates"
+  },
+  {
+    "objectID": "Lectures/L03-CAF.html#assessmentlesson-plan",
+    "href": "Lectures/L03-CAF.html#assessmentlesson-plan",
+    "title": "03 Conceptual Assessment Framework",
+    "section": "Assessment/Lesson Plan",
+    "text": "Assessment/Lesson Plan"
+  },
+  {
+    "objectID": "Lectures/L03-CAF.html#evidence-flow",
+    "href": "Lectures/L03-CAF.html#evidence-flow",
+    "title": "03 Conceptual Assessment Framework",
+    "section": "Evidence Flow",
+    "text": "Evidence Flow"
+  },
+  {
+    "objectID": "Lectures/L03-CAF.html#exercises",
+    "href": "Lectures/L03-CAF.html#exercises",
+    "title": "03 Conceptual Assessment Framework",
+    "section": "Exercises",
+    "text": "Exercises"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#the-q-matrix",
+    "href": "Lectures/L11-Planning.html#the-q-matrix",
+    "title": "11 Forms, Pools and Plans",
+    "section": "The Q-Matrix",
+    "text": "The Q-Matrix"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#topics",
+    "href": "Lectures/L11-Planning.html#topics",
+    "title": "11 Forms, Pools and Plans",
+    "section": "Topics",
+    "text": "Topics"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#moving-between-topics",
+    "href": "Lectures/L11-Planning.html#moving-between-topics",
+    "title": "11 Forms, Pools and Plans",
+    "section": "Moving Between Topics",
+    "text": "Moving Between Topics"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#moving-withing-topics",
+    "href": "Lectures/L11-Planning.html#moving-withing-topics",
+    "title": "11 Forms, Pools and Plans",
+    "section": "Moving Withing Topics",
+    "text": "Moving Withing Topics"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#optimizing-information-versus-optimizing-learning",
+    "href": "Lectures/L11-Planning.html#optimizing-information-versus-optimizing-learning",
+    "title": "11 Forms, Pools and Plans",
+    "section": "Optimizing Information versus Optimizing Learning",
+    "text": "Optimizing Information versus Optimizing Learning"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#spanning-the-space",
+    "href": "Lectures/L11-Planning.html#spanning-the-space",
+    "title": "11 Forms, Pools and Plans",
+    "section": "Spanning the Space",
+    "text": "Spanning the Space"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#preventing-conflicts",
+    "href": "Lectures/L11-Planning.html#preventing-conflicts",
+    "title": "11 Forms, Pools and Plans",
+    "section": "Preventing Conflicts",
+    "text": "Preventing Conflicts"
+  },
+  {
+    "objectID": "Lectures/L11-Planning.html#exercises",
+    "href": "Lectures/L11-Planning.html#exercises",
+    "title": "11 Forms, Pools and Plans",
+    "section": "Exercises",
+    "text": "Exercises"
+  },
+  {
+    "objectID": "Lectures/index.html",
+    "href": "Lectures/index.html",
+    "title": "Lecture Index",
+    "section": "",
+    "text": "Lecture notes should be in sidebar.\nThis page may eventually get non-trivial content."
+  },
+  {
+    "objectID": "Lectures/L05-Scales.html",
+    "href": "Lectures/L05-Scales.html",
+    "title": "05 Scales",
+    "section": "",
+    "text": "…to build an imaginary variable along which we can define … equal units that, although abstract in theory, are, nevertheless, approximable in practice…It is the fundamental language of science… [to] add up to reproducible meaning. – Wright, 1999, p. 67-8\n\nMany families have a wall in their home with a series of marks indicating the height of their children at various points in time. This provides a visual indication of how their children have grown over time. It also allows the family to compare the growth of a younger child to an older sibling. It provides a frame of reference for thinking about the growth of the children in stature.\nThe Skill Map is a wall against which the students can be measured. The word “map” was chosen to get people thinking about the landscape of possible skill configurations. One region of the map corresponds to a target or goal: a collection of skills that students should posses at the end of the instructional unit. An important part of the assessment is then to locate where the students are on the map, so the teacher can develop a plan to get them to the goal.\n\n\nHeight and length are examples of what mathematicians call a measure and statisticians call a interval scale. The key property of a measure or an interval scale is that they can be added together. Putting a 6’ table next to a 3’ card table produces 9’ of table length. The difference between two measurements is also meaningful: if I weigh 218 lbs at my annual physical and then I weigh 198 lbs at the next physical, I can be said to have lost 20 lbs (which will make my doctor happy).\nIn ordinal scale the states are ordered, but the difference between the levels are not necessarily equal. Consider a survey question on a Likert scale, e.g. “I like Brussel sprouts,” with possible answers of “Strongly disagree”, “Somewhat disagree”, “Neither agree nor disagree”, “Somewhat agree”, and “Strongly aggree”. The difference between “Strongly disagree” and “Somewhat disagree” and the difference between “Neither agree nor disagree” and “Somewhat agree” are both one point in the scale. But do they really represent the equivalent changes in attitude towards Brussel sprouts?\nAlthough an introductory statistics course will make a big distinction between these two types of scales, in practice, the line is wuzzy. Often researchers will take a number of Likert scale items and assign the numbers 1 to 5 (if there are 5 options) to the options. They will then add these numbers as if they represented an interval and not just an ordinal scale. The hope here is that the departures from a pure interval scale will cancel each other out, so that the resulting scale is approximately interval.\nAll interval scales are also ordinal, and for the purposes of educational measurement we need at least an ordinal scale. However, there are many applications for which we don’t need a full ordinal scale. Suppose the goal is to determine which students are meeting the state proficiency standards. Then an ordinal scale for which the levels of the scale can be mapped to the state standards is sufficient. On the other hand, if the goal is to rank order the students to identify a the group of highest (or lowest) performing students for a program then a fully interval scale may be necessary.\n\n\n\nThink of the scale as being a ladder in some latent space. Note that the position of the ladder, whether we place it high on a hill or down in a hole, and the distance between the rungs is arbitrary. To locate the ladder in latent space, label the spaces between the rungs and then identify them with qualities of people, what kind of things they can do and what quality that their work has.\nWe do this with a table like Table 1. We label the groups in our scale with labels suitable to the application: Advanced &gt; Proficient &gt; Approaching; or Master &gt; Journeyman &gt; Apprentice; or High &gt; Medium &gt; Low. Then we have three columns describing characteristics of people associated with that level, characteristics of activities associated with that level and characteristics of work associated with that level.\nBelow Basic\nTying levels to instruction\n\n\n\n\n\nHigh Jump\n\n\n\nDiving Example"
+  },
+  {
+    "objectID": "Lectures/L05-Scales.html#defining-a-scale",
+    "href": "Lectures/L05-Scales.html#defining-a-scale",
+    "title": "05 Scales",
+    "section": "",
+    "text": "Height and length are examples of what mathematicians call a measure and statisticians call a interval scale. The key property of a measure or an interval scale is that they can be added together. Putting a 6’ table next to a 3’ card table produces 9’ of table length. The difference between two measurements is also meaningful: if I weigh 218 lbs at my annual physical and then I weigh 198 lbs at the next physical, I can be said to have lost 20 lbs (which will make my doctor happy).\nIn ordinal scale the states are ordered, but the difference between the levels are not necessarily equal. Consider a survey question on a Likert scale, e.g. “I like Brussel sprouts,” with possible answers of “Strongly disagree”, “Somewhat disagree”, “Neither agree nor disagree”, “Somewhat agree”, and “Strongly aggree”. The difference between “Strongly disagree” and “Somewhat disagree” and the difference between “Neither agree nor disagree” and “Somewhat agree” are both one point in the scale. But do they really represent the equivalent changes in attitude towards Brussel sprouts?\nAlthough an introductory statistics course will make a big distinction between these two types of scales, in practice, the line is wuzzy. Often researchers will take a number of Likert scale items and assign the numbers 1 to 5 (if there are 5 options) to the options. They will then add these numbers as if they represented an interval and not just an ordinal scale. The hope here is that the departures from a pure interval scale will cancel each other out, so that the resulting scale is approximately interval.\nAll interval scales are also ordinal, and for the purposes of educational measurement we need at least an ordinal scale. However, there are many applications for which we don’t need a full ordinal scale. Suppose the goal is to determine which students are meeting the state proficiency standards. Then an ordinal scale for which the levels of the scale can be mapped to the state standards is sufficient. On the other hand, if the goal is to rank order the students to identify a the group of highest (or lowest) performing students for a program then a fully interval scale may be necessary."
+  },
+  {
+    "objectID": "Lectures/L05-Scales.html#identifying-points-on-the-scale",
+    "href": "Lectures/L05-Scales.html#identifying-points-on-the-scale",
+    "title": "05 Scales",
+    "section": "",
+    "text": "Think of the scale as being a ladder in some latent space. Note that the position of the ladder, whether we place it high on a hill or down in a hole, and the distance between the rungs is arbitrary. To locate the ladder in latent space, label the spaces between the rungs and then identify them with qualities of people, what kind of things they can do and what quality that their work has.\nWe do this with a table like Table 1. We label the groups in our scale with labels suitable to the application: Advanced &gt; Proficient &gt; Approaching; or Master &gt; Journeyman &gt; Apprentice; or High &gt; Medium &gt; Low. Then we have three columns describing characteristics of people associated with that level, characteristics of activities associated with that level and characteristics of work associated with that level.\nBelow Basic\nTying levels to instruction\n\n\n\n\n\nHigh Jump\n\n\n\nDiving Example"
+  },
+  {
+    "objectID": "Lectures/Untitled.html",
+    "href": "Lectures/Untitled.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "I’ll eventuall port the content over from http://ecd.ralmond.net/ecdwiki/ECD/Glossary"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html",
+    "href": "Lectures/L02-Argument.html",
+    "title": "02 Assessment Argument",
+    "section": "",
+    "text": "Toulmin Diagram\n\n\nSubject person (or thing) being measured\nWe persons doing the measurement\n\nClaim: What we want to say about subject\nObservation: Something we see about subject (often in a certain situation or context)\nWarrant: Reason to believe observation is associated with claim\nAlternative: Reasons why observation could be present when claim does not hold\n\nA task is a way of creating a situation in which we can make an observation.\n\n\n\nClaim: The job candidate can produce appropriate and relevant routine business correspondence.\nObservation: The candidate’s cover letter was well written.\nWarrant: A cover letter is a type of business correspondence, therefore this is a positive example of the type of needed work.\nAlternative: The candidate may have had help writing or correcting the letter."
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#situational-variables",
+    "href": "Lectures/L02-Argument.html#situational-variables",
+    "title": "02 Assessment Argument",
+    "section": "Situational variables",
+    "text": "Situational variables\n\nTask features – task goal and resources\n\nResponse type\nSkill demands\nKind and length of research material\n\nEnvironment features – environment properties and affordances\n\ndistractions\nsecurity\ntool availability\n\nPerson features – features of the subject, usually related to their experience\nbiological\npreparation\naversions\nInteraction features\nPerson by task: familiarity\nPerson by environment: ADHD and noisy environment\nTask by environment: Calculation demand and calculator availability"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#situtations-and-contexts",
+    "href": "Lectures/L02-Argument.html#situtations-and-contexts",
+    "title": "02 Assessment Argument",
+    "section": "Situtations and Contexts",
+    "text": "Situtations and Contexts\n\nA situation is a collection of variables describing a particular point in time and space.\n\nIn a situation all variable have an assigned value.\n\nA context is a set of situations.\nVariables may be unknown, or restricted to a set.\nSome contexts are nested within others."
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#sec-Indicators",
+    "href": "Lectures/L02-Argument.html#sec-Indicators",
+    "title": "02 Assessment Argument",
+    "section": "Indicators",
+    "text": "Indicators\nIndicators are features of the outcome (work product or process) of a task.\nWhat subject did, wrote, said, indicated, &c"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#contexts-and-claims",
+    "href": "Lectures/L02-Argument.html#contexts-and-claims",
+    "title": "02 Assessment Argument",
+    "section": "Contexts and Claims",
+    "text": "Contexts and Claims"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#construct-in-the-toulmin-diagram",
+    "href": "Lectures/L02-Argument.html#construct-in-the-toulmin-diagram",
+    "title": "02 Assessment Argument",
+    "section": "Construct in the Toulmin diagram",
+    "text": "Construct in the Toulmin diagram\n\n\n\nConstruct Diagram"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#contexts-and-situations",
+    "href": "Lectures/L02-Argument.html#contexts-and-situations",
+    "title": "02 Assessment Argument",
+    "section": "Contexts and situations",
+    "text": "Contexts and situations\n\n\n\nToulmin Diagram with Contexts"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#deduction",
+    "href": "Lectures/L02-Argument.html#deduction",
+    "title": "02 Assessment Argument",
+    "section": "Deduction",
+    "text": "Deduction"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#abduction",
+    "href": "Lectures/L02-Argument.html#abduction",
+    "title": "02 Assessment Argument",
+    "section": "Abduction",
+    "text": "Abduction"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#induction",
+    "href": "Lectures/L02-Argument.html#induction",
+    "title": "02 Assessment Argument",
+    "section": "Induction",
+    "text": "Induction"
+  },
+  {
+    "objectID": "Lectures/L15-Validity.html#concurrent-validity",
+    "href": "Lectures/L15-Validity.html#concurrent-validity",
+    "title": "15 Reliability and Validity",
+    "section": "Concurrent Validity",
+    "text": "Concurrent Validity"
+  },
+  {
+    "objectID": "Lectures/L15-Validity.html#consequential-validity",
+    "href": "Lectures/L15-Validity.html#consequential-validity",
+    "title": "15 Reliability and Validity",
+    "section": "Consequential Validity",
+    "text": "Consequential Validity"
+  },
+  {
+    "objectID": "Lectures/L15-Validity.html#convergent-and-divergent-validity",
+    "href": "Lectures/L15-Validity.html#convergent-and-divergent-validity",
+    "title": "15 Reliability and Validity",
+    "section": "Convergent and Divergent Validity",
+    "text": "Convergent and Divergent Validity"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "References\nNote: The references are also available via the Zotero EvidenceCenteredDesign group"
+  }
+]

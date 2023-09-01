@@ -1,11 +1,21 @@
-# Preface {.unnumbered}
+---
+title:  "Re:CAF---The Reconceptionalized Conceptual Assessment Framework"
+date: 2023-09-01
+---
 
-This is a Quarto book.
+# Re:CAF---The Reconceptionalized Conceptual Assessment Framework
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+::: {.callout-caution}
+This is a draft version of the material and does not represent the final content.  
+Feel free to offer suggestions or request clarifications in the comments.  I do not promise a prompt response.
+:::
 
-```{r}
-1 + 1
-```
+Currently we have the following content:
+
+* [Lecture Notes](Lectures/index.qmd) -- from my Scale and Instrument Class
+* [Book](Book/index.qmd) -- A draft screed
+* [Referenced](references.qmd) -- See also the Zotero [EvidenceCenteredDesign](https://www.zotero.org/groups/4900299/evidencecentereddesign) group
+* [Glossary](glossary.qmd) -- A work in progress
+
 
 

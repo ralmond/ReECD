@@ -2,10 +2,10 @@
 title: "01 Purpose"
 ---
 
-```{block}
-Never go anywhere without a Porpoise.
---Lewis Carroll
-```
+
+| Never go anywhere without a Porpoise.
+| --Lewis Carroll
+
 
 ## Setting A Goal
 

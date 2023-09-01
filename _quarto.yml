@@ -1,24 +1,86 @@
 project:
-  type: book
+  type: website
+  
 
-book:
-  title: "ReCAF:  The Evidence-Centered Design Conceptual Assessment Framework Reconceptualized"
-  author: "Russell G. Almond"
-  date: "5/9/2023"
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - arguments.qmd
-    - variables.qmd
-    - tasks.qmd
-    - observations.qmd
-    - evidenceRules.qmd
-    - marks.qmd
-    - interactions.qmd
-    - CAF.qmd
-    - comments.qmd
-    - glossary.qmd
-    - references.qmd
+website:
+  title: "ReCAF"
+  navbar:
+    search: true
+    left:
+    - text: Lectures
+      file: Lectures/index.qmd
+    - text: Book
+      file: Book/index.qmd
+    - text: References
+      file: references.qmd
+    - text: Glossary
+      file: glossary.qmd
+  sidebar:
+    style: "docked"
+    contents:
+      - section: "Lectures"
+        contents:
+        - text: "01 Purpose"
+          file: Lectures/L01-Purpose.qmd
+        - text: "02 Argument"
+          file: Lectures/L02-Argument.qmd
+        - text: "03 Conceptual Assessment Framework"
+          file: Lectures/L03-CAF.qmd
+        - text: "04 Delivery Architecture"
+          file: Lectures/L04-Architecture.qmd
+        - text: "05 Defining Scales"
+          file: Lectures/L05-Scales.qmd
+        - text: "06 Score Reports"
+          file: Lectures/L06-ScoreReports.qmd
+        - text: "07 Authoring Prompts"
+          file: Lectures/L07-WritingPrompts.qmd
+        - text: "08 Task Features"
+          file: Lectures/L08-TaskFeatures.qmd
+        - text: "09 Scoring Rubrics"
+          file: Lectures/L09-ScoringRubrics.qmd
+        - text: "10 Rules of Evidence"
+          file: Lectures/L10-EvidenceRules.qmd
+        - text: "11 Assessment Plans"
+          file: Lectures/L11-Planning.qmd
+        - text: "12 Field Testing and Item Analysis"
+          file: Lectures/L12-FieldTesting.qmd
+        - text: "13 Scoring Models"
+          file: Lectures/L13-ScoringModels.qmd
+        - text: "14 Dimensionality"
+          file: Lectures/L14-Dimensionality.qmd
+        - text: "15 Reliability and Validity"
+          file: Lectures/L15-Validity.qmd
+        - text: References
+          file: references.qmd
+        - text: Glossary
+          file: glossary.qmd
+        
+      - section: "Book"
+        contents:
+        - text: "Preface"
+          file: Book/index.qmd
+        - text: "Introduction" 
+          file: Book/intro.qmd
+        - text: "Arguments"
+          file: Book/arguments.qmd
+        - text: "Variables"
+          file: Book/variables.qmd
+        - text: "Tasks"
+          file: Book/tasks.qmd
+        - text: "Observations"
+          file: Book/observations.qmd
+        - text: "Rules of Evidence"
+          file: Book/evidenceRules.qmd
+        - text: "Marks and Feedback"
+          file: Book/marks.qmd
+        - text: "Feature Interactions"
+          file: Book/interactions.qmd
+        - text: "The New Conceptual Assessment Framework"
+          file: Book/CAF.qmd
+        - text: "The future of ECD"
+          file: comments.qmd
+      - glossary.qmd
+      - references.qmd
 
 bibliography: ReCAF.bib
 csl:  apa.csl
@@ -26,6 +88,8 @@ csl:  apa.csl
 format:
   html:
     theme: cosmo
+    css: styles.css
+    toc: true
   pdf:
     documentclass: scrreprt
 

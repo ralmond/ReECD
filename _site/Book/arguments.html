@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ReCAF – arguments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">ReCAF</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../Lectures/index.html" rel="" target="">
+ <span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../Book/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Book</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../references.html" rel="" target="">
+ <span class="menu-text">References</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../glossary.html" rel="" target="">
+ <span class="menu-text">Glossary</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Book/index.html">Book</a></li><li class="breadcrumb-item"><a href="../Book/arguments.html">Arguments</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Lectures</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L01-Purpose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">01 Purpose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L02-Argument.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">02 Argument</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L03-CAF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">03 Conceptual Assessment Framework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L04-Architecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">04 Delivery Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L05-Scales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">05 Defining Scales</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L06-ScoreReports.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">06 Score Reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L07-WritingPrompts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">07 Authoring Prompts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L08-TaskFeatures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">08 Task Features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L09-ScoringRubrics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">09 Scoring Rubrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L10-EvidenceRules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10 Rules of Evidence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L11-Planning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11 Assessment Plans</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L12-FieldTesting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Field Testing and Item Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L13-ScoringModels.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Scoring Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L14-Dimensionality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Dimensionality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/L15-Validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Reliability and Validity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Book</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/arguments.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Arguments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/tasks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tasks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/observations.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Observations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/evidenceRules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rules of Evidence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/marks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Marks and Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/interactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feature Interactions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book/CAF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The New Conceptual Assessment Framework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../comments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The future of ECD</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#evidential-arguments" id="toc-evidential-arguments" class="nav-link active" data-scroll-target="#evidential-arguments">Evidential Arguments</a></li>
+  <li><a href="#sec-Argument" id="toc-sec-Argument" class="nav-link" data-scroll-target="#sec-Argument">The Assessment Argument</a></li>
+  <li><a href="#sec-Variables" id="toc-sec-Variables" class="nav-link" data-scroll-target="#sec-Variables">Variables, Indicators and Context Features</a>
+  <ul class="collapse">
+  <li><a href="#context-features" id="toc-context-features" class="nav-link" data-scroll-target="#context-features">Context Features</a></li>
+  <li><a href="#sec-Indicators" id="toc-sec-Indicators" class="nav-link" data-scroll-target="#sec-Indicators">Indicators</a></li>
+  </ul></li>
+  <li><a href="#sec-Constructs" id="toc-sec-Constructs" class="nav-link" data-scroll-target="#sec-Constructs">Constructs</a></li>
+  <li><a href="#contexts" id="toc-contexts" class="nav-link" data-scroll-target="#contexts">Contexts</a>
+  <ul class="collapse">
+  <li><a href="#contexts-and-situtations" id="toc-contexts-and-situtations" class="nav-link" data-scroll-target="#contexts-and-situtations">Contexts and Situtations</a></li>
+  <li><a href="#adding-contexts-to-the-toulmin-diagram" id="toc-adding-contexts-to-the-toulmin-diagram" class="nav-link" data-scroll-target="#adding-contexts-to-the-toulmin-diagram">Adding Contexts to the Toulmin Diagram</a></li>
+  </ul></li>
+  <li><a href="#logical-reasoning" id="toc-logical-reasoning" class="nav-link" data-scroll-target="#logical-reasoning">Logical Reasoning</a>
+  <ul class="collapse">
+  <li><a href="#sec-Deduction" id="toc-sec-Deduction" class="nav-link" data-scroll-target="#sec-Deduction">Deduction</a></li>
+  <li><a href="#sec-Abduction" id="toc-sec-Abduction" class="nav-link" data-scroll-target="#sec-Abduction">Abduction</a></li>
+  <li><a href="#sec-Induction" id="toc-sec-Induction" class="nav-link" data-scroll-target="#sec-Induction">Induction</a></li>
+  </ul></li>
+  <li><a href="#validity-arguments" id="toc-validity-arguments" class="nav-link" data-scroll-target="#validity-arguments">Validity Arguments</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="arguments.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="evidential-arguments" class="level1">
+<h1>Evidential Arguments</h1>
+</section>
+<section id="sec-Argument" class="level1">
+<h1>The Assessment Argument</h1>
+<p>A quote I have often used in introducing ECD is that data become evidence when connected to a claim through a warrant. This is often shown in a Toulmin diagram (<a href="#fig-Toulmin">Figure&nbsp;1</a>). I have relabled <em>data</em> as <em>observation</em> (<span class="math inline">\(O\)</span>). The <em>warrant</em> is a belief that the observation is more likely if the claim holds. The <em>alternative</em> is a situation, which if it holds, would cause the observation to be likely even in the absence of the claim holding.</p>
+<div class="cell" data-fig-height="4">
+<div class="cell-output-display">
+<div id="fig-Toulmin" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<svg width="672" height="384" viewbox="0.00 0.00 248.41 223.65" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 219.65)"> <polygon fill="white" stroke="transparent" points="-4,4 -4,-219.65 244.41,-219.65 244.41,4 -4,4"></polygon> <!-- claim --> <g id="node1" class="node">
+<title>
+claim
+</title>
+<polygon fill="none" stroke="black" points="135.93,-215.65 81.93,-215.65 81.93,-179.65 135.93,-179.65 135.93,-215.65"></polygon> <text text-anchor="middle" x="108.93" y="-193.45" font-family="Times,serif" font-size="14.00">Claim</text> </g> <!-- spacer2 --> <!-- claim&#45;&gt;spacer2 --> <!-- warrant --> <g id="node2" class="node">
+<title>
+warrant
+</title>
+<polygon fill="none" stroke="black" points="61.78,-126.85 0.07,-126.85 0.07,-90.85 61.78,-90.85 61.78,-126.85"></polygon> <text text-anchor="middle" x="30.93" y="-104.65" font-family="Times,serif" font-size="14.00">Warrant</text> </g> <!-- alt --> <g id="node3" class="node">
+<title>
+alt
+</title>
+<polygon fill="none" stroke="black" points="240.4,-126.85 161.46,-126.85 161.46,-90.85 240.4,-90.85 240.4,-126.85"></polygon> <text text-anchor="middle" x="200.93" y="-104.65" font-family="Times,serif" font-size="14.00">Alternative</text> </g> <!-- warrant&#45;&gt;alt --> <!-- warrant&#45;&gt;alt --> <!-- junction1 --> <!-- warrant&#45;&gt;junction1 --> <g id="edge15" class="edge">
+<title>
+warrant-&gt;junction1
+</title>
+<path fill="none" stroke="black" d="M62.2,-108.85C74.96,-108.85 88.86,-108.85 98.15,-108.85"></path> <polygon fill="black" stroke="black" points="98.29,-112.35 108.29,-108.85 98.29,-105.35 98.29,-112.35"></polygon> <text text-anchor="middle" x="85.14" y="-93.25" font-family="Times,serif" font-size="14.00">since</text> </g> <!-- spacer3 --> <!-- warrant&#45;&gt;spacer3 --> <!-- spacer4 --> <!-- alt&#45;&gt;spacer4 --> <!-- data --> <g id="node4" class="node">
+<title>
+data
+</title>
+<polygon fill="none" stroke="black" points="151.36,-53.85 66.5,-53.85 66.5,-17.85 151.36,-17.85 151.36,-53.85"></polygon> <text text-anchor="middle" x="108.93" y="-31.65" font-family="Times,serif" font-size="14.00">Observation</text> </g> <!-- data&#45;&gt;junction1 --> <g id="edge13" class="edge">
+<title>
+data-&gt;junction1
+</title>
+<path fill="none" stroke="black" d="M108.93,-54.04C108.93,-74.4 108.93,-105.82 108.93,-107.76"></path> </g> <!-- data&#45;&gt;spacer4 --> <!-- junction1&#45;&gt;claim --> <g id="edge14" class="edge">
+<title>
+junction1-&gt;claim
+</title>
+<path fill="none" stroke="black" d="M108.93,-109.92C108.93,-111.55 108.93,-144.72 108.93,-169.55"></path> <polygon fill="black" stroke="black" points="105.43,-169.57 108.93,-179.57 112.43,-169.57 105.43,-169.57"></polygon> <text text-anchor="middle" x="115.15" y="-149.05" font-family="Times,serif" font-size="14.00">so</text> </g> <!-- junction1&#45;&gt;alt --> <g id="edge16" class="edge">
+<title>
+junction1-&gt;alt
+</title>
+<path fill="none" stroke="black" d="M119.81,-108.85C130.08,-108.85 146.12,-108.85 161.23,-108.85"></path> <polygon fill="black" stroke="black" points="119.52,-105.35 109.52,-108.85 119.52,-112.35 119.52,-105.35"></polygon> <text text-anchor="middle" x="135.43" y="-93.25" font-family="Times,serif" font-size="14.00">unless</text> </g> <!-- spacer1 --> <!-- spacer1&#45;&gt;claim --> <!-- spacer1&#45;&gt;warrant --> <!-- spacer1&#45;&gt;spacer2 --> <!-- spacer2&#45;&gt;alt --> <!-- spacer3&#45;&gt;data --> <!-- spacer3&#45;&gt;spacer4 --> </g>
+</svg>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;1: The basic Toulmin diagram of an argument.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>A simple example will help illustrate the idea.</p>
+<ul>
+<li><p><strong>Claim:</strong> The job candidate can produce appropriate and relevant routine business correspondence.</p></li>
+<li><p><strong>Observation:</strong> The candidate’s cover letter was well written.</p></li>
+<li><p><strong>Warrant:</strong> A cover letter is a type of business correspondence, therefore this is a positive example of the type of needed work.</p></li>
+<li><p><strong>Alternative:</strong> The candidate may have had help writing or correcting the letter.</p></li>
+</ul>
+<p>Although the diagram and example implies that each of the elements are singular, in practice there are multiples of each. First, many claim–observation pairs will have multiple warrants and alternative associated with them (and the diagram should not be interpreted to indicate that the warrants and alternatives are somehow paired). Second, any given assessment is likely to have multiple observations to support each claim and a given assessment is likely to support multiple claims.</p>
+</section>
+<section id="sec-Variables" class="level1">
+<h1>Variables, Indicators and Context Features</h1>
+<p>Domain – Value – Evaluator</p>
+<section id="context-features" class="level2">
+<h2 class="anchored" data-anchor-id="context-features">Context Features</h2>
+</section>
+<section id="sec-Indicators" class="level2">
+<h2 class="anchored" data-anchor-id="sec-Indicators">Indicators</h2>
+<p>Both the claim and observation are written in terms of <em>tasks</em>; opportunities to collect information about the candidate (<strong>?@sec-Task</strong> provides a more rigorous definition of a task). The <em>Observation</em> refers to the outcome from a task which was complete (writing the letter), while the <em>claim</em> is a prediction for a task in the future (presumably the job requires routine business correspondence). This future orientation is more apparent in educational constructs than in other kinds of psychological constructs, but it works there as well. The claim that a patient is depressed is a prediction about how the patient will react in a future situation. At some points in assessment design process (particularly when constructing the skill map; <strong>?@sec-Skill</strong>), the distinction between past observation and future prediction is not important. In that case, the term <em>indicator</em> can be used to refer to both claims and obserables.</p>
+<p>All indicators need to pass the <em>clarity test</em> <span class="citation" data-cites="HowardMatheson1981">(<a href="#ref-HowardMatheson1981" role="doc-biblioref"><strong>HowardMatheson1981?</strong></a>)</span>. This is an idea from the field of decision analysis that it is possible for some person who had all the relevant information can unambiguously tell whether the claim/observation holds or not. (Howard and Matheson imagine a clairvoyant who can see everything in her crystal ball, but in the 21st Century, we have Google and Facebook, so we no longer need the clairvoyant.) The claim and observation above fail this test: to meet the test, the phrases “appropriate”, “relevant”, “routine business correspondence” and “well written” need to be more clearly defined.</p>
+<p>The clarity test forces claims to be potentially observable. The <em>observable</em> will be defined in terms of a <em>task</em> (<strong>?@sec-Task</strong>); then the <em>claim</em> in the following section (<strong>?@sec-Claim</strong>). This restriction is similar in effect to the common practice of restricting educational objectives to “action verbs”. Thus, in a proper educational reasoning system, the claims need to be reworked in terms of tasks.</p>
+</section>
+</section>
+<section id="sec-Constructs" class="level1">
+<h1>Constructs</h1>
+<p>On the other hand, it is fairly commmon to express a claim, at least initially, using non-action verbs like <em>knows</em> or <em>understands</em>. For example, the hiring manager might request that the candidate “understand routine business correspondence”. This is a <em>construct</em> or a <em>skill</em>, words I will use to indicate a collection of claims that might be made about an individual. For example, “understanding routine business correspondence” might cover claims regarding both understading received letters and emails and making an appropriate response as well as producing letters and emails for work activities. Often these claims are arranged into a scale, or a collection of scales called a <em>skill map</em> (<strong>?@sec-Skill</strong>).</p>
+<p>Many psychological models are defined in terms of these <em>constructs</em>. In the example of the job candidate, it is natural to think about a “business correspondence” construct which would imply the ability to produce a variety of different business correspondence. Almond et al. (-<span class="citation" data-cites="bninea">Almond et al. (<a href="#ref-bninea" role="doc-biblioref">2015</a>)</span>) refers to this as a <em>high-level claim</em> and notes that it is defined by a hierarchy of claims. For the claim hierarchy to be well defined, the lowest level members of the claim hierarchy must all pass the clarity test; that is, they must be potentially observable (if given enough time and resources).</p>
+<p>The question of whether or not an assessment is a valid measure of a construct begs the question of whether or not the construct is well defined. To this end, I offer the following rule:</p>
+<blockquote class="blockquote">
+<p><em>Russell’s Rule (binary Construct):</em> _Consider a construct defined as either being present or absent in a particular candidate. Then the construct is well defined if and only if there exists at least one indicator which is likely to be observed when the construct is present and unlikely to be observed when the construct is absent. Furthermore, the indicator must pass the clarity test.</p>
+</blockquote>
+<p>One big advantage of the introducing the construct into the picture is that the relationship between construct and indicator is causal (or at least a hypothesized cause under a certain psychological model). This can be seen in <strong>?@fig-Construct</strong> where the edges are now oriented in the causal direction: from the construct to the indicator. The construct is now an intermediate point on the link from observation to claim.</p>
+<div class="cell" height="4">
+<div class="cell-output-display">
+<div id="fig-Context" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 317.43 188.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)"> <polygon fill="white" stroke="transparent" points="-4,4 -4,-184 313.43,-184 313.43,4 -4,4"></polygon> <!-- claim1 --> <g id="node1" class="node">
+<title>
+claim1
+</title>
+<polygon fill="none" stroke="black" points="108.43,-180 50.99,-180 50.99,-144 108.43,-144 108.43,-180"></polygon> <text text-anchor="middle" x="79.71" y="-157.8" font-family="Times,serif" font-size="14.00">Claim1</text> </g> <!-- claim2 --> <g id="node2" class="node">
+<title>
+claim2
+</title>
+<polygon fill="none" stroke="black" points="183.43,-180 125.99,-180 125.99,-144 183.43,-144 183.43,-180"></polygon> <text text-anchor="middle" x="154.71" y="-157.8" font-family="Times,serif" font-size="14.00">Claim2</text> </g> <!-- claim1&#45;&gt;claim2 --> <!-- claim3 --> <g id="node3" class="node">
+<title>
+claim3
+</title>
+<polygon fill="none" stroke="black" points="258.43,-180 200.99,-180 200.99,-144 258.43,-144 258.43,-180"></polygon> <text text-anchor="middle" x="229.71" y="-157.8" font-family="Times,serif" font-size="14.00">Claim3</text> </g> <!-- claim2&#45;&gt;claim3 --> <!-- const --> <g id="node4" class="node">
+<title>
+const
+</title>
+<polygon fill="none" stroke="black" points="190.16,-108 119.27,-108 119.27,-72 190.16,-72 190.16,-108"></polygon> <text text-anchor="middle" x="154.71" y="-85.8" font-family="Times,serif" font-size="14.00">Construct</text> </g> <!-- const&#45;&gt;claim1 --> <g id="edge3" class="edge">
+<title>
+const-&gt;claim1
+</title>
+<path fill="none" stroke="black" d="M136.17,-108.3C126.91,-116.95 115.55,-127.55 105.46,-136.97"></path> <polygon fill="black" stroke="black" points="102.96,-134.51 98.04,-143.9 107.74,-139.63 102.96,-134.51"></polygon> </g> <!-- const&#45;&gt;claim2 --> <g id="edge4" class="edge">
+<title>
+const-&gt;claim2
+</title>
+<path fill="none" stroke="black" d="M154.71,-108.3C154.71,-116.02 154.71,-125.29 154.71,-133.89"></path> <polygon fill="black" stroke="black" points="151.21,-133.9 154.71,-143.9 158.21,-133.9 151.21,-133.9"></polygon> </g> <!-- const&#45;&gt;claim3 --> <g id="edge5" class="edge">
+<title>
+const-&gt;claim3
+</title>
+<path fill="none" stroke="black" d="M173.25,-108.3C182.52,-116.95 193.88,-127.55 203.97,-136.97"></path> <polygon fill="black" stroke="black" points="201.69,-139.63 211.39,-143.9 206.47,-134.51 201.69,-139.63"></polygon> </g> <!-- data1 --> <g id="node5" class="node">
+<title>
+data1
+</title>
+<polygon fill="none" stroke="black" points="91.64,-36 -0.21,-36 -0.21,0 91.64,0 91.64,-36"></polygon> <text text-anchor="middle" x="45.71" y="-13.8" font-family="Times,serif" font-size="14.00">Observation1</text> </g> <!-- const&#45;&gt;data1 --> <g id="edge8" class="edge">
+<title>
+const-&gt;data1
+</title>
+<path fill="none" stroke="black" d="M127.95,-71.81C113.81,-62.73 96.28,-51.47 81.04,-41.69"></path> <polygon fill="black" stroke="black" points="82.68,-38.58 72.38,-36.12 78.9,-44.47 82.68,-38.58"></polygon> </g> <!-- data2 --> <g id="node6" class="node">
+<title>
+data2
+</title>
+<polygon fill="none" stroke="black" points="200.64,-36 108.79,-36 108.79,0 200.64,0 200.64,-36"></polygon> <text text-anchor="middle" x="154.71" y="-13.8" font-family="Times,serif" font-size="14.00">Observation2</text> </g> <!-- const&#45;&gt;data2 --> <g id="edge9" class="edge">
+<title>
+const-&gt;data2
+</title>
+<path fill="none" stroke="black" d="M154.71,-71.9C154.71,-64.21 154.71,-54.95 154.71,-46.33"></path> <polygon fill="black" stroke="black" points="158.21,-46.3 154.71,-36.3 151.21,-46.3 158.21,-46.3"></polygon> </g> <!-- data3 --> <g id="node7" class="node">
+<title>
+data3
+</title>
+<polygon fill="none" stroke="black" points="309.64,-36 217.79,-36 217.79,0 309.64,0 309.64,-36"></polygon> <text text-anchor="middle" x="263.71" y="-13.8" font-family="Times,serif" font-size="14.00">Observation3</text> </g> <!-- const&#45;&gt;data3 --> <g id="edge10" class="edge">
+<title>
+const-&gt;data3
+</title>
+<path fill="none" stroke="black" d="M181.48,-71.81C195.62,-62.73 213.15,-51.47 228.39,-41.69"></path> <polygon fill="black" stroke="black" points="230.53,-44.47 237.05,-36.12 226.74,-38.58 230.53,-44.47"></polygon> </g> <!-- data1&#45;&gt;data2 --> <!-- data2&#45;&gt;data3 --> </g>
+</svg>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;2: A Toulmin Diagram with context added.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="contexts" class="level1">
+<h1>Contexts</h1>
+<section id="contexts-and-situtations" class="level2">
+<h2 class="anchored" data-anchor-id="contexts-and-situtations">Contexts and Situtations</h2>
+</section>
+<section id="adding-contexts-to-the-toulmin-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="adding-contexts-to-the-toulmin-diagram">Adding Contexts to the Toulmin Diagram</h2>
+<p>Every task, both the ones corresponding to claims and those corresponding to observations, has a <em>context</em> (<strong>?@sec-Context</strong>). Figure <a href="#fig-ToulminC">Figure&nbsp;3</a> augments the previous figure with an indication of the contexts associated with both the observation and the claim. The claim is often associated with a set of contexts (denoted _Context*_ in the diagram) which are usually distinct from the context of the observation (denoted <em>Context</em>) which is usually a single context or a subset of the full range of contexts.</p>
+<div class="cell" height="4">
+<div class="cell-output-display">
+<div id="fig-ToulminC" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 199.41 413.60" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 409.6)"> <polygon fill="white" stroke="transparent" points="-4,4 -4,-409.6 195.41,-409.6 195.41,4 -4,4"></polygon> <g id="clust7" class="cluster">
+<title>
+cluster_O
+</title>
+<path fill="none" stroke="black" d="M30.43,-8C30.43,-8 146.43,-8 146.43,-8 152.43,-8 158.43,-14 158.43,-20 158.43,-20 158.43,-72.8 158.43,-72.8 158.43,-78.8 152.43,-84.8 146.43,-84.8 146.43,-84.8 30.43,-84.8 30.43,-84.8 24.43,-84.8 18.43,-78.8 18.43,-72.8 18.43,-72.8 18.43,-20 18.43,-20 18.43,-14 24.43,-8 30.43,-8"></path> <text text-anchor="middle" x="88.43" y="-16.2" font-family="Times,serif" font-size="14.00">Context</text> </g> <g id="clust1" class="cluster">
+<title>
+cluster_C
+</title>
+<path fill="none" stroke="black" d="M44.43,-320.8C44.43,-320.8 130.43,-320.8 130.43,-320.8 136.43,-320.8 142.43,-326.8 142.43,-332.8 142.43,-332.8 142.43,-385.6 142.43,-385.6 142.43,-391.6 136.43,-397.6 130.43,-397.6 130.43,-397.6 44.43,-397.6 44.43,-397.6 38.43,-397.6 32.43,-391.6 32.43,-385.6 32.43,-385.6 32.43,-332.8 32.43,-332.8 32.43,-326.8 38.43,-320.8 44.43,-320.8"></path> <text text-anchor="middle" x="87.43" y="-381" font-family="Times,serif" font-size="14.00">Context*</text> </g> <!-- claim --> <g id="node1" class="node">
+<title>
+claim
+</title>
+<polygon fill="none" stroke="black" points="114.43,-364.8 60.43,-364.8 60.43,-328.8 114.43,-328.8 114.43,-364.8"></polygon> <text text-anchor="middle" x="87.43" y="-342.6" font-family="Times,serif" font-size="14.00">Claim</text> </g> <!-- spacer2 --> <!-- claim&#45;&gt;spacer2 --> <!-- spacer1 --> <!-- spacer1&#45;&gt;claim --> <!-- warrant1 --> <g id="node4" class="node">
+<title>
+warrant1
+</title>
+<polygon fill="none" stroke="black" points="68.78,-292.8 0.07,-292.8 0.07,-256.8 68.78,-256.8 68.78,-292.8"></polygon> <text text-anchor="middle" x="34.43" y="-270.6" font-family="Times,serif" font-size="14.00">Warrant*</text> </g> <!-- spacer1&#45;&gt;warrant1 --> <!-- alt1 --> <g id="node5" class="node">
+<title>
+alt1
+</title>
+<polygon fill="none" stroke="black" points="191.4,-292.8 105.46,-292.8 105.46,-256.8 191.4,-256.8 191.4,-292.8"></polygon> <text text-anchor="middle" x="148.43" y="-270.6" font-family="Times,serif" font-size="14.00">Alternative*</text> </g> <!-- spacer2&#45;&gt;alt1 --> <!-- junction1 --> <!-- warrant1&#45;&gt;junction1 --> <g id="edge3" class="edge">
+<title>
+warrant1-&gt;junction1
+</title>
+<path fill="none" stroke="black" d="M68.79,-274.8C71.43,-274.8 74.06,-274.8 76.69,-274.8"></path> <polygon fill="black" stroke="black" points="76.85,-278.3 86.85,-274.8 76.85,-271.3 76.85,-278.3"></polygon> </g> <!-- spacerM1 --> <!-- warrant1&#45;&gt;spacerM1 --> <!-- spacerM2 --> <!-- alt1&#45;&gt;spacerM2 --> <!-- junction1&#45;&gt;claim --> <g id="edge22" class="edge">
+<title>
+junction1-&gt;claim
+</title>
+<path fill="none" stroke="black" d="M87.43,-275.89C87.43,-277.49 87.43,-299.55 87.43,-318.46"></path> <polygon fill="black" stroke="black" points="83.93,-318.5 87.43,-328.5 90.93,-318.5 83.93,-318.5"></polygon> </g> <!-- junction1&#45;&gt;alt1 --> <g id="edge4" class="edge">
+<title>
+junction1-&gt;alt1
+</title>
+<path fill="none" stroke="black" d="M98.41,-274.8C100.7,-274.8 102.98,-274.8 105.27,-274.8"></path> <polygon fill="black" stroke="black" points="98.38,-271.3 88.38,-274.8 98.38,-278.3 98.38,-271.3"></polygon> </g> <!-- const --> <g id="node7" class="node">
+<title>
+const
+</title>
+<polygon fill="none" stroke="black" points="123.87,-220.8 52.98,-220.8 52.98,-184.8 123.87,-184.8 123.87,-220.8"></polygon> <text text-anchor="middle" x="88.43" y="-198.6" font-family="Times,serif" font-size="14.00">Construct</text> </g> <!-- const&#45;&gt;junction1 --> <g id="edge21" class="edge">
+<title>
+const-&gt;junction1
+</title>
+<path fill="none" stroke="black" d="M88.18,-220.99C87.89,-241.24 87.45,-272.33 87.43,-273.75"></path> </g> <!-- const&#45;&gt;spacerM2 --> <!-- spacerM1&#45;&gt;const --> <!-- warrant2 --> <g id="node10" class="node">
+<title>
+warrant2
+</title>
+<polygon fill="none" stroke="black" points="65.28,-148.8 3.57,-148.8 3.57,-112.8 65.28,-112.8 65.28,-148.8"></polygon> <text text-anchor="middle" x="34.43" y="-126.6" font-family="Times,serif" font-size="14.00">Warrant</text> </g> <!-- spacerM1&#45;&gt;warrant2 --> <!-- alt2 --> <g id="node11" class="node">
+<title>
+alt2
+</title>
+<polygon fill="none" stroke="black" points="186.9,-148.8 107.96,-148.8 107.96,-112.8 186.9,-112.8 186.9,-148.8"></polygon> <text text-anchor="middle" x="147.43" y="-126.6" font-family="Times,serif" font-size="14.00">Alternative</text> </g> <!-- spacerM2&#45;&gt;alt2 --> <!-- junction2 --> <!-- warrant2&#45;&gt;junction2 --> <g id="edge7" class="edge">
+<title>
+warrant2-&gt;junction2
+</title>
+<path fill="none" stroke="black" d="M65.65,-130.8C69.67,-130.8 73.69,-130.8 77.72,-130.8"></path> <polygon fill="black" stroke="black" points="77.72,-134.3 87.72,-130.8 77.72,-127.3 77.72,-134.3"></polygon> </g> <!-- spacer3 --> <!-- warrant2&#45;&gt;spacer3 --> <!-- spacer4 --> <!-- alt2&#45;&gt;spacer4 --> <!-- junction2&#45;&gt;const --> <g id="edge20" class="edge">
+<title>
+junction2-&gt;const
+</title>
+<path fill="none" stroke="black" d="M88.43,-131.89C88.43,-133.79 88.43,-164.42 88.43,-184.5"></path> </g> <!-- junction2&#45;&gt;alt2 --> <g id="edge8" class="edge">
+<title>
+junction2-&gt;alt2
+</title>
+<path fill="none" stroke="black" d="M99.52,-130.8C102.33,-130.8 105.14,-130.8 107.95,-130.8"></path> <polygon fill="black" stroke="black" points="99.35,-127.3 89.35,-130.8 99.35,-134.3 99.35,-127.3"></polygon> </g> <!-- data --> <g id="node13" class="node">
+<title>
+data
+</title>
+<polygon fill="none" stroke="black" points="130.86,-76.8 46,-76.8 46,-40.8 130.86,-40.8 130.86,-76.8"></polygon> <text text-anchor="middle" x="88.43" y="-54.6" font-family="Times,serif" font-size="14.00">Observation</text> </g> <!-- data&#45;&gt;junction2 --> <g id="edge19" class="edge">
+<title>
+data-&gt;junction2
+</title>
+<path fill="none" stroke="black" d="M88.43,-87.12C88.43,-106.23 88.43,-128.55 88.43,-129.75"></path> <polygon fill="black" stroke="black" points="91.93,-86.99 88.43,-76.99 84.93,-86.99 91.93,-86.99"></polygon> </g> <!-- data&#45;&gt;spacer4 --> <!-- spacer3&#45;&gt;data --> </g>
+</svg>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;3: Toulmin diagram with added context.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Returning to the job candidate, the context for the cover letter includes the feature that the candidate can ask for assistance in writing the letter. The question then becomes is that sufficiently similar to the task in the claim. In particular, if it is expected that the future correspondence produced by the candidate will be reviewed and that the candidate can request assistance when needed, it might be. If the job expectation is that the candidate can produce the correspondence without assistance, it might not be.</p>
+<p>Reasoning about the relationship between <em>Context</em> and _Context*_ is thus key to any assessment argument. However, in practice a single task is seldom used as the complete assessment argument. Instead, there must be an assessment <em>plan</em> (<strong>?@sec-Plan</strong>) which asks the candidate to perform a collection of different tasks, with differing contexts. This collection must provide a sufficient span of the _Context*_ space, that the observations will provide sufficient support for the claim.</p>
+<p>The context feature used in the example, the candidate has access to help in writing the cover letter, is related to the alternative in the model. In particular, if the context was restricted (say to a proctored environment) then the alternative related to help would no longer be active, and the letter would provide stronger evidence. Thus, the context under which the observation is made influences both the warrant and the alternative. This is shown in <a href="#fig-ToulminCC">Figure&nbsp;4</a>.</p>
+<div class="cell" height="4">
+<div class="cell-output-display">
+<div id="fig-ToulminCC" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 199.41 413.60" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 409.6)"> <polygon fill="white" stroke="transparent" points="-4,4 -4,-409.6 195.41,-409.6 195.41,4 -4,4"></polygon> <g id="clust7" class="cluster">
+<title>
+cluster_O
+</title>
+<path fill="none" stroke="black" d="M30.43,-8C30.43,-8 146.43,-8 146.43,-8 152.43,-8 158.43,-14 158.43,-20 158.43,-20 158.43,-72.8 158.43,-72.8 158.43,-78.8 152.43,-84.8 146.43,-84.8 146.43,-84.8 30.43,-84.8 30.43,-84.8 24.43,-84.8 18.43,-78.8 18.43,-72.8 18.43,-72.8 18.43,-20 18.43,-20 18.43,-14 24.43,-8 30.43,-8"></path> <text text-anchor="middle" x="88.43" y="-16.2" font-family="Times,serif" font-size="14.00">Context</text> </g> <g id="clust1" class="cluster">
+<title>
+cluster_C
+</title>
+<path fill="none" stroke="black" d="M44.43,-320.8C44.43,-320.8 130.43,-320.8 130.43,-320.8 136.43,-320.8 142.43,-326.8 142.43,-332.8 142.43,-332.8 142.43,-385.6 142.43,-385.6 142.43,-391.6 136.43,-397.6 130.43,-397.6 130.43,-397.6 44.43,-397.6 44.43,-397.6 38.43,-397.6 32.43,-391.6 32.43,-385.6 32.43,-385.6 32.43,-332.8 32.43,-332.8 32.43,-326.8 38.43,-320.8 44.43,-320.8"></path> <text text-anchor="middle" x="87.43" y="-381" font-family="Times,serif" font-size="14.00">Context*</text> </g> <!-- claim --> <g id="node1" class="node">
+<title>
+claim
+</title>
+<polygon fill="none" stroke="black" points="114.43,-364.8 60.43,-364.8 60.43,-328.8 114.43,-328.8 114.43,-364.8"></polygon> <text text-anchor="middle" x="87.43" y="-342.6" font-family="Times,serif" font-size="14.00">Claim</text> </g> <!-- spacer2 --> <!-- claim&#45;&gt;spacer2 --> <!-- spacer1 --> <!-- spacer1&#45;&gt;claim --> <!-- warrant1 --> <g id="node4" class="node">
+<title>
+warrant1
+</title>
+<polygon fill="none" stroke="black" points="68.78,-292.8 0.07,-292.8 0.07,-256.8 68.78,-256.8 68.78,-292.8"></polygon> <text text-anchor="middle" x="34.43" y="-270.6" font-family="Times,serif" font-size="14.00">Warrant*</text> </g> <!-- spacer1&#45;&gt;warrant1 --> <g id="edge14" class="edge">
+<title>
+spacer1-&gt;warrant1
+</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M38.93,-320.8C38.35,-315.07 37.74,-308.95 37.16,-303.12"></path> <polygon fill="black" stroke="black" points="40.62,-302.59 36.15,-292.99 33.66,-303.29 40.62,-302.59"></polygon> </g> <!-- alt1 --> <g id="node5" class="node">
+<title>
+alt1
+</title>
+<polygon fill="none" stroke="black" points="191.4,-292.8 105.46,-292.8 105.46,-256.8 191.4,-256.8 191.4,-292.8"></polygon> <text text-anchor="middle" x="148.43" y="-270.6" font-family="Times,serif" font-size="14.00">Alternative*</text> </g> <!-- spacer2&#45;&gt;alt1 --> <g id="edge18" class="edge">
+<title>
+spacer2-&gt;alt1
+</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M138.78,-320.8C140.03,-314.98 141.36,-308.76 142.63,-302.86"></path> <polygon fill="black" stroke="black" points="146.07,-303.5 144.74,-292.99 139.23,-302.04 146.07,-303.5"></polygon> </g> <!-- junction1 --> <!-- warrant1&#45;&gt;junction1 --> <g id="edge3" class="edge">
+<title>
+warrant1-&gt;junction1
+</title>
+<path fill="none" stroke="black" d="M68.79,-274.8C71.43,-274.8 74.06,-274.8 76.69,-274.8"></path> <polygon fill="black" stroke="black" points="76.85,-278.3 86.85,-274.8 76.85,-271.3 76.85,-278.3"></polygon> </g> <!-- spacerM1 --> <!-- warrant1&#45;&gt;spacerM1 --> <!-- spacerM2 --> <!-- alt1&#45;&gt;spacerM2 --> <!-- junction1&#45;&gt;claim --> <g id="edge22" class="edge">
+<title>
+junction1-&gt;claim
+</title>
+<path fill="none" stroke="black" d="M87.43,-275.89C87.43,-277.49 87.43,-299.55 87.43,-318.46"></path> <polygon fill="black" stroke="black" points="83.93,-318.5 87.43,-328.5 90.93,-318.5 83.93,-318.5"></polygon> </g> <!-- junction1&#45;&gt;alt1 --> <g id="edge4" class="edge">
+<title>
+junction1-&gt;alt1
+</title>
+<path fill="none" stroke="black" d="M98.41,-274.8C100.7,-274.8 102.98,-274.8 105.27,-274.8"></path> <polygon fill="black" stroke="black" points="98.38,-271.3 88.38,-274.8 98.38,-278.3 98.38,-271.3"></polygon> </g> <!-- const --> <g id="node7" class="node">
+<title>
+const
+</title>
+<polygon fill="none" stroke="black" points="123.87,-220.8 52.98,-220.8 52.98,-184.8 123.87,-184.8 123.87,-220.8"></polygon> <text text-anchor="middle" x="88.43" y="-198.6" font-family="Times,serif" font-size="14.00">Construct</text> </g> <!-- const&#45;&gt;junction1 --> <g id="edge21" class="edge">
+<title>
+const-&gt;junction1
+</title>
+<path fill="none" stroke="black" d="M88.18,-220.99C87.89,-241.24 87.45,-272.33 87.43,-273.75"></path> </g> <!-- const&#45;&gt;spacerM2 --> <!-- spacerM1&#45;&gt;const --> <!-- warrant2 --> <g id="node10" class="node">
+<title>
+warrant2
+</title>
+<polygon fill="none" stroke="black" points="65.28,-148.8 3.57,-148.8 3.57,-112.8 65.28,-112.8 65.28,-148.8"></polygon> <text text-anchor="middle" x="34.43" y="-126.6" font-family="Times,serif" font-size="14.00">Warrant</text> </g> <!-- spacerM1&#45;&gt;warrant2 --> <!-- alt2 --> <g id="node11" class="node">
+<title>
+alt2
+</title>
+<polygon fill="none" stroke="black" points="186.9,-148.8 107.96,-148.8 107.96,-112.8 186.9,-112.8 186.9,-148.8"></polygon> <text text-anchor="middle" x="147.43" y="-126.6" font-family="Times,serif" font-size="14.00">Alternative</text> </g> <!-- spacerM2&#45;&gt;alt2 --> <!-- junction2 --> <!-- warrant2&#45;&gt;junction2 --> <g id="edge7" class="edge">
+<title>
+warrant2-&gt;junction2
+</title>
+<path fill="none" stroke="black" d="M65.65,-130.8C69.67,-130.8 73.69,-130.8 77.72,-130.8"></path> <polygon fill="black" stroke="black" points="77.72,-134.3 87.72,-130.8 77.72,-127.3 77.72,-134.3"></polygon> </g> <!-- spacer3 --> <!-- warrant2&#45;&gt;spacer3 --> <g id="edge11" class="edge">
+<title>
+warrant2-&gt;spacer3
+</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M31.69,-102.46C31.11,-96.64 30.5,-90.52 29.93,-84.8"></path> <polygon fill="black" stroke="black" points="28.22,-102.89 32.7,-112.5 35.18,-102.2 28.22,-102.89"></polygon> </g> <!-- spacer4 --> <!-- alt2&#45;&gt;spacer4 --> <g id="edge15" class="edge">
+<title>
+alt2-&gt;spacer4
+</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M148.21,-102.46C148.38,-96.64 148.55,-90.52 148.71,-84.8"></path> <polygon fill="black" stroke="black" points="144.71,-102.4 147.92,-112.5 151.71,-102.6 144.71,-102.4"></polygon> </g> <!-- junction2&#45;&gt;const --> <g id="edge20" class="edge">
+<title>
+junction2-&gt;const
+</title>
+<path fill="none" stroke="black" d="M88.43,-131.89C88.43,-133.79 88.43,-164.42 88.43,-184.5"></path> </g> <!-- junction2&#45;&gt;alt2 --> <g id="edge8" class="edge">
+<title>
+junction2-&gt;alt2
+</title>
+<path fill="none" stroke="black" d="M99.52,-130.8C102.33,-130.8 105.14,-130.8 107.95,-130.8"></path> <polygon fill="black" stroke="black" points="99.35,-127.3 89.35,-130.8 99.35,-134.3 99.35,-127.3"></polygon> </g> <!-- data --> <g id="node13" class="node">
+<title>
+data
+</title>
+<polygon fill="none" stroke="black" points="130.86,-76.8 46,-76.8 46,-40.8 130.86,-40.8 130.86,-76.8"></polygon> <text text-anchor="middle" x="88.43" y="-54.6" font-family="Times,serif" font-size="14.00">Observation</text> </g> <!-- data&#45;&gt;junction2 --> <g id="edge19" class="edge">
+<title>
+data-&gt;junction2
+</title>
+<path fill="none" stroke="black" d="M88.43,-87.12C88.43,-106.23 88.43,-128.55 88.43,-129.75"></path> <polygon fill="black" stroke="black" points="91.93,-86.99 88.43,-76.99 84.93,-86.99 91.93,-86.99"></polygon> </g> <!-- data&#45;&gt;spacer4 --> <!-- spacer3&#45;&gt;data --> </g>
+</svg>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;4: Toulmin diagram with retricted context.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Contexts are complex entities. It is clear than there are hierarchical relationships as well as non-hierarchical ones. In fact, every domain has an ontology of contexts that are considered interesting (at least for the target population). <strong>?@sec-Context</strong> develops the notion of the ontology of contexts. It is also true that the context might change in the middle of an activity (especially if the activity is long and complex with many parts). Also, contexts will largely determine the features of tasks, particularly the ones used to manipulate the evidentiary focus of the task (<strong>?@sec-Activity</strong>).</p>
+</section>
+</section>
+<section id="logical-reasoning" class="level1">
+<h1>Logical Reasoning</h1>
+<p><strong>?@fig-Construct</strong> is a reframing of the basic validity argument of an assessment. On the basis of a collection of observations, the examiner produces a score, which is a measure of the strength of evidence for the proposition that the examinee possess the central construct of the assessment. On the basis of the subsequent beliefs about the examinee projecting the construct, the score user can then establish beliefs about whether or not the claims will hold. (Note that different score users might assign different degrees of importance to different claims and hence have different values for the validity of the assessment). Documenting the warrants and alternatives for the relationships between constructs and both observations and claims is central to documenting the validity argument.</p>
+<p>The introduction of the construct into the argument is important for two reasons. One is that the construct is a shorthand for a collection of claims or observations, and hence assessment designers can concentrate on only the top or bottom half of <a href="#fig-ToulminC">Figure&nbsp;3</a> and <a href="#fig-ToulminCC">Figure&nbsp;4</a>. The second is that the construct is a hypothesized cause. Thus the relationships of construct to claim and construct to observable are both causal ones. Humans are often much better at reasoning in the causal direction.</p>
+<p>The philosopher Charles S. Pierce discusses three different types of logical reasoning: deduction, abduction, and induction. All three play a role in building a validity argument.</p>
+<section id="sec-Deduction" class="level2">
+<h2 class="anchored" data-anchor-id="sec-Deduction">Deduction</h2>
+<p>Deduction deals with logical rules of the form <em>If A then B.</em> If this rule is believed to be true, and <em>x</em> is an <em>A</em>, then it can be logically deduced that <em>x</em> is also a <em>B</em>. In the case of an assessment argument, <em>x</em> is the candidate, <em>A</em> the proposition that the candidate possesses the construct, and <em>B</em> an observation or a claim. Therefore, deduction is following the path of causal reasoning.</p>
+<p>Often modal adverbs (e.g., <em>always</em>, <em>usually</em>, <em>sometimes</em>, <em>never</em>) are applied to the claim. This is probably useful in many problems, but the modal adverbs themselves need precise definitions. How is <em>usually</em> defined in the context of a particular problem. In some cases, it could be represented with a probability, but in other cases, it may refer to some contexts in which the candidate is likely to be successful and other, more difficult, contexts in which the candidate is not likely to be successful.</p>
+</section>
+<section id="sec-Abduction" class="level2">
+<h2 class="anchored" data-anchor-id="sec-Abduction">Abduction</h2>
+</section>
+<section id="sec-Induction" class="level2">
+<h2 class="anchored" data-anchor-id="sec-Induction">Induction</h2>
+</section>
+</section>
+<section id="validity-arguments" class="level1">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Validity Arguments</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-bninea" class="csl-entry" role="listitem">
+Almond, R. G., Mislevy, R. J., Steinberg, L. S., Williamson, D. M., &amp; Yan, D. (2015). <em>Bayesian <span>Networks</span> in <span>Educational Assessment</span></em>. <span>Springer New York</span>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="ralmond/ReECD" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

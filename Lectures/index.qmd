@@ -1,0 +1,8 @@
+---
+title: "Lecture Index"
+author: "Russell Almond"
+---
+
+Lecture notes should be in sidebar.
+
+This page may eventually get non-trivial content.
