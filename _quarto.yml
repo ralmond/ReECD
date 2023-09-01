@@ -67,8 +67,6 @@ website:
           file: Book/variables.qmd
         - text: "Tasks"
           file: Book/tasks.qmd
-        - text: "Observations"
-          file: Book/observations.qmd
         - text: "Rules of Evidence"
           file: Book/evidenceRules.qmd
         - text: "Marks and Feedback"
