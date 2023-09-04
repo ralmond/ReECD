@@ -36,13 +36,56 @@ A _task_ is a way of creating a _situation_ in which _we_ can make an _observati
 -   **Alternative:** The candidate may have had help writing or
     correcting the letter.
 
-# Variables, Indicators and Context Features {#sec-Variables}
+# Task and Task Features Features {#sec-Variables}
+
+A task is a sequence of actions a subject performs in pursuit of a goal.
+
+A task, particularly in an assessment, has a number of parts:
+
+* _Prompt_ -- Statement of the goals of the task
+  - Explicit prompt (what is written down or said)
+  - Implicit prompt (instructions subject is assumed to know)
+  - Rubric -- set of instructions
+  - Scoring Rubric -- information about how task is awarded points
+
+* _Resources_ 
+  - Content
+  - Tools
+  - Collaborators
+  - Internal (subject's experiences and memory)
+  
+* _Work Product and Process_ (WPP)
+  - Work product is what is produced
+    - selection
+    - Document
+    - Simulator state
+  - Work process is series of steps taken to reach goal
+    - Log file
+    - Audio/video transcript
+    
+  
+## Feature and observable variables
+
+A _task feature_ is a variable that describes some aspect of a task prompt or resources.
+
+An _observable variable_ (_indicator_, _observable_) is a variable that describes the
+realized work product or process.
+
+### Variable Trichotomy
 
 There are three aspects to a variable definition:
 
 * _Domain_:  possible values variable could take on.
 * _Value_: the value it takes a particular situation
 * _Evaluator_:  a rule or procedure for determining its value.
+
+### Clarity Test
+
+A variable passes the clarity test if running the evaluator in a particular situation
+produces an unambiguous result [@HowardMatheson1981].
+
+_Latent variables_ are variables that don't pass the clarity test.  Their value must 
+be inferred from observations.
 
 ## Situational variables
 
@@ -77,30 +120,146 @@ There are three aspects to a variable definition:
  
  - Some contexts are nested within others.
 
-## Indicators {#sec-Indicators}
+## Observables (Indicators) and Claims
 
-Indicators are features of the outcome (work product or process) of a task.
+Observables or indicators are features of the outcome (work product or process) of a task.
 
 What _subject_ did, wrote, said, indicated, &c
 
+An _observation_ is a realized observable, usually in a particular situation.
+
+A _claim_ is a prediction about a future observation, in a _context_ (set of possible situations).
+
+
 # Constructs
 
-## Contexts and Claims
+A _construct_ is a latent variable associated with a collection of related claims.
 
-## Construct in the Toulmin diagram
+  * Skill in academic construct
+  
+  * Latent trait or state
+  
+  * Psychological syndrome
+  
+Different levels of the construct are associated with different claims.
+
+_Russell's Rule_
+| For different levels of the construct to be identifiable, there must be at 
+| least one different claim associated with each level.  
+
+## Assessments
+
+An _assessment_ is a series of assigned tasks, whose observation will be used to assign a
+value to a construct.
+
+Generally, the _context_ in an assessment is constrained.
 
 ![Construct Diagram](../img/ToulminConstruct.png)
 
-## Contexts and situations
+## Contexts and Situtaions with Constructs
+
+Let _context_ be the constrained context of the assessment.
+
+Let _context*_ be the less constrained context of the claim.
+
 
 ![Toulmin Diagram with Contexts](../img/ToulminCC.png)
 
 # Logical Reasoning
 
+* Hypothesis:  $H$ -- construct is within a certain set of values
+  - $\overline{H}$ -- negation of hypothesis
+  
+* $C_1, C_2, \ldots$ -- claims
+
+* $E_1, E_2, \ldots$ -- observations.
+
 ## Deduction
+
+$ H \rightarrow E$
+
+Often add probability, so  $P(E|H) \ge P(E|\overline{H})$
+
+_Weight of Evidence_
+$$ WOE(H\mathord{:}E) = \log { \frac{\Pr (E |H)}{\Pr (E | \overline H )} }
+= \log { \frac{\Pr (H | E)}{\Pr (\overline H | E)} } -
+\log { \frac{\Pr (H )}{\Pr (\overline H )} } $$
+
+### Radicals and incidentals
+
+Let $Z$ be a feature variable, and $z_1$ and $z_2$ two possible values.
+
+A feature variable is _radical_ if $P(E|H,Z=z_1) \ne P(E|H,Z=z_2)$ or
+ $P(E|\overline{H},Z=z_1) \ne P(E|\overline{H},Z=z_2)$
+
+A feature variable is _incidental_ if it is not radical.  It is approximately incidental
+if the probability of the $z_2$ value is low.
 
 ## Abduction
 
+$ H \leftarrow E$
+
+Reversing the arrow can be done with Bayes Rule
+
+$$ P(H|E) = \frac{P(E|H)P(H)}{P(E)} = \frac{P(E|H)P(H)}{P(E|H)P(H) + 
+P(E|\overline{H})P(\overline{H})} $$
+
+Often not enough evidence from single observation to make good prediction.
+
+There is dependence on the _base rate_ $P(H)$.
+
 ## Induction
 
+Repeated observation indicates the claim holds.
+
+* Sun rises every morning, so sun will rise tomorrow.
+* Every swan I've seen is white, so all swans are white:
+
+![Black swan I saw in Australia](../img/BlackSwan.jpg)
+
+Sample of situations in assessment must be a representative sample of the target Context*
+in the claim.
+
+
 # Validity Argument
+
+Use induction and abduction to go from observations to constructs.
+
+Use deduction to go from construct to claims.
+
+Need to be careful about which contexts are covered in the claims.
+
+
+## Sensitivity and Specificity
+
+$T$ -- test result indicates claim holds
+$C$ -- claim holds.
+
+Sensitivity:  $P(T|C)$
+
+Specificity: $P(\overline{T}|\overline{C})$
+
+[Wikipedia article](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+
+## False Positives and Negatives
+
+False positives and false negatives have different costs based on the use of the assessment.
+
+Need for sensitivity and specificity depends on use of the assessment.
+
+Can adjust cut score to trade sensitivity and specificity.
+
+_Receiver operating characteristic_ or _ROC curve_:
+
+![ROC Curve](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roccurves.png/220px-Roccurves.png)
+
+More area under curve means better assessment.
+
+Usually requires longer assessment.
+
+# Exercise
+
+Make a copy of this [Google sheet](https://docs.google.com/presentation/d/10kfZNKASq0kOsWO-PGq45Q3mH3k8QgvP5QgIxOeGLmc/edit?usp=sharing).
+
+Make your own Toulmin diagram, and share it with some colleagues.  
+
