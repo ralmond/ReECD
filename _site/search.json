@@ -410,21 +410,21 @@
     "href": "Lectures/L02-Argument.html#deduction",
     "title": "02 Assessment Argument",
     "section": "Deduction",
-    "text": "Deduction"
+    "text": "Deduction\n$ H E$\nOften add probability, so \\(P(E|H) \\ge P(E|\\overline{H})\\)\nWeight of Evidence \\[ WOE(H\\mathord{:}E) = \\log { \\frac{\\Pr (E |H)}{\\Pr (E | \\overline H )} }\n= \\log { \\frac{\\Pr (H | E)}{\\Pr (\\overline H | E)} } -\n\\log { \\frac{\\Pr (H )}{\\Pr (\\overline H )} } \\]\n\nRadicals and incidentals\nLet \\(Z\\) be a feature variable, and \\(z_1\\) and \\(z_2\\) two possible values.\nA feature variable is radical if \\(P(E|H,Z=z_1) \\ne P(E|H,Z=z_2)\\) or \\(P(E|\\overline{H},Z=z_1) \\ne P(E|\\overline{H},Z=z_2)\\)\nA feature variable is incidental if it is not radical. It is approximately incidental if the probability of the \\(z_2\\) value is low."
   },
   {
     "objectID": "Lectures/L02-Argument.html#abduction",
     "href": "Lectures/L02-Argument.html#abduction",
     "title": "02 Assessment Argument",
     "section": "Abduction",
-    "text": "Abduction"
+    "text": "Abduction\n$ H E$\nReversing the arrow can be done with Bayes Rule\n\\[ P(H|E) = \\frac{P(E|H)P(H)}{P(E)} = \\frac{P(E|H)P(H)}{P(E|H)P(H) +\nP(E|\\overline{H})P(\\overline{H})} \\]\nOften not enough evidence from single observation to make good prediction.\nThere is dependence on the base rate \\(P(H)\\)."
   },
   {
     "objectID": "Lectures/L02-Argument.html#induction",
     "href": "Lectures/L02-Argument.html#induction",
     "title": "02 Assessment Argument",
     "section": "Induction",
-    "text": "Induction"
+    "text": "Induction\nRepeated observation indicates the claim holds.\n\nSun rises every morning, so sun will rise tomorrow.\nEvery swan I’ve seen is white, so all swans are white:\n\n\n\n\nBlack swan I saw in Australia\n\n\nSample of situations in assessment must be a representative sample of the target Context* in the claim."
   },
   {
     "objectID": "Lectures/L15-Validity.html#concurrent-validity",
@@ -453,5 +453,47 @@
     "title": "References",
     "section": "",
     "text": "References\nNote: The references are also available via the Zotero EvidenceCenteredDesign group"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#feature-and-observable-variables",
+    "href": "Lectures/L02-Argument.html#feature-and-observable-variables",
+    "title": "02 Assessment Argument",
+    "section": "Feature and observable variables",
+    "text": "Feature and observable variables\nA task feature is a variable that describes some aspect of a task prompt or resources.\nAn observable variable (indicator, observable) is a variable that describes the realized work product or process.\n\nVariable Trichotomy\nThere are three aspects to a variable definition:\n\nDomain: possible values variable could take on.\nValue: the value it takes a particular situation\nEvaluator: a rule or procedure for determining its value.\n\n\n\nClarity Test\nA variable passes the clarity test if running the evaluator in a particular situation produces an unambiguous result (HowardMatheson1981?).\nLatent variables are variables that don’t pass the clarity test. Their value must be inferred from observations."
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#observables-indicators-and-claims",
+    "href": "Lectures/L02-Argument.html#observables-indicators-and-claims",
+    "title": "02 Assessment Argument",
+    "section": "Observables (Indicators) and Claims",
+    "text": "Observables (Indicators) and Claims\nObservables or indicators are features of the outcome (work product or process) of a task.\nWhat subject did, wrote, said, indicated, &c\nAn observation is a realized observable, usually in a particular situation.\nA claim is a prediction about a future observation, in a context (set of possible situations)."
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#assessments",
+    "href": "Lectures/L02-Argument.html#assessments",
+    "title": "02 Assessment Argument",
+    "section": "Assessments",
+    "text": "Assessments\nAn assessment is a series of assigned tasks, whose observation will be used to assign a value to a construct.\nGenerally, the context in an assessment is constrained.\n\n\n\nConstruct Diagram"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#contexts-and-situtaions-with-constructs",
+    "href": "Lectures/L02-Argument.html#contexts-and-situtaions-with-constructs",
+    "title": "02 Assessment Argument",
+    "section": "Contexts and Situtaions with Constructs",
+    "text": "Contexts and Situtaions with Constructs\nLet context be the constrained context of the assessment.\nLet _context*_ be the less constrained context of the claim.\n\n\n\nToulmin Diagram with Contexts"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#sensitivity-and-specificity",
+    "href": "Lectures/L02-Argument.html#sensitivity-and-specificity",
+    "title": "02 Assessment Argument",
+    "section": "Sensitivity and Specificity",
+    "text": "Sensitivity and Specificity\n\\(T\\) – test result indicates claim holds \\(C\\) – claim holds.\nSensitivity: \\(P(T|C)\\)\nSpecificity: \\(P(\\overline{T}|\\overline{C})\\)\nWikipedia article"
+  },
+  {
+    "objectID": "Lectures/L02-Argument.html#false-positives-and-negatives",
+    "href": "Lectures/L02-Argument.html#false-positives-and-negatives",
+    "title": "02 Assessment Argument",
+    "section": "False Positives and Negatives",
+    "text": "False Positives and Negatives\nFalse positives and false negatives have different costs based on the use of the assessment.\nNeed for sensitivity and specificity depends on use of the assessment.\nCan adjust cut score to trade sensitivity and specificity.\nReceiver operating characteristic or ROC curve:\n\n\n\nROC Curve\n\n\nMore area under curve means better assessment.\nUsually requires longer assessment."
   }
 ]

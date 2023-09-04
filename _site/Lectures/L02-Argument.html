@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,10 +55,13 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -273,12 +276,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Book/observations.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Observations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../Book/evidenceRules.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Rules of Evidence</span></a>
   </div>
@@ -335,25 +332,37 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
   </ul></li>
-  <li><a href="#sec-Variables" id="toc-sec-Variables" class="nav-link" data-scroll-target="#sec-Variables">Variables, Indicators and Context Features</a>
+  <li><a href="#sec-Variables" id="toc-sec-Variables" class="nav-link" data-scroll-target="#sec-Variables">Task and Task Features Features</a>
   <ul class="collapse">
+  <li><a href="#feature-and-observable-variables" id="toc-feature-and-observable-variables" class="nav-link" data-scroll-target="#feature-and-observable-variables">Feature and observable variables</a>
+  <ul class="collapse">
+  <li><a href="#variable-trichotomy" id="toc-variable-trichotomy" class="nav-link" data-scroll-target="#variable-trichotomy">Variable Trichotomy</a></li>
+  <li><a href="#clarity-test" id="toc-clarity-test" class="nav-link" data-scroll-target="#clarity-test">Clarity Test</a></li>
+  </ul></li>
   <li><a href="#situational-variables" id="toc-situational-variables" class="nav-link" data-scroll-target="#situational-variables">Situational variables</a></li>
   <li><a href="#situtations-and-contexts" id="toc-situtations-and-contexts" class="nav-link" data-scroll-target="#situtations-and-contexts">Situtations and Contexts</a></li>
-  <li><a href="#sec-Indicators" id="toc-sec-Indicators" class="nav-link" data-scroll-target="#sec-Indicators">Indicators</a></li>
+  <li><a href="#observables-indicators-and-claims" id="toc-observables-indicators-and-claims" class="nav-link" data-scroll-target="#observables-indicators-and-claims">Observables (Indicators) and Claims</a></li>
   </ul></li>
   <li><a href="#constructs" id="toc-constructs" class="nav-link" data-scroll-target="#constructs">Constructs</a>
   <ul class="collapse">
-  <li><a href="#contexts-and-claims" id="toc-contexts-and-claims" class="nav-link" data-scroll-target="#contexts-and-claims">Contexts and Claims</a></li>
-  <li><a href="#construct-in-the-toulmin-diagram" id="toc-construct-in-the-toulmin-diagram" class="nav-link" data-scroll-target="#construct-in-the-toulmin-diagram">Construct in the Toulmin diagram</a></li>
-  <li><a href="#contexts-and-situations" id="toc-contexts-and-situations" class="nav-link" data-scroll-target="#contexts-and-situations">Contexts and situations</a></li>
+  <li><a href="#assessments" id="toc-assessments" class="nav-link" data-scroll-target="#assessments">Assessments</a></li>
+  <li><a href="#contexts-and-situtaions-with-constructs" id="toc-contexts-and-situtaions-with-constructs" class="nav-link" data-scroll-target="#contexts-and-situtaions-with-constructs">Contexts and Situtaions with Constructs</a></li>
   </ul></li>
   <li><a href="#logical-reasoning" id="toc-logical-reasoning" class="nav-link" data-scroll-target="#logical-reasoning">Logical Reasoning</a>
   <ul class="collapse">
-  <li><a href="#deduction" id="toc-deduction" class="nav-link" data-scroll-target="#deduction">Deduction</a></li>
+  <li><a href="#deduction" id="toc-deduction" class="nav-link" data-scroll-target="#deduction">Deduction</a>
+  <ul class="collapse">
+  <li><a href="#radicals-and-incidentals" id="toc-radicals-and-incidentals" class="nav-link" data-scroll-target="#radicals-and-incidentals">Radicals and incidentals</a></li>
+  </ul></li>
   <li><a href="#abduction" id="toc-abduction" class="nav-link" data-scroll-target="#abduction">Abduction</a></li>
   <li><a href="#induction" id="toc-induction" class="nav-link" data-scroll-target="#induction">Induction</a></li>
   </ul></li>
-  <li><a href="#validity-argument" id="toc-validity-argument" class="nav-link" data-scroll-target="#validity-argument">Validity Argument</a></li>
+  <li><a href="#validity-argument" id="toc-validity-argument" class="nav-link" data-scroll-target="#validity-argument">Validity Argument</a>
+  <ul class="collapse">
+  <li><a href="#sensitivity-and-specificity" id="toc-sensitivity-and-specificity" class="nav-link" data-scroll-target="#sensitivity-and-specificity">Sensitivity and Specificity</a></li>
+  <li><a href="#false-positives-and-negatives" id="toc-false-positives-and-negatives" class="nav-link" data-scroll-target="#false-positives-and-negatives">False Positives and Negatives</a></li>
+  </ul></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise">Exercise</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="L02-Argument.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -405,13 +414,58 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="sec-Variables" class="level1">
-<h1>Variables, Indicators and Context Features</h1>
+<h1>Task and Task Features Features</h1>
+<p>A task is a sequence of actions a subject performs in pursuit of a goal.</p>
+<p>A task, particularly in an assessment, has a number of parts:</p>
+<ul>
+<li><em>Prompt</em> – Statement of the goals of the task
+<ul>
+<li>Explicit prompt (what is written down or said)</li>
+<li>Implicit prompt (instructions subject is assumed to know)</li>
+<li>Rubric – set of instructions</li>
+<li>Scoring Rubric – information about how task is awarded points</li>
+</ul></li>
+<li><em>Resources</em>
+<ul>
+<li>Content</li>
+<li>Tools</li>
+<li>Collaborators</li>
+<li>Internal (subject’s experiences and memory)</li>
+</ul></li>
+<li><em>Work Product and Process</em> (WPP)
+<ul>
+<li>Work product is what is produced
+<ul>
+<li>selection</li>
+<li>Document</li>
+<li>Simulator state</li>
+</ul></li>
+<li>Work process is series of steps taken to reach goal
+<ul>
+<li>Log file</li>
+<li>Audio/video transcript</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="feature-and-observable-variables" class="level2">
+<h2 class="anchored" data-anchor-id="feature-and-observable-variables">Feature and observable variables</h2>
+<p>A <em>task feature</em> is a variable that describes some aspect of a task prompt or resources.</p>
+<p>An <em>observable variable</em> (<em>indicator</em>, <em>observable</em>) is a variable that describes the realized work product or process.</p>
+<section id="variable-trichotomy" class="level3">
+<h3 class="anchored" data-anchor-id="variable-trichotomy">Variable Trichotomy</h3>
 <p>There are three aspects to a variable definition:</p>
 <ul>
 <li><em>Domain</em>: possible values variable could take on.</li>
 <li><em>Value</em>: the value it takes a particular situation</li>
 <li><em>Evaluator</em>: a rule or procedure for determining its value.</li>
 </ul>
+</section>
+<section id="clarity-test" class="level3">
+<h3 class="anchored" data-anchor-id="clarity-test">Clarity Test</h3>
+<p>A variable passes the clarity test if running the evaluator in a particular situation produces an unambiguous result <span class="citation" data-cites="HowardMatheson1981">(<a href="#ref-HowardMatheson1981" role="doc-biblioref"><strong>HowardMatheson1981?</strong></a>)</span>.</p>
+<p><em>Latent variables</em> are variables that don’t pass the clarity test. Their value must be inferred from observations.</p>
+</section>
+</section>
 <section id="situational-variables" class="level2">
 <h2 class="anchored" data-anchor-id="situational-variables">Situational variables</h2>
 <ul>
@@ -449,19 +503,28 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Some contexts are nested within others.</p></li>
 </ul>
 </section>
-<section id="sec-Indicators" class="level2">
-<h2 class="anchored" data-anchor-id="sec-Indicators">Indicators</h2>
-<p>Indicators are features of the outcome (work product or process) of a task.</p>
+<section id="observables-indicators-and-claims" class="level2">
+<h2 class="anchored" data-anchor-id="observables-indicators-and-claims">Observables (Indicators) and Claims</h2>
+<p>Observables or indicators are features of the outcome (work product or process) of a task.</p>
 <p>What <em>subject</em> did, wrote, said, indicated, &amp;c</p>
+<p>An <em>observation</em> is a realized observable, usually in a particular situation.</p>
+<p>A <em>claim</em> is a prediction about a future observation, in a <em>context</em> (set of possible situations).</p>
 </section>
 </section>
 <section id="constructs" class="level1">
 <h1>Constructs</h1>
-<section id="contexts-and-claims" class="level2">
-<h2 class="anchored" data-anchor-id="contexts-and-claims">Contexts and Claims</h2>
-</section>
-<section id="construct-in-the-toulmin-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="construct-in-the-toulmin-diagram">Construct in the Toulmin diagram</h2>
+<p>A <em>construct</em> is a latent variable associated with a collection of related claims.</p>
+<ul>
+<li><p>Skill in academic construct</p></li>
+<li><p>Latent trait or state</p></li>
+<li><p>Psychological syndrome</p></li>
+</ul>
+<p>Different levels of the construct are associated with different claims.</p>
+<p><em>Russell’s Rule</em> | For different levels of the construct to be identifiable, there must be at | least one different claim associated with each level.</p>
+<section id="assessments" class="level2">
+<h2 class="anchored" data-anchor-id="assessments">Assessments</h2>
+<p>An <em>assessment</em> is a series of assigned tasks, whose observation will be used to assign a value to a construct.</p>
+<p>Generally, the <em>context</em> in an assessment is constrained.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../img/ToulminConstruct.png" class="img-fluid figure-img"></p>
@@ -469,8 +532,10 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="contexts-and-situations" class="level2">
-<h2 class="anchored" data-anchor-id="contexts-and-situations">Contexts and situations</h2>
+<section id="contexts-and-situtaions-with-constructs" class="level2">
+<h2 class="anchored" data-anchor-id="contexts-and-situtaions-with-constructs">Contexts and Situtaions with Constructs</h2>
+<p>Let <em>context</em> be the constrained context of the assessment.</p>
+<p>Let _context*_ be the less constrained context of the claim.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../img/ToulminCC.png" class="img-fluid figure-img"></p>
@@ -481,18 +546,85 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="logical-reasoning" class="level1">
 <h1>Logical Reasoning</h1>
+<ul>
+<li><p>Hypothesis: <span class="math inline">\(H\)</span> – construct is within a certain set of values</p>
+<ul>
+<li><span class="math inline">\(\overline{H}\)</span> – negation of hypothesis</li>
+</ul></li>
+<li><p><span class="math inline">\(C_1, C_2, \ldots\)</span> – claims</p></li>
+<li><p><span class="math inline">\(E_1, E_2, \ldots\)</span> – observations.</p></li>
+</ul>
 <section id="deduction" class="level2">
 <h2 class="anchored" data-anchor-id="deduction">Deduction</h2>
+<p>$ H E$</p>
+<p>Often add probability, so <span class="math inline">\(P(E|H) \ge P(E|\overline{H})\)</span></p>
+<p><em>Weight of Evidence</em> <span class="math display">\[ WOE(H\mathord{:}E) = \log { \frac{\Pr (E |H)}{\Pr (E | \overline H )} }
+= \log { \frac{\Pr (H | E)}{\Pr (\overline H | E)} } -
+\log { \frac{\Pr (H )}{\Pr (\overline H )} } \]</span></p>
+<section id="radicals-and-incidentals" class="level3">
+<h3 class="anchored" data-anchor-id="radicals-and-incidentals">Radicals and incidentals</h3>
+<p>Let <span class="math inline">\(Z\)</span> be a feature variable, and <span class="math inline">\(z_1\)</span> and <span class="math inline">\(z_2\)</span> two possible values.</p>
+<p>A feature variable is <em>radical</em> if <span class="math inline">\(P(E|H,Z=z_1) \ne P(E|H,Z=z_2)\)</span> or <span class="math inline">\(P(E|\overline{H},Z=z_1) \ne P(E|\overline{H},Z=z_2)\)</span></p>
+<p>A feature variable is <em>incidental</em> if it is not radical. It is approximately incidental if the probability of the <span class="math inline">\(z_2\)</span> value is low.</p>
+</section>
 </section>
 <section id="abduction" class="level2">
 <h2 class="anchored" data-anchor-id="abduction">Abduction</h2>
+<p>$ H E$</p>
+<p>Reversing the arrow can be done with Bayes Rule</p>
+<p><span class="math display">\[ P(H|E) = \frac{P(E|H)P(H)}{P(E)} = \frac{P(E|H)P(H)}{P(E|H)P(H) +
+P(E|\overline{H})P(\overline{H})} \]</span></p>
+<p>Often not enough evidence from single observation to make good prediction.</p>
+<p>There is dependence on the <em>base rate</em> <span class="math inline">\(P(H)\)</span>.</p>
 </section>
 <section id="induction" class="level2">
 <h2 class="anchored" data-anchor-id="induction">Induction</h2>
+<p>Repeated observation indicates the claim holds.</p>
+<ul>
+<li>Sun rises every morning, so sun will rise tomorrow.</li>
+<li>Every swan I’ve seen is white, so all swans are white:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/BlackSwan.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Black swan I saw in Australia</figcaption>
+</figure>
+</div>
+<p>Sample of situations in assessment must be a representative sample of the target Context* in the claim.</p>
 </section>
 </section>
 <section id="validity-argument" class="level1">
 <h1>Validity Argument</h1>
+<p>Use induction and abduction to go from observations to constructs.</p>
+<p>Use deduction to go from construct to claims.</p>
+<p>Need to be careful about which contexts are covered in the claims.</p>
+<section id="sensitivity-and-specificity" class="level2">
+<h2 class="anchored" data-anchor-id="sensitivity-and-specificity">Sensitivity and Specificity</h2>
+<p><span class="math inline">\(T\)</span> – test result indicates claim holds <span class="math inline">\(C\)</span> – claim holds.</p>
+<p>Sensitivity: <span class="math inline">\(P(T|C)\)</span></p>
+<p>Specificity: <span class="math inline">\(P(\overline{T}|\overline{C})\)</span></p>
+<p><a href="https://en.wikipedia.org/wiki/Sensitivity_and_specificity">Wikipedia article</a></p>
+</section>
+<section id="false-positives-and-negatives" class="level2">
+<h2 class="anchored" data-anchor-id="false-positives-and-negatives">False Positives and Negatives</h2>
+<p>False positives and false negatives have different costs based on the use of the assessment.</p>
+<p>Need for sensitivity and specificity depends on use of the assessment.</p>
+<p>Can adjust cut score to trade sensitivity and specificity.</p>
+<p><em>Receiver operating characteristic</em> or <em>ROC curve</em>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roccurves.png/220px-Roccurves.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">ROC Curve</figcaption>
+</figure>
+</div>
+<p>More area under curve means better assessment.</p>
+<p>Usually requires longer assessment.</p>
+</section>
+</section>
+<section id="exercise" class="level1">
+<h1>Exercise</h1>
+<p>Make a copy of this <a href="https://docs.google.com/presentation/d/10kfZNKASq0kOsWO-PGq45Q3mH3k8QgvP5QgIxOeGLmc/edit?usp=sharing">Google sheet</a>.</p>
+<p>Make your own Toulmin diagram, and share it with some colleagues.</p>
 
 
 </section>
