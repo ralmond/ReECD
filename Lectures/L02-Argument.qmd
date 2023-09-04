@@ -6,35 +6,29 @@ title: "02 Assessment Argument"
 
 ![Toulmin Diagram](../img/Toulmin.png)
 
+*Subject* person (or thing) being measured
 
+*We* persons doing the measurement
 
-_Subject_ person (or thing) being measured
+-   *Claim*: What *we* want to say about *subject*
 
-_We_ persons doing the measurement
+-   *Observation*: Something we see about *subject* (often in a certain *situation* or *context*)
 
-* _Claim_:  What _we_ want to say about _subject_
+-   *Warrant*: Reason to believe *observation* is associated with *claim*
 
-* _Observation_: Something we see about _subject_ (often in a certain _situation_ or _context_)
+-   *Alternative*: Reasons why *observation* could be present when *claim* does not hold
 
-* _Warrant_: Reason to believe _observation_ is associated with _claim_
-
-* _Alternative_: Reasons why _observation_ could be present when _claim_ does not hold
-
-A _task_ is a way of creating a _situation_ in which _we_ can make an _observation_.
+A *task* is a way of creating a *situation* in which *we* can make an *observation*.
 
 ### Example
 
-
--   **Claim:** The job candidate can produce appropriate and relevant
-    routine business correspondence.
+-   **Claim:** The job candidate can produce appropriate and relevant routine business correspondence.
 
 -   **Observation:** The candidate's cover letter was well written.
 
--   **Warrant:** A cover letter is a type of business correspondence,
-    therefore this is a positive example of the type of needed work.
+-   **Warrant:** A cover letter is a type of business correspondence, therefore this is a positive example of the type of needed work.
 
--   **Alternative:** The candidate may have had help writing or
-    correcting the letter.
+-   **Alternative:** The candidate may have had help writing or correcting the letter.
 
 # Task and Task Features Features {#sec-Variables}
 
@@ -42,146 +36,133 @@ A task is a sequence of actions a subject performs in pursuit of a goal.
 
 A task, particularly in an assessment, has a number of parts:
 
-* _Prompt_ -- Statement of the goals of the task
-  - Explicit prompt (what is written down or said)
-  - Implicit prompt (instructions subject is assumed to know)
-  - Rubric -- set of instructions
-  - Scoring Rubric -- information about how task is awarded points
+-   *Prompt* -- Statement of the goals of the task
+    -   Explicit prompt (what is written down or said)
+    -   Implicit prompt (instructions subject is assumed to know)
+    -   Rubric -- set of instructions
+    -   Scoring Rubric -- information about how task is awarded points
+-   *Resources*
+    -   Content
+    -   Tools
+    -   Collaborators
+    -   Internal (subject's experiences and memory)
+-   *Work Product and Process* (WPP)
+    -   Work product is what is produced
+        -   selection
+        -   Document
+        -   Simulator state
+    -   Work process is series of steps taken to reach goal
+        -   Log file
+        -   Audio/video transcript
 
-* _Resources_ 
-  - Content
-  - Tools
-  - Collaborators
-  - Internal (subject's experiences and memory)
-  
-* _Work Product and Process_ (WPP)
-  - Work product is what is produced
-    - selection
-    - Document
-    - Simulator state
-  - Work process is series of steps taken to reach goal
-    - Log file
-    - Audio/video transcript
-    
-  
 ## Feature and observable variables
 
-A _task feature_ is a variable that describes some aspect of a task prompt or resources.
+A *task feature* is a variable that describes some aspect of a task prompt or resources.
 
-An _observable variable_ (_indicator_, _observable_) is a variable that describes the
-realized work product or process.
+An *observable variable* (*indicator*, *observable*) is a variable that describes the realized work product or process.
 
 ### Variable Trichotomy
 
 There are three aspects to a variable definition:
 
-* _Domain_:  possible values variable could take on.
-* _Value_: the value it takes a particular situation
-* _Evaluator_:  a rule or procedure for determining its value.
+-   *Domain*: possible values variable could take on.
+-   *Value*: the value it takes a particular situation
+-   *Evaluator*: a rule or procedure for determining its value.
 
 ### Clarity Test
 
-A variable passes the clarity test if running the evaluator in a particular situation
-produces an unambiguous result [@HowardMatheson1981].
+A variable passes the clarity test if running the evaluator in a particular situation produces an unambiguous result [@HowardMatheson1981].
 
-_Latent variables_ are variables that don't pass the clarity test.  Their value must 
-be inferred from observations.
+*Latent variables* are variables that don't pass the clarity test. Their value must be inferred from observations.
 
 ## Situational variables
 
-* Task features -- task goal and resources
-  - Response type
-  - Skill demands
-  - Kind and length of research material
-
-* Environment features -- environment properties and affordances
-  - distractions
-  - security
-  - tool availability
-
-* Person features -- features of the _subject_, usually related to their experience
- - biological
- - preparation
- - aversions
- 
-* Interaction features
- - Person by task:  familiarity
- - Person by environment:  ADHD and noisy environment
- - Task by environment:  Calculation demand and calculator availability
+-   Task features -- task goal and resources
+    -   Response type
+    -   Skill demands
+    -   Kind and length of research material
+-   Environment features -- environment properties and affordances
+    -   distractions
+    -   security
+    -   tool availability
+-   Person features -- features of the *subject*, usually related to their experience
+    -   biological
+    -   preparation
+    -   aversions
+-   Interaction features
+    -   Person by task: familiarity
+    -   Person by environment: ADHD and noisy environment
+    -   Task by environment: Calculation demand and calculator availability
 
 ## Situtations and Contexts
 
-* A _situation_ is a collection of variables describing a particular point in time and space.  
-  - In a _situation_ all variable have an assigned value.
+-   A *situation* is a collection of variables describing a particular point in time and space.
 
-* A _context_ is a set of situations.
+    -   In a *situation* all variable have an assigned value.
 
- - Variables may be unknown, or restricted to a set.
- 
- - Some contexts are nested within others.
+-   A *context* is a set of situations.
+
+-   Variables may be unknown, or restricted to a set.
+
+-   Some contexts are nested within others.
 
 ## Observables (Indicators) and Claims
 
 Observables or indicators are features of the outcome (work product or process) of a task.
 
-What _subject_ did, wrote, said, indicated, &c
+What *subject* did, wrote, said, indicated, &c
 
-An _observation_ is a realized observable, usually in a particular situation.
+An *observation* is a realized observable, usually in a particular situation.
 
-A _claim_ is a prediction about a future observation, in a _context_ (set of possible situations).
-
+A *claim* is a prediction about a future observation, in a *context* (set of possible situations).
 
 # Constructs
 
-A _construct_ is a latent variable associated with a collection of related claims.
+A *construct* is a latent variable associated with a collection of related claims.
 
-  * Skill in academic construct
-  
-  * Latent trait or state
-  
-  * Psychological syndrome
-  
+-   Skill in academic construct
+
+-   Latent trait or state
+
+-   Psychological syndrome
+
 Different levels of the construct are associated with different claims.
 
-_Russell's Rule_
-| For different levels of the construct to be identifiable, there must be at 
-| least one different claim associated with each level.  
+*Russell's Rule* \| For different levels of the construct to be identifiable, there must be at \| least one different claim associated with each level.
 
 ## Assessments
 
-An _assessment_ is a series of assigned tasks, whose observation will be used to assign a
-value to a construct.
+An *assessment* is a series of assigned tasks, whose observation will be used to assign a value to a construct.
 
-Generally, the _context_ in an assessment is constrained.
+Generally, the *context* in an assessment is constrained.
 
 ![Construct Diagram](../img/ToulminConstruct.png)
 
 ## Contexts and Situtaions with Constructs
 
-Let _context_ be the constrained context of the assessment.
+Let *context* be the constrained context of the assessment.
 
-Let _context*_ be the less constrained context of the claim.
-
+Let \_context\*\_ be the less constrained context of the claim.
 
 ![Toulmin Diagram with Contexts](../img/ToulminCC.png)
 
 # Logical Reasoning
 
-* Hypothesis:  $H$ -- construct is within a certain set of values
-  - $\overline{H}$ -- negation of hypothesis
-  
-* $C_1, C_2, \ldots$ -- claims
+-   Hypothesis: $H$ -- construct is within a certain set of values
 
-* $E_1, E_2, \ldots$ -- observations.
+    -   $\overline{H}$ -- negation of hypothesis
+
+-   $C_1, C_2, \ldots$ -- claims
+
+-   $E_1, E_2, \ldots$ -- observations.
 
 ## Deduction
 
-$ H \rightarrow E$
+$H \rightarrow E$
 
-Often add probability, so  $P(E|H) \ge P(E|\overline{H})$
+Often add probability, so $P(E|H) \ge P(E|\overline{H})$
 
-_Weight of Evidence_
-$$ WOE(H\mathord{:}E) = \log { \frac{\Pr (E |H)}{\Pr (E | \overline H )} }
+*Weight of Evidence* $$ WOE(H\mathord{:}E) = \log { \frac{\Pr (E |H)}{\Pr (E | \overline H )} }
 = \log { \frac{\Pr (H | E)}{\Pr (\overline H | E)} } -
 \log { \frac{\Pr (H )}{\Pr (\overline H )} } $$
 
@@ -189,15 +170,13 @@ $$ WOE(H\mathord{:}E) = \log { \frac{\Pr (E |H)}{\Pr (E | \overline H )} }
 
 Let $Z$ be a feature variable, and $z_1$ and $z_2$ two possible values.
 
-A feature variable is _radical_ if $P(E|H,Z=z_1) \ne P(E|H,Z=z_2)$ or
- $P(E|\overline{H},Z=z_1) \ne P(E|\overline{H},Z=z_2)$
+A feature variable is *radical* if $P(E|H,Z=z_1) \ne P(E|H,Z=z_2)$ or $P(E|\overline{H},Z=z_1) \ne P(E|\overline{H},Z=z_2)$
 
-A feature variable is _incidental_ if it is not radical.  It is approximately incidental
-if the probability of the $z_2$ value is low.
+A feature variable is *incidental* if it is not radical. It is approximately incidental if the probability of the $z_2$ value is low.
 
 ## Abduction
 
-$ H \leftarrow E$
+$H \leftarrow E$
 
 Reversing the arrow can be done with Bayes Rule
 
@@ -206,36 +185,32 @@ P(E|\overline{H})P(\overline{H})} $$
 
 Often not enough evidence from single observation to make good prediction.
 
-There is dependence on the _base rate_ $P(H)$.
+There is dependence on the *base rate* $P(H)$.
 
 ## Induction
 
 Repeated observation indicates the claim holds.
 
-* Sun rises every morning, so sun will rise tomorrow.
-* Every swan I've seen is white, so all swans are white:
+-   Sun rises every morning, so sun will rise tomorrow.
+-   Every swan I've seen is white, so all swans are white:
 
 ![Black swan I saw in Australia](../img/BlackSwan.jpg)
 
-Sample of situations in assessment must be a representative sample of the target Context*
-in the claim.
-
+Sample of situations in assessment must be a representative sample of the target Context\* in the claim.
 
 # Validity Argument
 
-Use induction and abduction to go from observations to constructs.
+Use induction and abduction to go from observations, in a collection of situations, to constructs.
 
-Use deduction to go from construct to claims.
+Use deduction to go from construct to claims in a certain context or set of contexts.
 
 Need to be careful about which contexts are covered in the claims.
 
-
 ## Sensitivity and Specificity
 
-$T$ -- test result indicates claim holds
-$C$ -- claim holds.
+$T$ -- test result indicates claim holds $C$ -- claim holds.
 
-Sensitivity:  $P(T|C)$
+Sensitivity: $P(T|C)$
 
 Specificity: $P(\overline{T}|\overline{C})$
 
@@ -249,7 +224,7 @@ Need for sensitivity and specificity depends on use of the assessment.
 
 Can adjust cut score to trade sensitivity and specificity.
 
-_Receiver operating characteristic_ or _ROC curve_:
+*Receiver operating characteristic* or *ROC curve*:
 
 ![ROC Curve](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roccurves.png/220px-Roccurves.png)
 
@@ -261,5 +236,8 @@ Usually requires longer assessment.
 
 Make a copy of this [Google sheet](https://docs.google.com/presentation/d/10kfZNKASq0kOsWO-PGq45Q3mH3k8QgvP5QgIxOeGLmc/edit?usp=sharing).
 
-Make your own Toulmin diagram, and share it with some colleagues.  
+Make your own Toulmin diagram, and share it with some colleagues.
 
+Make a copy of this [Claims List Worksheet](https://docs.google.com/spreadsheets/d/1WDI_FWJe_Qrtb66za7EqtERcR6VnvyENCehr9oEvhbs/edit?usp=sharing)
+
+Fill out the claims for an assessment you are considering.

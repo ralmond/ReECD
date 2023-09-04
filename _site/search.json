@@ -368,7 +368,7 @@
     "href": "Lectures/L02-Argument.html#situational-variables",
     "title": "02 Assessment Argument",
     "section": "Situational variables",
-    "text": "Situational variables\n\nTask features – task goal and resources\n\nResponse type\nSkill demands\nKind and length of research material\n\nEnvironment features – environment properties and affordances\n\ndistractions\nsecurity\ntool availability\n\nPerson features – features of the subject, usually related to their experience\nbiological\npreparation\naversions\nInteraction features\nPerson by task: familiarity\nPerson by environment: ADHD and noisy environment\nTask by environment: Calculation demand and calculator availability"
+    "text": "Situational variables\n\nTask features – task goal and resources\n\nResponse type\nSkill demands\nKind and length of research material\n\nEnvironment features – environment properties and affordances\n\ndistractions\nsecurity\ntool availability\n\nPerson features – features of the subject, usually related to their experience\n\nbiological\npreparation\naversions\n\nInteraction features\n\nPerson by task: familiarity\nPerson by environment: ADHD and noisy environment\nTask by environment: Calculation demand and calculator availability"
   },
   {
     "objectID": "Lectures/L02-Argument.html#situtations-and-contexts",
@@ -410,14 +410,14 @@
     "href": "Lectures/L02-Argument.html#deduction",
     "title": "02 Assessment Argument",
     "section": "Deduction",
-    "text": "Deduction\n$ H E$\nOften add probability, so \\(P(E|H) \\ge P(E|\\overline{H})\\)\nWeight of Evidence \\[ WOE(H\\mathord{:}E) = \\log { \\frac{\\Pr (E |H)}{\\Pr (E | \\overline H )} }\n= \\log { \\frac{\\Pr (H | E)}{\\Pr (\\overline H | E)} } -\n\\log { \\frac{\\Pr (H )}{\\Pr (\\overline H )} } \\]\n\nRadicals and incidentals\nLet \\(Z\\) be a feature variable, and \\(z_1\\) and \\(z_2\\) two possible values.\nA feature variable is radical if \\(P(E|H,Z=z_1) \\ne P(E|H,Z=z_2)\\) or \\(P(E|\\overline{H},Z=z_1) \\ne P(E|\\overline{H},Z=z_2)\\)\nA feature variable is incidental if it is not radical. It is approximately incidental if the probability of the \\(z_2\\) value is low."
+    "text": "Deduction\n\\(H \\rightarrow E\\)\nOften add probability, so \\(P(E|H) \\ge P(E|\\overline{H})\\)\nWeight of Evidence \\[ WOE(H\\mathord{:}E) = \\log { \\frac{\\Pr (E |H)}{\\Pr (E | \\overline H )} }\n= \\log { \\frac{\\Pr (H | E)}{\\Pr (\\overline H | E)} } -\n\\log { \\frac{\\Pr (H )}{\\Pr (\\overline H )} } \\]\n\nRadicals and incidentals\nLet \\(Z\\) be a feature variable, and \\(z_1\\) and \\(z_2\\) two possible values.\nA feature variable is radical if \\(P(E|H,Z=z_1) \\ne P(E|H,Z=z_2)\\) or \\(P(E|\\overline{H},Z=z_1) \\ne P(E|\\overline{H},Z=z_2)\\)\nA feature variable is incidental if it is not radical. It is approximately incidental if the probability of the \\(z_2\\) value is low."
   },
   {
     "objectID": "Lectures/L02-Argument.html#abduction",
     "href": "Lectures/L02-Argument.html#abduction",
     "title": "02 Assessment Argument",
     "section": "Abduction",
-    "text": "Abduction\n$ H E$\nReversing the arrow can be done with Bayes Rule\n\\[ P(H|E) = \\frac{P(E|H)P(H)}{P(E)} = \\frac{P(E|H)P(H)}{P(E|H)P(H) +\nP(E|\\overline{H})P(\\overline{H})} \\]\nOften not enough evidence from single observation to make good prediction.\nThere is dependence on the base rate \\(P(H)\\)."
+    "text": "Abduction\n\\(H \\leftarrow E\\)\nReversing the arrow can be done with Bayes Rule\n\\[ P(H|E) = \\frac{P(E|H)P(H)}{P(E)} = \\frac{P(E|H)P(H)}{P(E|H)P(H) +\nP(E|\\overline{H})P(\\overline{H})} \\]\nOften not enough evidence from single observation to make good prediction.\nThere is dependence on the base rate \\(P(H)\\)."
   },
   {
     "objectID": "Lectures/L02-Argument.html#induction",
