@@ -5,8 +5,9 @@
 
 A quote I have often used in introducing ECD is that data become
 evidence when connected to a claim through a warrant. This is often
-shown in a Toulmin diagram (@fig-Toulmin). I have relabled *data* as
-*observation* ($O$). The *warrant* is a belief that the observation is
+shown in a Toulmin diagram (@fig-Toulmin), a diagram created for 
+representing leagal arguments.  I have relabeled *data* as
+*observation*. The *warrant* is a belief that the observation is
 more likely if the claim holds. The *alternative* is a situation, which
 if it holds, would cause the observation to be likely even in the
 absence of the claim holding.
@@ -68,7 +69,44 @@ indicate that the warrants and alternatives are somehow paired). Second,
 any given assessment is likely to have multiple observations to support
 each claim and a given assessment is likely to support multiple claims.
 
-# Variables, Indicators and Context Features {#sec-Variables}
+In general, I will use word _subject_ for the person (or group or thing) who is
+the target of the claims and observations, and _we_[^1] for the group of people making
+the claims, that is the decision making authority.
+
+[^1]:  The use of _we_ in this application is similar to De Finetti's use of the term
+_you_ for the decision maker.  I use _we_ instead of _you_ to emphasize that it is
+generally a group of people making the claim, and not just a single individual.
+
+# Tasks, _situation_Task Features {#sec-Tasks}
+
+In the world of psychological assessments, the claims and observations are usually
+related to the outcomes of tasks.  A _tasks_ is a series of actions that a subject 
+undertakes to realize a goal.  The task may have taken place in the past, or it may
+take place in the future.  The _situtation_ includes the _environment_ in which the task
+is attempted and the _subject_ who attempts the task.
+
+Generally tasks have a number of _resources_ available to the subject.  This could
+include reference material, tools (e.g., a calculator or a dictionary), and even other
+people who are either subjects or resources.  There are also internal resources
+(e.g., experiences and training) that the subject brings to the task.
+
+A particularly important resource is the _prompt_, the set of instructions given to the
+subject.  Note that part of the prompt may be implicit.  For example, the prompt for
+a set of multiple choice options given by computer might instruct the subject to "Select
+the option which best answers the question," but they may assume that the subject knows
+how to manipulate the mouse to make a selection.
+
+Another important part of the prompt is the _rubric_, or description of what is counted
+as a successful outcome to the task.  For example, if the solution to a problem is a
+fraction, the rubric might state that in order to receive credit, the fraction must be
+reduced to its simplest form.
+
+
+
+
+
+
+## Variables 
 
 Domain -- Value -- Evaluator
 
