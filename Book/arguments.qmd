@@ -1,16 +1,50 @@
-# Evidential Arguments
+---
+title: "Evidential Arguments"
+---
 
 
 # The Assessment Argument {#sec-Argument}
 
-A quote I have often used in introducing ECD is that data become
-evidence when connected to a claim through a warrant. This is often
-shown in a Toulmin diagram (@fig-Toulmin), a diagram created for 
-representing leagal arguments.  I have relabeled *data* as
-*observation*. The *warrant* is a belief that the observation is
-more likely if the claim holds. The *alternative* is a situation, which
-if it holds, would cause the observation to be likely even in the
-absence of the claim holding.
+The purpose of an assessment is to make some prediction about what the
+subject will do or will be able to do in some future situation.  This
+prediction is a _claim_.  Obviously, the future is unknowable, but
+based on evidence that the subject has performed similarly in the
+pass, _we_ can predict that the claim will hold.
+
+The term _we_ above refers to a group of decision makers, or a testing
+authority.  This use is similar to the De Finnetti's use of the term
+_you_ as the ideal decision maker, as whether or not _we_ endorse a
+claim depends on what evidence _we_ have seen. Thus it is subjective
+in the sense that two different raters might reach different
+conclusions on the basis of different evidence.  Unlike De Finnetti's
+_you_, the term _we_ implies that there is a consensus among a group
+of experts about the support provided by the evidence for the claims.
+Thus, the claims are objective in the sense that two different
+raters presented with the same evidence would come to the same
+conclusions.  This is similar to the objective--subjective synthesis
+of @Dempster1990.
+
+Objectivity, the assertion that two raters will agree on the claims if
+presented with the same collection of evidence, requires that the
+raters have the same meta-evidence---evidence that the observations
+and claims are related.  This takes the form of expert testomony,
+research articles, and documentation of the procedures and environment
+used to gather the evidence.  Indeed, documenting this meta-evidence
+is the essence of the argument-based validity of @kane1992
+[@kane2006].  This chapter examines the basic structure of arguments
+as used in assessments.
+
+
+## The Toulmin Diagram {#sec-Toulmin}
+
+
+A quote often used in introducing ECD is that data become evidence
+when connected to a claim through a warrant. This is often shown in a
+Toulmin diagram (@fig-Toulmin), a diagram created for representing
+leagal arguments [@toulmin1958].  The *warrant* is a belief that the
+observation is more likely if the claim holds. The *alternative* is a
+situation, which if it holds, would cause the observation to be likely
+even in the absence of the claim holding.
 
 ```{dot}
 //| label: fig-Toulmin
@@ -48,7 +82,7 @@ digraph {
 }
 ```
 
-A simple example will help illustrate the idea.
+A simple example illustrates the idea.
 
 -   **Claim:** The job candidate can produce appropriate and relevant
     routine business correspondence.
@@ -69,48 +103,189 @@ indicate that the warrants and alternatives are somehow paired). Second,
 any given assessment is likely to have multiple observations to support
 each claim and a given assessment is likely to support multiple claims.
 
-In general, I will use word _subject_ for the person (or group or thing) who is
-the target of the claims and observations, and _we_[^1] for the group of people making
-the claims, that is the decision making authority.
-
-[^1]:  The use of _we_ in this application is similar to De Finetti's use of the term
-_you_ for the decision maker.  I use _we_ instead of _you_ to emphasize that it is
-generally a group of people making the claim, and not just a single individual.
-
-# Tasks, _situation_Task Features {#sec-Tasks}
-
-In the world of psychological assessments, the claims and observations are usually
-related to the outcomes of tasks.  A _tasks_ is a series of actions that a subject 
-undertakes to realize a goal.  The task may have taken place in the past, or it may
-take place in the future.  The _situtation_ includes the _environment_ in which the task
-is attempted and the _subject_ who attempts the task.
-
-Generally tasks have a number of _resources_ available to the subject.  This could
-include reference material, tools (e.g., a calculator or a dictionary), and even other
-people who are either subjects or resources.  There are also internal resources
-(e.g., experiences and training) that the subject brings to the task.
-
-A particularly important resource is the _prompt_, the set of instructions given to the
-subject.  Note that part of the prompt may be implicit.  For example, the prompt for
-a set of multiple choice options given by computer might instruct the subject to "Select
-the option which best answers the question," but they may assume that the subject knows
-how to manipulate the mouse to make a selection.
-
-Another important part of the prompt is the _rubric_, or description of what is counted
-as a successful outcome to the task.  For example, if the solution to a problem is a
-fraction, the rubric might state that in order to receive credit, the fraction must be
-reduced to its simplest form.
+Toulmin orginally produced this for the legal context.  Detectives and
+laywers making a legal argument are limited to the evidence at hand
+which is often gathered in less than ideals situations.  Assessment
+designers can craft tasks, situations in which evidence is gathered,
+to maximize the warrant and eliminate alternatives.  This is the craft
+of assessment design.
 
 
+# Tasks, _Situations_, and Task Features {#sec-Tasks}
 
+In the world of psychological assessments, the claims and observations
+are usually related to the outcomes of tasks.  A _task_ is a series of
+actions that a subject undertakes to realize a goal.  The task may
+have taken place in the past, or it may take place in the future.  The
+_situtation_ includes the _environment_ in which the task is
+attempted, details about the task, and the _subject_ who attempts the
+task.
 
+Generally tasks have a number of _resources_ available to the subject.
+This could include reference material, tools (e.g., a calculator or a
+dictionary), and even other people who are either subjects or
+resources.  There are also internal resources (e.g., experiences and
+training) that the subject brings to the task.
+
+A particularly important resource is the _prompt_, the set of
+instructions given to the subject.  Note that part of the prompt may
+be implicit.  For example, the prompt for a set of multiple choice
+questions given by computer might instruct the subject to "Select the
+option which best answers the question," but they may assume that the
+subject knows how to manipulate the mouse to make a selection.
+
+Another important part of the prompt is the _rubric_, or description
+of what is counted as a successful outcome to the task.  For example,
+if the solution to a problem is a fraction, the rubric might state
+that in order to receive credit, the fraction must be reduced to its
+simplest form.  Again this may be implied, for example, the assessor
+may assume that the subject knows that misspelled words will reflect
+poorly on the score.
+
+When the subject interacts with the task, the subject produces some
+output (which could be empty in the case of an unsuccessful attempt).
+This is the _work product_.  Some example include a selection made in
+a multiple choice or rating scale item, a piece of text, a
+mathematical expression, a document, a picture, a speech, a musical
+performance, &c.  If the task uses a game or a simulator, the final
+state of the system at the end of the task (or some other point in
+time) is a part of the work product.
+
+In addition to the work product, a _work process_, the set of steps
+the subject took in addressing the task, can be recorded.  If the task
+uses the computer, this is often an event log, with a series of
+interactions with the computer tagged with the times at which they
+took place.  For example, a keystroke log of a subject typing an
+essay.  A audio of video recording of the subject is another way of
+capturing the work process.  Often specific events in the recording
+are tagged (by a human or computer) for later analysis.
+
+Together the _work product and process_ (WPP) are the output of the task.
 
 
 ## Variables 
 
-Domain -- Value -- Evaluator
+Let $\omega$ be the situation in which an observation takes place (or
+might take place in the future). Then $z(\omega)$ is a _feature_ of
+the situation, a variable that summarizes some aspect of situation.
 
-## Context Features
+Charles S. Pierce [@bergman2018] notes that there are three parts of
+the definition of a variable:
+
+* The _domain_ or possible set of values it can take on, i.e.,
+  $\{z(\omega) : \omega \in \Omega\} = \{z_1, z_2, \ldots\}$.
+* The _value_ it takes on in a particular situation, e.g., $z(\omega^{*})
+  = z^{*}$
+* The _evaluator_ or rule by which the value is assigned based on the
+  situation, i.e., the function $z(\cdot)$.  
+  
+In order for a variable to be well defined, the evaluator must be
+unambiguously specified.  @howardMatheson1981DA refer to this as the
+_clarity test_.  Would an observer[^1] who has access to all relevant
+details of the situation be able to unambiguously determine the value
+of the variable.  If not, then either the evaluator, or the situation
+is not sufficiently well defined to be used operationally.
+
+[^1]: [@howardMatheson1981DA] refer to a clairvoyant, a person with
+    the magical power to observe all details of a situation.  In the
+    twenty-first century, there is no need for magic, organizations
+    such as Alphabet (Google), Microsoft, and Meta (Facebook) have
+    already gathered it.
+
+In practice, not all details of the situation will be known.  For
+example, it is unlikely that the position of the International Space
+Station at the time the subject sat for the exam.  What is important
+is that all details which are necessary to compute the relevant
+variables are recorded.
+
+## Contexts and Context Features
+
+Observations are made in specific _situations_ (even all the details of the
+situation are not recorded).  Claim, however, are generally made over
+a collection of situations.  Consider again the business
+correspondence example.  The cover letter was written in one specific
+situation, while the company doing the hiring wants the subject to be
+able to write a variety of different kinds of business letters.  This
+collection of situations is called a _context_.
+
+Generally speaking the context associated with a claim will constrain
+certain features to a given value or set of values.  For example, the
+expected form of the business correspondence is restricted to a few
+genres:  letters, memos, emails, &c.  The context may also require
+access to a word processor, and possibly even restrict the task to a
+specific word processor.  Thus, contexts are characterized by the
+features they restrict.
+
+## Feature Types
+
+Context features are usually associate with (a) a particular task, 
+(b)\ the environment in which the tasks are performed, (c)\ the
+background and experience of the subject, or (d)\ some interaction of
+these kinds of features.  Some examples of each are given in the
+following sections.
+
+Context/situation features can also be explicitly noted, or implicitly
+assumed.  Assumptions are always troubling, as when they don't hold
+they can change the value of the observed evidence.  For example, if
+it is assumed that the subject can understand written instructions in
+English, but the subject cannot either because of limited English
+language ability or limited visual accuity, then failure to perform a
+particular mathematical problem provides little evidence about their
+mathematical abilities. In this case, the lack of reading ability is
+strong alternative explation for the observed performance.
+
+
+### Task Features
+
+The most common kinds of features are related to the task.  These can
+be related to the expectations established in the prompt and rubric, the
+properties of the available resources, or the cognitive demands of the
+usual solution path.  Some examples:
+
+* The number of steps the solution requires.
+
+* Various measures of text complexity and readability of a reading
+  passage [@sheehan2008]
+  
+* How many elements in the prompt need to be matched in the document
+  [@mosenthal1991]. 
+
+* The amount of time provided for the task.
+
+* The name of the actors in a story.
+
+Some of the features are related to the strength of the evidence;  for
+example, reading a newspaper article provides stronger evidence of
+reading ability than reading a children's picture book.  Some are
+related to the nature of evidence, for example, in order to assess a
+claim related comparing two documents,  the task must have two
+documents.  Some, like the name of the actors, may be important for
+making variants of the task.  Task variants help eliminate the
+alternative that the student memorized a solution based on superficial
+features of the task.  @taskFeatures and @taskFeatures2 discuss more
+about the role of task features, although note that some of the
+features discussed there might be classified as environmental
+features.
+
+Task features are often confined by the task specifications.  For
+example, a reading passage for a reading comprehension test may be
+within a given difficulty band.  @sheehan2008 discuss various tools
+that can be used for this purpose.  The original thrust of their work
+was to search for a corpus that met the given criteria; however, the
+same metrics could be used with automatically generated text.  
+
+
+### Environmental Features
+
+### Personal Features
+
+### Interactions
+
+## Dynamic Features
+
+
+# Indicators, Observations and Claims
+
 
 ## Indicators {#sec-Indicators}
 
@@ -145,6 +320,15 @@ The clarity test forces claims to be potentially observable. The
 similar in effect to the common practice of restricting educational
 objectives to "action verbs". Thus, in a proper educational reasoning
 system, the claims need to be reworked in terms of tasks.
+
+## Observation:  Indicator in a situation
+
+Practical constraints
+
+## Claims:  Predicted Future Indicator
+
+May be impractical to observe
+
 
 # Constructs {#sec-Constructs}
 
