@@ -2,6 +2,992 @@
 title: "Glossary"
 ---
 
+# Table of Notation
+
+$i$
+: Index for subjects
+$j$
+: Index for tasks
+$k$
+: Index for obserables with a task
+$m$
+: Index for states of an observable
+$d$
+: Index for constructs or proficiencies
+$s$
+: Index for states of a construct
+$\theta_d$
+: A construct
+$\boldsymbol{\theta}$
+: A vector of constructs
+$\omega$
+: A situation
+$\Omega$
+: The set of all situations
+$\boldsymbol{\Omega}$
+: The inverse covariance matrix for $\boldsymbol{\theta}$
+$z(\omega)$, $z, z_1, z_2, \ldots$, $Z, Z_1, Z_2, \ldots$
+: Feature variables
+$y(\omega)$, $y, y_1, y_2, \ldots$, $Y, Y_1, Y_2, \ldots$
+: Observable outcome from a task.
+$\Gamma$
+: A context or set of situations
+$C, C_1, C_2, \ldots$
+: Claims
+$E E_1, E_2, \ldots$
+: Evidence
+
+# Glossary
+
+[A](#A)[B](#B)[C](#C)[D](#D)[E](#E)[F](#F)[G](#G)[H](#H)[I](#I)[J](#J)
+[K](#K)[L](#L)[M](#M)[N](#N)[O](#O)[P](#P)[Q](#Q)[R](#R)[S](#S)[T](#T)
+[U](#U)[V](#V)[W](#W)[X](#X)[Y](#Y)[Z](#Z)
+
+
+## A {#A}
+
+Activity Selection Process
+:  The Activity Selection Process is 
+the part of the Assessment Cycle that selects a task or other activity 
+for presentation to an examinee.
+
+Acyclic directed graph
+: A directed graph that has no directed cycles. 
+Note that if the directions of the arrows are dropped there may be cycles.  
+
+Administrator
+:  The Administrator is the person responsible for 
+setting up and maintaining the assessment. The Administrator is 
+responsible for starting the process and configuring various choices; 
+for example, whether or not item level feedback will be displayed 
+during the assessment. 
+
+Assembly Model
+:  The Assembly Model, one of a collection of six 
+different types of models that comprise the [[CAF|Conceptual Assessment 
+Framework]] ([[CAF]]), provides the information required to control the 
+selection of tasks for the creation of an assessment.
+
+Assessment
+:  An Assessment is a system (computer, manual, or 
+some combination of the these) that presents examinees, or 
+participants, with work and evaluates the results. This includes high 
+stakes examinations, diagnostic tests, and coached-practice systems, 
+which include embedded assessment.
+
+Assessment Cycle
+:  The Assessment Cycle is comprised of four 
+basic processes: Activity Selection, Presentation, Response 
+Processing, and Summary Scoring. The Activity Selection Process 
+selects a task or other activity for presentation to an examinee. The 
+Presentation Process displays the task to the examinee and captures 
+the results (or Work Products) when the examinee performs the 
+task. Response Processing identifies the essential features of the 
+response and records these as a series of Observations. The Summary 
+Scoring Process updates the scoring based on the input it receives 
+from Response Processing. This four-process architecture can work in 
+either synchronous or asynchronous mode.
+
+Assessment Designer
+:  A person who is responsible for the building and/or 
+maintaining the Conceptual Assessment Framework for an assessment.
+
+## B {#B}
+
+Bayesian network (Bayes net)
+:  A Bayesian network (or Bayes net) is a method of representing a
+probability distribution with an acyclic directed graph.  The nodes of
+the graph represent variables in the problem and the pattern of edges
+represent conditional independence relationships (see $d$-separation).
+The variables in a Bayesian network are generally required to be
+discrete.  Bayesian networks are a special case of graphical models.
+
+Beta distribution
+: The beta distribution is a continuous probability 
+distribution with the following probability density function:  
+$f(\theta|a,b) = \left[{1over B(a,b)} \right]
+\theta^{a-1}(1-\theta)^{b-1}$, where $B(a,b)$ is the "beta function",
+$B(a,b) = \int_0^1 t^{a-1}(1-t)^{b-1}\,dt = 
+{\Gamma(a)\Gamma(b)\over \Gamma(a+b)}$ .  
+The beta distribution is interesting because it is a natural conjugate
+of the binomial distribution.  In particular, if $\theta$ is
+interpreted as the probability of 'success', then the parameter $a$
+corresponds to the number of observed successes and the parameter $b$
+corresponds to the number of observed failures.  The
+Dirichlet distribution is a generalization of the beta distribution.  
+$B(1,1)$ is the uniform distribution.
+
+
+Binomial (Bernoulli) distribution
+: A single event or trial which can 'succeed' with a probability
+$\theta$ is said to follow a Bernoulli distribution.  If the
+experiment is repeated for $n$ independent trials, then the count of
+the number of 'successes' is said to follow a binomial distribution.
+The probability mass function is:  
+$p(Y=y|\theta,n) = {n\choose y}\theta^y(1-\theta)^{n-y}$ for
+$y=0,\ldots,n$.  The multinomial distribution is a generalization of
+the binomial where each trial has more than two possible outcomes.
+
+
+
+## C {#C}
+
+Calibration
+:  Choosing a set of parameters for a [[measurement model]] based on
+data collected from that model.  In Bayesian terms this means
+calculating a posterior law for parameters based on the prior law and
+the collected data.
+
+Child
+: In a [[Graph]], the child is the node that is the second position in
+the edge, that is, that the arrow points from the _parent_ node to
+the _child_ node.  In a Bayes net, a child node has a conditional
+probability distribution that depends on one or more other nodes,
+which are its parents.  The _descendents_ of a node $A$ is any node
+that is a child, a child of a child, a child of a child of a child, or
+so forth.
+
+Claim
+:  A claim is a proposition, educationally relevant and 
+stated in natural language, about the kinds of things a student might 
+know or be able to do, in what kinds of circumstances.  Claims are 
+what users of assessments want to be able to say about examinees, and 
+are the basis of Score Reports.  A Reporting Rule maps information 
+from probability distributions over Student Model Variables to summary 
+statements about the amount and direction of evidence to support a 
+claim.
+
+Clique
+: A maximally connected set of nodes in a graph.  This means 
+that all nodes in the clique are neighbors and there is no other node 
+in the graph which is a neighbor of all of the nodes in the clique. 
+The cliques of a graphical model are important because they define the 
+spaces over which the computations take place.  The cliques of the 
+graph are often arranged into a tree of cliques or junction tree.  The 
+treewidth of a graph is the size of its largest clique and generally 
+the dominant term in the cost of probability calculations within that 
+graph. 
+
+Compensatory Distribution
+: A design pattern for a conditional 
+probability table with multiple parents (usually representing 
+proficiencies) where more of one skill can compensate for less of 
+another.  For example, when driving a car, planning ahead can 
+compensate for reaction time. 
+
+Competency Model
+:  An alternative term used for [[proficiency model]] 
+because the term "proficiency" has taken on a special meaning under 
+the No Child Left Behind Act. 
+
+Computer Adaptive Testing (CAT)
+: An assessment in which the form of 
+the assessment, that is, the sequence of tasks seen by the examinee, 
+is dynamically created by a computer at the time of the assessment, 
+usually each task is based on observed outcomes from previous tasks. 
+This is often contrasted with a linear test, in which each form 
+has a fixed sequence of tasks.  See {[bninea.bib,WainerCAT]}
+
+Conditional Independence
+:  Two events A and B are _conditionally independent_ given a third
+event X if when the state of X is known, knowledge of A provides no
+information about B.  This can be stated in terms of probabilities as
+$\Pr(A|X,B) = \Pr(A|X,\neg B) = \Pr(A|X)$.  When two events are
+conditionally independent their joint conditional probabilities can be
+calculated by the product of the conditional probabilities:
+$\Pr(A,B|X) = \Pr (A|X) \Pr(B|X)$.
+
+
+Conditional Multinomial Distribution
+:  This is the natural distribution for a conditional probability
+table in a Bayesian network where every row of the conditional
+probability table, corresponding to a configuration of the parent
+variables, is an independent multinomial distribution.  The natural
+conjugate distribution for the parameters of this distribution is the
+_hyper-Dirichlet law_.
+
+Conceptual Assessment Framework (CAF)
+:  The Conceptual Assessment Framework builds specific models for use
+in a particular assessment product (taking into account the specific
+purposes and requirements of that product). The conceptual assessment
+framework consists of a collection of six different types of models
+that define what objects are needed and how an assessment will
+function for a particular purpose. The models of the CAF are as
+follows: the Student Model, the Task Model, the Evidence Model, the
+Assembly Model, the Presentation Model, and the Delivery Model.
+Delivery Model.  The Delivery Model, one of a collection of six
+different types of models that comprise the Conceptual Assessment
+Framework (CAF), describes which other models will be used, as well as
+other properties of the assessment that span all four processes, such
+as platform and security requirements.
+
+Conjunctive Distribution
+: A design pattern for a conditional probability table with multiple
+parents (usually representing proficiencies) where all skills are
+necessary in order to solve the problem.  For example, both reading
+and writing skills are necessary for a book report task.  This is
+sometimes called a _noisy-and_ distribution.
+
+## D {#E}
+
+
+D-Separation
+: A set of rules for when a observing a set of variables $S$ 
+makes two other variables (or sets of variables) $A$ and $B$ independent 
+[@Pearl1988].  This provides the rules for reading conditional 
+independence relationships from a directed graph.  For $A$ and $B$ 
+to be independent, there must be at least one variable in $S$ along every 
+path from $A$ to $B$ or $B$ to $A$, as well as at least one variable 
+of $S$ along the path from any common ancestor to $A$ and $B$.  
+Additionally, no common descendant of $A$ and $B$ may appear in $S$.
+
+DAG
+:  An abbreviation for Directed Acyclic Graph, a term often 
+used in place of _acyclic directed graph_.  Technically 
+incorrect (a directed acyclic graph would be a tree which is 
+directed), but has a better abbreviation.
+
+Demographic Variable
+:  A variable, often appearing in a [[proficiency model]], 
+that is known and provides background information about an examinee.  
+Examples include _Race_, _Gender_, _Number of previous Algebra 
+courses taken_, _Prefers large print test forms_.
+
+DiBello--Samejima Distribution
+:  A conditional probability table in a 
+Bayesian network that is constructed using a procedure first described by 
+Lou DiBello that employs Samejima's graded response model to generate 
+the conditional probabilities.  Under this procedure, first each state 
+of each parent variable is assigned a real number value called its 
+_effective theta_.  These are combined using a structure function that 
+reflects the domain experts view of how the skills interact in a particular 
+task (popular choices are _conjunctive_, _disjunctive_, 
+_compensatory_, and _inhibitor_), to produce an effective theta 
+value for each parent combination.  The resulting value is used as the 
+ability parameter in Samejima's graded response model to produce the 
+conditional probability distribution for that 
+row. [@diBelloSamejima,@matrix2] 
+
+Differential Item (Task) Functioning (DIF)
+:  One way in which an assessment 
+needs to be fair, is that it should have the same measurement properties for 
+different subgroups (often defined by demographic variables).  In the language 
+of Bayes nets, the outcome variables from any task should be conditionally 
+independent from group membership given the proficiency variables.  Any task 
+in which the observables are not conditionally independent from group 
+membership is said to exhibit DIF for that group.  Traditionally, testing 
+for DIF has been very important when the group membership variable indicates 
+race or gender, however, DIF based on language group is also well studied, 
+especially in the context of multilingual tests.  
+
+Difficulty
+:  A parameter for a conditional probability distribution that 
+controls what level of skill is necessary to achieve a high probability of 
+getting an observed outcome in a higher state.  In item response theory (IRT)
+ models, the difficulty parameter is often subtracted from the proficiency 
+variable and expressed on the same scale as the proficiency variables.  
+In conditional probability distributions, the difficulty is often expressed 
+as an intercept parameter with a negative sign.  In general higher difficulty, 
+means that fewer members of the population will get the item right.
+
+Direct Evidence
+:  If a proficiency variable is a parent of an observed 
+outcome variable, then that variable provides "direct evidence" for the 
+proficiency.  If the proficiency variable is connected, but not a parent, 
+then the observed outcome may still provide indirect evidence for the 
+proficiency. 
+
+Directed Graph (Digraph)
+: A [[Graph]] whose edges are considered to be 
+ordered; therefore, in a directed graph $(A,B)$ and $(B,A)$ are 
+considered to be distinct edges, where in an undirected or simple graph 
+they would be considered the same.  The edges of a directed graph are 
+often depicted with an arrow going from the _parent_ node to the _child_ 
+node.  The terms parent and child can be extended using the obvious 
+analogy:  an node $A$ is an _ancestor_ of $B$ if there is a directed 
+path from $A$ to $B$ and $B$ is then a _descendent_ of $A$.  
+Directed graphs are important in the construction of Bayesian networks as 
+the variables of the model are represented by nodes in the graph and the 
+probability distribution for any variable is given conditional on its 
+parent in the graph.
+
+Directed Hypergraph
+: A [[Graph]] that instead of having edges consisting of 
+pairs of nodes, has _directed hyperedges_ that consist of a partitioned set 
+of nodes, divided into _parents_ and _children_.  Directed hypergraphs are 
+often drawn with nodes as circles and hyperedges as squares, with 
+_tentacles_ connecting the nodes and the hyperedges (drawn as an 
+arrow two the hyperedge if the node is in the parent partition, and as 
+a arrow towards the node if the node is in the child partition).
+Directed hypergraphs are useful representing Bayesian networks when 
+emphasizing the factorization structure, as the hyperedges correspond
+to the component factors of the joint probability distribution (each 
+one represents a conditional probability distribution from its parents 
+to its children).  In this representation, the glyph used to indicate 
+the hyperedge can be annotated with the type of distribution (e.g., 
+_conjunctive_, _compensatory_).
+
+Dirichlet Law
+: A generalization of the beta distribution that is the 
+natural conjugate law for the parameter of a categorical or 
+multinomial distribution.  The random vector consists of $K$ values 
+between zero and one, $\{\theta_1,\ldots,\theta_K\}$, 
+with the restriction that $\sum_{k=1}^K \theta_k =1$. 
+The Dirichlet distribution then has the following density function:
+$f(\theta_1,\ldots,\theta_K | \alpha_1,\ldots,\alpha_K)  = C \prod_{k=1}^K \theta_k^{\alpha_k-1}$, 
+where $C = \Gamma(\sum_{k=1}^K \alpha_k) / \prod_{k=1}^K \Gamma(\alpha_k)$, 
+is a normalizing constant.  The parameter 
+$\alpha_1,\ldots,\alpha_K$ is a collection of positive numbers which 
+can be interpreted as a series of pseudo counts of observed cases.
+
+Discrimination
+:  A parameter which determines the difference in
+probability for an observable for people for which a claim holds those
+for which the claim does not hold.  In IRT models (and pseudo-IRT
+models like the DiBello--Samejima models) the discrimination parameter
+is a slope; i.e., in $P(X) = \textrm{logit}^{-1} \left ( a(\theta-b)
+\right)$, the parameter $a$ is the discrimination parameter.
+
+Disjunctive Distribution
+:  A design pattern for a conditional 
+probability table with multiple parents (usually representing 
+proficiencies) where any one of the skills are necessary in order to 
+solve the problem.  For example, a mathematics problem with two 
+different solution strategies would be modeled with a disjunctive 
+distribution.  This is sometimes called a _noisy-or_ distribution.
+
+
+## E {#E}
+
+Edge
+:A pair of nodes in a [[Graph]] that are considered to be joined 
+in some way.  Note that in a directed graph the edge is ordered so 
+that $(A,B)$ and $(B,A)$ are distinct edges, but in an undirected 
+or simple graph they are considered to be the same.  In a 
+_hypergraph_, _hyperedges_ are generalized edges that may contain 
+more one, two, or more nodes.
+
+Elicitation
+:  The process of asking questions (usually of an expert) 
+to obtain the parameters or hyperparameters of a model.  In 
+constructing a Bayesian network, the elicitation usually takes place 
+in several steps.  First the analysts elicit the graphical structure 
+of the model.  Next, they elicit a design pattern or distribution type 
+for each conditional probability table and prior laws for the 
+parameters of those distributions.  Finally, the experts must specify 
+hyperparameters for all of the prior laws.
+
+Equating
+: Equating in the process of creating a function that maps a 
+pattern of observed outcomes to a score such that the score obtained 
+from two different forms of an assessment are equivalent.  The idea, 
+coming from the world of high-stakes testing, is that there should be 
+no inherent advantage in receiving Form A or Form B.  For equating to 
+be meaningful, it must be reasonable that the two forms are 
+equivalent, i.e., they are built to the same specifications.  When 
+comparable scores are needed from non-equivalent forms, then the 
+weaker term, _linking_ is used instead.
+
+Expected A Posteriori (EAP) Score
+:  A score that is obtained by 
+taking the expected value (mean) of the posterior distribution over 
+score profiles.  Consider a function $h({\bf s}$ that maps a 
+proficiency profile ${\bf s}$ to a numeric value.  For example, it 
+might map to the integers 0, 1 or 2 based on whether or not a given 
+proficiency variable is @@low@@, @@medium@@, or @@high@@.  The EAP 
+score is the expected value of $h({\bf s})$ with respect to the 
+posterior distribution (after observing evidence).
+
+Evaluation Rules
+:  Evaluation Rules are a type of Evidence 
+Rules that set the values of Observable Variables.
+
+Evidence
+:  In educational assessment, Evidence is information 
+or observations that allow inferences to be made about aspects of an 
+examinee's proficiency (which are unobservable) from evaluations of 
+observable behaviors in given performance situations.
+
+Evidence Accumulation Process
+:  In the _Four-Process Architecture_ 
+this is the process that is responsible for compiling evidence across 
+multiple tasks to draw inferences about student proficiency.  Usually, 
+the evidence accumulation process maintains some kind of _scoring 
+record_ which records the current best information about the student 
+proficiency.  The evidence accumulation process performs two critical 
+roles:  (1) it accepts the observable outcomes from the _Evidence 
+Identification Process_ and uses them to update the scoring record, 
+and (2) it calculates information about how much evidence any 
+potential task might yield for the _Activity Selection Process_ (if 
+the assessment is adaptive).
+
+Evidence-Centered Assessment Design (ECD)
+:  Evidence-Centered 
+Assessment Design (ECD) is a methodology for designing assessments 
+that underscores the central role of evidentiary reasoning in 
+assessment design. ECD is based on three premises: (1) An assessment 
+must build around the important knowledge in the domain of interest, 
+and an understanding of how that knowledge is acquired and put to use; 
+(2) the chain of reasoning from what participants say and do in 
+assessments to inferences about what they know, can do, or should do 
+next, must be based on the principles of evidentiary reasoning; (3) 
+Purpose must be the driving force behind design decisions, which 
+reflect constraints, resources, and conditions of use. 
+
+Evidence Identification Process
+:  This is the part of the 
+_Four-Process Architecture_ that is responsible for processing the 
+raw _work product_ from a task and setting the values of the 
+_observable outcome variables_.  This could be as simple as matching 
+the observed response to the key in a multiple-choice item or as 
+complex as identifying key features in the output from a simulator. 
+It could also be a human process, such as a rater assigning a holistic 
+or trait scores to an essay.  
+
+Evidence Model
+:  The Evidence Model is a set of instructions 
+for interpreting the output of a specific task. It is the bridge 
+between the Task Model, which describes the task, and the Student 
+Model, which describes the framework for expressing what is known 
+about the examinee's state of knowledge. The Evidence Model generally 
+has two parts: (1) A series of Evidence Rules which describe how to 
+identify and characterize essential features of the Work Product; (2) 
+A Statistical Model that tells how the scoring should be updated given 
+the observed features of the response.
+
+Evidence Rules
+:  Evidence Rules are the rubrics, algorithms, 
+assignment functions, or other methods for evaluating the response 
+(Work Product). They specify how values are assigned to Observable 
+Variables, and thereby identify those pieces of evidence that can be 
+gleaned from a given response (Work Product).
+
+Evidence Rule Data
+:  Evidence Rule Data is data found within 
+the Response Processing.  It often takes the form of logical rules.
+
+Examinee.  See Participant
+:
+
+Examinee Record
+: The Examinee Record is a record of tasks to 
+which the participant is exposed, as well as the participant's Work 
+Products, Observables, and Scoring Record.
+
+Expected Weight of Evidence
+:  This is a measure of how much 
+information a task provides for a particular hypothesis or claim. 
+Consider, a hypothesis $H$ which is any true of false claim about 
+a student.  Let $\{e_{j},j=1,...,n\}$ be the possible observed 
+outcomes from a task $E$ and let $W(H:e_{j})$ be the weight of 
+evidence $e_{j}$ would provide for $H$.  Then the expected 
+weight of evidence that $E$ would provide for $H$ is 
+$EW(HE) = \sum_{j=1}^{n} W(H
+:e_{j})\Pr(e_{j} \mid H)$. 
+[@goodCard1971]
+
+
+
+## F {#F}
+
+Four Processes
+:  Any assessment must have four different 
+logical processes. The four processes that comprise the Assessment 
+Cycle include the following (1) The Activity Selection Process: the 
+system responsible for selecting a task from the task library; (2) The 
+Presentation Process: the process responsible for presenting the task 
+to the examinee; (3) Response Processing: the first step in the 
+scoring process, which identifies the essential features of the 
+response that provide evidence about the examinee's current knowledge, 
+skills, and abilities; (4) The Summary Score Process: the second stage 
+in the scoring process, which updates beliefs about the examinee's 
+knowledge, skills, and abilities based on the evidence provided by the 
+preceding process.  Instructions.  Instructions are commands sent by 
+the Activity Selection Process to the Presentation Process.
+
+## G {#G}
+
+Graph
+:  A mathematical graph (or _network_) is two coordinated sets
+$<V,E>$, where $V$ is a set of _vertices_ or _nodes_ and $E$ is a set
+of edges which consists of pairs of nodes.  In a simple graph, the
+edges are considered unordered, and in a directed graph the edges are
+ordered pairs.  In a _hypergraph_, the notion of edge is extended to
+allow any positive number of nodes.  In a _graphical model_ or a
+_Bayesian network_, the nodes in the graph correspond to variables in
+the problem space and the edges describe the factorization structure
+and conditional independence properties in the joint probability
+distribution.
+
+Graphical Model
+:  A representation of the joint probability distribution using a
+graph where (1) the variables in the model are represented by nodes in
+the graph, and (2) separation in the graph (_d-separation_ if the
+graph is directed), implies that the variables are conditionally
+independent.  The term is sometimes used generically to refer to both
+representations using both undirected and directed (i.e., _Bayesian
+networks_) graphs, and sometime specifically to refer only to
+representations on undirected graphs.  In that case, the joint
+probability distribution can be represented as the product of a
+collection of _potentials_ over the _cliques_ of the graph.
+
+## H {#H}
+
+Hyper-Dirichlet Law
+:  This is the natural conjugate distribution for 
+the parameters of a conditional multinomial distribution.  It is 
+essentially an independent _Dirichlet_ distribution for each row of 
+the conditional probability table.  The usage in this book is slightly 
+different from the definition in Spiegelhalter and Lauritzen (1990)
+[@SL1990] where it refers to a 
+Bayesian network with hyper-Dirichlet distributions for every 
+conditional probability table.
+
+Hyperedge
+:  A generalized _edge_ used in a _hypergraph_.  Unlike 
+ordinary [[Graph]]s, where an edge must have exactly two _nodes_, a 
+hyperedge can contain one, two, or more nodes.  Undirected hyperedges 
+are often drawn as a closed curve containing all of the nodes.  In a 
+directed hyperedge, the nodes in the edge are partitioned into a set of 
+_parents_ and _children_.  Directed hyperedges are often drawn as a 
+symbol with _tentacles_ (arrows) connecting the symbol to the nodes 
+(the direction of the arrow indicates whether the node is a parent or 
+a child.  When a hypergraph is used to represent the factorization 
+structure of a joint probability distribution, the hyperedge is 
+represents one factor.  The symbol used to represent a directed 
+hyperedge can be based on way the corresponding conditional 
+probability distribution is parameterized.
+
+Hypergraph
+:  A generalization of a [[Graph]] in which the notion of 
+_edge_ is extended to allow one, two, or more nodes.  The resulting 
+edges are called _hyperedges_.  Like ordinary graphs, hypergraphs 
+come in directed and undirected versions.  Both are useful for 
+representing the factorization structure of a joint probability 
+distribution over many variables.  In the hypergraph the edges of 
+the graph correspond to the factors in the model.  
+
+Hyperparameter
+:  The parameters of a _law_ providing the 
+distribution for other parameters.  In Bayesian inference, the 
+parameters of interest are assigned a prior law, and the 
+hyperparameters of that law must be elicited from an expert.  If the 
+hyperparameters are themselves assigned a prior law, the parameters of 
+that distribution are also called hyperparameters (an so forth up the 
+hierarchy). 
+
+## I {#I}
+
+Item Response Theory (IRT)
+:
+
+Independence
+:  Two events are said to be _independent_ if knowledge 
+about Event A provides no information about Event B.  In terms of 
+probability, this implies:  $\Pr(A|B) =\Pr(A|\neg B) = \Pr(A)$. 
+In this situation, the joint probability of Event A and Event B is the 
+product of the individual probabilities:  $\Pr(A,B) = \Pr(A)\Pr(B)$.  
+
+Indirect Evidence
+:  Evidence that is not about a targeted proficiency 
+variable, but rather evidence about a proficiency variable that is 
+highly correlated with the targeted proficiency in the target 
+population.  For example, the ability to produce written text fluently 
+is highly correlated with critical thinking skills in writing. 
+Therefore, text length in a timed essay provides indirect evidence 
+about critical thinking skills.
+
+Influence Diagram
+:  An extension of a Bayesian network that allows 
+the following additional features:  (a) _decision variables_ whose 
+values can be set by the decision maker and (b) _utilities_ which 
+provide the values of potential outcomes and the costs of potential 
+decisions.  The solution to an influence diagram is a decision rule or 
+policy for setting the decision variables (given the observed values 
+of other variables which are available at the time of the decision) to 
+maximize expected utility [@howardMatheson1981ID,@olvierSmith1990].
+
+Inhibitor Distribution
+:  A design pattern for conditional probability 
+tables with two parent variables in which one parent is thought of as 
+a valve or gate keeper for the others.  Unless the value of the 
+inhibiting value has reached a certain level, then conditional 
+probability tables are the same as if the participant was at the lowest 
+level of the other skill.  After reaching the threshold value, more of 
+the inhibiting skill does not contributed to the outcome.  For 
+example, when solving mathematical word problems, proficiency in the 
+language of the assessment is an inhibitor skill:  a certain minimal 
+level is necessary to understand the problem, but beyond that more 
+does not help.
+
+## J {#J}
+Junction Tree
+:  A re-expression of a Bayesian network into a tree 
+shape such that each node in the tree represents a group of variables 
+that either form a _clique_ in the original network (possible after 
+additional edges have been filled-in to make the graph triangulated) 
+or an intersection of one or more cliques.  The junction tree is a 
+_Markov Tree_ and many probability calculations in a Bayesian 
+network can be expressed as message passing algorithms in a junction 
+tree.  The computational complexity of those calculations is usually 
+driven by the size of the largest node in the junction tree which is 
+known as its _treewidth._  The process of building a junction tree
+from a Bayesian network is often called _compiling the network._
+
+
+
+## K {#K}
+
+## L {#L}
+Law
+:  Another word for distribution.  Stephan Lauritzen suggests 
+that do avoid ambiguity when describing Bayesian networks that the 
+term _distribution_ be used for the conditional probability tables 
+in the network, and the term _law_ be used for the prior/posterior 
+distributions for the parameters of those distributions, as well as 
+for any higher-level distribution for the hyperparameters.
+
+Learning
+:  This word can be used in two different ways.  _Student 
+learning_ refers to how the knowledge, skills and abilities of an 
+individual change over time, in particular in response to instruction. 
+_Parameter learning_ refers to the act of Bayesian inference, that 
+is using data about a system to replace prior laws for model 
+parameters with posterior laws.
+
+Likelihood
+:  The conditional probability of observable evidence given 
+a hypothesized state and set of parameters.  This is often written 
+$\Pr(X|\theta)$  where $X$ represents the observable 
+evidence, and $\theta$ is a parameter or unknown variable.  A 
+popular alternative to Bayesian inference involve choosing a parameter 
+value to maximize the likelihood function, however, this involves the 
+implicit assumption that all parameter values are equally likely a 
+priori.  
+
+Link (Model)
+: A task-specific version of an evidence model.  Consider 
+a collection of tasks all made from the same task model, and an 
+evidence model that is used to evaluate evidence from work products 
+from this task model.  The individual tasks may vary slightly in their 
+difficulty or other properties.  The links are task-specific version 
+of the evidence model that share the same graphical structure and 
+distribution families, but differ in the parameter values. 
+
+Local Independence
+: This is a desirable property of educational 
+assessments that observable variables from distinct tasks should be 
+conditionally independent given the proficiency variables.  Note that 
+the Bayesian network formulation uses a more relaxed version of this 
+assumption than other measurement model frameworks, as activities that 
+produce observables that locally dependent observables can be placed 
+within the same task and hence, the dependence among the observables 
+can be modeled within the evidence model. 
+[@localDependenceJEBS].  
+
+
+## M {#M}
+
+Maximum A Posterior (MAP) Score
+:
+
+Maximum Likelihood
+:
+
+Marginal Distribution
+:
+
+Markov Chain Monte Carlo (MCMC)
+:
+
+Markov Tree
+:  A transformed version of a Bayesian network that has 
+nodes corresponding to sets of variables in the original model, and 
+whose nodes are connected to have the running intersection property: 
+the set of nodes containing any given variable forms a connected 
+subtree.  Many probability calculations within the Bayesian network 
+can be expressed as passing messages in this tree.  The two most 
+common examples of a Markov tree are the _junction tree_ and the 
+_tree of cliques._
+
+
+Measurement Model
+:  The Measurement Model is that part of the 
+Evidence Model that explains how the scoring should be updated given 
+the observed features of the response.  Model.  A Model is a design 
+object in the CAF that provides requirements for one or more of the 
+Four Processes, particularly for the data structures used by those 
+processes (e.g., Tasks and Scoring Records). A Model describes 
+variables, which appear in data structures used by the Four Processes, 
+whose values are set in the course of authoring the tasks or running 
+the assessment.
+
+Multinomial Distribution
+:
+
+
+## N {#N}
+
+Neighborhood
+:
+
+Network
+: Another name for a [[Graph]].
+
+Normalization Constant
+:
+
+
+## O {#O}
+
+Observables/Observable Outcome Variables
+:  Observables are variables 
+that are produced through the application of Evidence Rules to the 
+task Work Product. Observables describe characteristics to be 
+evaluated in the Work Product and/or may represent aggregations of 
+other observables.
+
+Observation
+:  An Observation is a specific value for an 
+observable variable for a particular participant.
+
+Outcome Pattern/Vector
+:
+
+Outcome Space
+:
+
+
+## P {#P}
+
+Parent
+:
+
+Parameter
+:
+
+Participant
+:  A Participant is the person whose skills are 
+being assessed. A Participant directly engages with the assessment for 
+any of a variety of purposes (e.g., certification, tutoring, 
+selection, drill and practice, etc.).
+
+Platform
+:  Platform refers to method that will be used to 
+deliver the presentation materials to the examinees. Platform is 
+defined broadly to include human, computer, paper and pencil, etc. 
+
+Posterior Distribution
+:
+
+Posterior Predictive Distribution
+:
+
+Potential
+:
+
+Presentation Material
+:  Presentation Material is material that 
+is presented to a participant as part of a task (including stimulus, 
+rubric, prompt, possible options for multiple choice).
+
+Presentation Process
+:  The Presentation Process is the part of 
+the Assessment Cycle that displays the task to the examinee and 
+captures the results (or Work Products) when the examinee performs the 
+task.
+
+Pretest Data
+:
+
+Prior Distribution
+:
+
+Proficiency (Variable)
+:
+
+Proficiency Model
+:
+
+Profile Score
+:
+
+
+## Q {#Q}
+
+_Q_-Matrix
+:
+
+
+
+## R {#R}
+
+Rasch Model
+:
+
+Reliability
+:
+
+Reporting Rule
+:  Reporting Rules describe how Student Model 
+Variables should be combined or sampled to produce scores, and how 
+those scores should be interpreted.
+
+Response.  See Work Product
+:
+
+Response Processing
+:  Response Processing is the part of the 
+Assessment Cycle that identifies the essential features of the 
+examinee's response and records these as a series of Observations. At 
+one time referred to as the "Evidence Identification Process," it 
+emphasizes the key observations in the Work Product that provide 
+evidence.
+
+Response Processing Data
+:  See Evidence Rule Data.
+
+
+## S {#S}
+
+Scoring Model
+:
+
+Sensitivity Analysis
+:
+
+Simple Graph
+:
+
+Simulee
+:
+
+Strategy
+:  Strategy refers to the overall method that will be 
+used to select tasks in the  Assembly Model.
+
+Student Model
+:  The Student Model is a collection of variables 
+representing knowledge, skills, and abilities of an examinee about 
+which inferences will be made. A Student Model is comprised of the 
+following types of information: (1) Student Model Variables that 
+correspond to aspects of proficiency the assessment is meant to 
+measure; (2) Model Type that describes the mathematical form of the 
+Student Model (e.g., univariate IRT, multivariate IRT, or discrete 
+Bayesian Network); (3) Reporting Rules that explain how the Student 
+Model Variables should be combined or sampled to produce scores.  
+
+Summary Scoring Process
+:  The Summary Scoring Process is the 
+part of the Assessment Cycle that updates the scoring based on the 
+input it receives from Response Processing. At one time referred to as 
+the "Evidence Accumulation Process," the Summary Scoring Process plays 
+an important role in accumulating evidence.
+
+
+## T {#T}
+
+Task
+:  A Task is a unit of work requested from an examinee 
+during the course of an assessment. In ECD, a task is a specific 
+instance of a Task Model.
+
+Task/Evidence Composite Library
+:  The Task/Evidence Composite 
+Library is a database of task objects along with all the information 
+necessary to select and score them.  For each such Task/Evidence 
+Composite, the library stores (1) descriptive properties that are used 
+to ensure content coverage and prevent overlap among tasks; (2) 
+specific values of, or references to, Presentation Material and other 
+environmental parameters that are used for delivering the task; (3) 
+specific data that are used to extract the salient characteristics of 
+Work Products; and (4) Weights of Evidence that are used to update the 
+scoring from performances on this task, specifically, scoring weights, 
+conditional probabilities, or parameters in a psychometric model.
+
+Task Model
+:  A Task Model is a generic description of a family 
+of tasks that contains (1) a list of variables that are used to 
+describe key features of the tasks, (2) a collection of Presentation 
+Material Specifications that describe material that will be presented 
+to the examinee as part of a stimulus, prompt, or instructional 
+program, and (3) a collection of Work Product Specifications that 
+describe the material that the task will be return to the scoring 
+process.
+
+Task Model Variables
+:  Task Model Variables describe features 
+of the task that are important for designing, calibrating, selecting, 
+executing, and scoring it. These variables describe features of the 
+task that are important descriptors of the task itself, such as 
+substance, interactivity, size, and complexity, or are descriptors of 
+the task performance environment, such as tools, help, and 
+scaffolding.
+
+Testlet
+:
+
+Tree
+:
+
+Treewidth
+:
+
+Triangulated
+:
+
+
+## U {#U}
+
+Utility
+:
+
+
+## V {#V}
+
+Validity
+:
+
+Value of Information
+:
+
+Variable
+:
+
+Vertex
+:
+
+
+## W {#W}
+
+Weak prior
+:
+
+Weight of Evidence
+:  
+
+Work Product
+:  A Work Product is the Examinee's response a task 
+from a given task model. This could be expressed as a transcript of 
+examinee actions, an artifact created by the examinee and/or other 
+appropriate information. The Work Product provides an important bridge 
+between the Task Model and the Evidence Model. In particular, work 
+products are the input to the Evidence Rules.
+
+Work Process
+:
+
+Work Product and Process (WPP)
+: The work product and work process taken together.  This is the
+  complete output of a task. 
+
+## X {#X}
+
+## Y {#Y}
+
+## Z {#Z}
+
+
 I'll eventuall port the content over from
 <http://ecd.ralmond.net/ecdwiki/ECD/Glossary>
 
